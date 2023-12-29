@@ -1,70 +1,65 @@
-import React, { useRef } from 'react'
-import {motion, useScroll} from "framer-motion"
-import LiIcon from './LiIcon'
+import React, { useRef } from 'react';
+import { motion, useScroll } from "framer-motion";
+import LiIcon from './LiIcon';
 
-const Details =({ type,time,place,info }) => {
+const Details = ({ type, time, info, link }) => {
     const ref = useRef(null);
     return (
-    <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]'>
-        <LiIcon reference={ref} />
-        <motion.div
-        initial={{y:50}}
-        whileInView={{y:0}}
-        transition={{duration:0.5, type:"spring"}}
-        >
-            <h3 className='capitalize font-bold text-2xl sm:text-xl xs:text-lg'>
-            {type}</h3>
-            <span className='capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm'>
-                {time}  {place}
-            </span>
-            <p className='font-medium w-full md:text-sm'>
-                {info}
-            </p>
-        </motion.div>
+        <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]'>
+            <LiIcon reference={ref} />
+            <motion.div
+                initial={{ y: 50 }}
+                whileInView={{ y: 0 }}
+                transition={{ duration: 0.5, type: "spring" }}
+            >
+                <h3 className='capitalize font-bold text-2xl sm:text-xl xs:text-lg'>
+                    Graduate @ <a href={link} target='_blank' className='text-primary'>{type}</a>
+                </h3>
+                
+                <span className='capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm'>
+                    {time}
+                </span>
+                <p className='font-medium w-full md:text-sm'>
+                    {info}
+                </p>
+            </motion.div>
         </li>
     );
 };
 
 const Education = () => {
     const ref = useRef(null);
-    const{scrollYProgress} = useScroll(
-        {
-            target:ref,
-            offset:["start end","center start"]
-        }
-    )
-  return (
-    <div className='my-64'>
-        <h2 className='font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16'>Education
-            </h2>
-            <div ref={ref} className='w-[75%] mx-auto relative lg:w-[90%] md:w-full'>
+    const { scrollYProgress } = useScroll({
+        target: ref,
+        offset: ["start end", "center start"]
+    });
 
+    return (
+        <div className='my-64'>
+            <h2 className='font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16'>Education</h2>
+            <div ref={ref} className='w-[75%] mx-auto relative lg:w-[90%] md:w-full'>
                 <motion.div
-                style={{scaleY: scrollYProgress}}
-                className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light
-                md:w-[2px] md:left-[30px] xs:left-[20px]
-                '/>
-                <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
-                <Details 
-                
-type="Florida International University"
-time="Junior | B.S. Computer Science"
-info="As a computer science major at FIU, I've been actively involved in clubs like the Google Student Developer Club, INIT Build AI Team, and AI-4-ALL team. Through these experiences, 
-I've developed advanced AI skills, including designing deep learning models for real-world applications. Collaborating with my peers, I've contributed to cutting-edge AI solutions and 
-explored ethical AI principles. My involvement has significantly shaped my growth as a software engineer, preparing me for a future full of AI opportunities."
-/>
-<Details
-type="Miami Dade College"
-time="Graduate | A.A. Architecture"
-info="As a former architecture major at Miami Dade College, I've always been drawn to the creative process and the ability to shape the world around us. However, after exploring the 
-vast possibilities that technology offers, I decided to pivot my academic path and dive into computer science. This transition allowed me to merge my passion for design with the 
-cutting-edge world of programming and artificial intelligence. Now, as a computer science major, I am eager to bring innovative ideas to life, blending aesthetics and functionality to 
-create solutions that will positively impact our ever-evolving digital landscape."
+                    style={{ scaleY: scrollYProgress }}
+                    className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[20px]'
                 />
+                <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
+                    <Details
+                        type="Florida State University"
+                        time="Expected Graduation: Jun 2026 | B.S. Computer Science"
+                        link="https://www.fsu.edu"
+                        info="At Florida State University, my journey in Computer Science has been marked by academic excellence and active involvement in extracurricular activities. I've engaged in various clubs, including Init Build AI Team and Code Culture, where I've honed my skills in AI and software development. My coursework in Data Structures, Computer Architecture, and Software Engineering, complemented by a strong GPA of 3.9/4.0, has laid a solid foundation for my technical expertise. My participation in Pencils for Latin America and Silver Knights has also allowed me to contribute over 1,000 volunteer hours, demonstrating my commitment to community service."
+                    />
+                    <Details
+                        type="Doral College"
+                        time="Aug 2021 - Jun 2023 | A.A. Computer Science"
+                        link="https://www.doral.edu/"
+                        info="During my time at Doral College, I completed my Associate of Arts in Computer Science, where I delved into the fundamentals of programming and software development. This period was crucial for my academic growth, allowing me to explore various aspects of computer science and its practical applications. My studies here served as a stepping stone to my further education in computer science at Florida State University, providing me with the necessary knowledge and skills to excel in my ongoing academic endeavors."
+                    />
+                    {/* Add more <Details /> components for other education or experiences as needed */}
                 </ul>
             </div>
         </div>
-  )
-}
+    );
+};
 
-export default Education
+export default Education;
