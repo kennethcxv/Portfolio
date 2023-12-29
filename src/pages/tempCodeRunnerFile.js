@@ -2,21 +2,8 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Typewriter from 'typewriter-effect';
 import SphereTagCloud from '../components/sphere.js';
-import React, { useEffect } from 'react';
 
 export default function Home() {
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js';
-    script.async = true;
-
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
   return (
     <>
       <Head>
@@ -25,7 +12,7 @@ export default function Home() {
       </Head>
       <main className="flex justify-center items-center w-full min-h-screen bg-gradient-to-br from-white to-a6c1ee">
         {/* Sphere Tag Cloud on the left */}
-        <div className="w-1/2 ml-20">
+        <div className="w-1/2">
           <SphereTagCloud />
         </div>
 
@@ -45,18 +32,19 @@ export default function Home() {
               }}
             />
           </h1>
-          <p className="my-4 text-base font-medium md:text-md sm:text-sm mr-20">
-            I'm Kenneth Camacho, a software engineering student at Florida State University with a knack for developing innovative solutions. In this portfolio, you'll find a showcase of my projects ranging from AI-driven applications to full-stack development. Each project reflects my commitment to quality, efficiency, and user-centric design. Dive in to see how my work at Sebanda Insurance, as a Team Lead at Founders Deep Learning Startup, and various freelance endeavors have shaped my professional journey. I'm excited to share these experiences with you.
+          <p className="my-4 text-base font-medium md:text-md sm:text-sm">
+            I'm Kenneth Camacho, a software engineering student at Florida State University with a knack for developing innovative solutions...
           </p>
           <div className="flex items-center justify-center mt-2">
-            <Link href="/Kenneth_Camacho_Resume.pdf" target="_blank" className="bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light md:p-2 md:px-4 md:text-base">
-              Resume
+            <Link href="/Kenneth_Camacho_Resume.pdf" passHref>
+              <a target="_blank" className="bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light md:p-2 md:px-4 md:text-base">
+                Resume
+              </a>
             </Link>
             <a href="mailto:kennethcxv@outlook.com" target="_blank" className="ml-4 text-lg font-medium capitalize text-dark underline dark:text-light md:text-base">
               Contact
             </a>
           </div>
-       
         </div>
       </main>
     </>
