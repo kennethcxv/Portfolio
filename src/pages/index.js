@@ -26,13 +26,12 @@ export default function Home() {
       </Head>
       <main className="flex justify-center items-center w-full min-h-screen bg-gradient-to-br from-white to-a6c1ee">
         {/* Sphere Tag Cloud on the left */}
-        <div className="w-1/2 ml-32 ">
-          <SphereTagCloud />
-        </div>
-
+        <div className="w-1/2 ml-32  sm:block">
+        <SphereTagCloud />
+</div>
         {/* Content on the right */}
-        <div className="w-3/2 text-center">
-          <h1 className="text-5xl font-semibold  mr-40">
+        <div className=" w-3/5 text-center">
+          <h1 className="text-5xl font-semibold  mr-44">
             <Typewriter
               options={{
                 strings: [
@@ -46,10 +45,10 @@ export default function Home() {
               }}
             />
           </h1>
-          <p className="intro-text my-6 md:text-lg sm:text-md mr-40">
-            I'm Kenneth Camacho, a software engineering student at Florida State University with a knack for developing innovative solutions. In this portfolio, you'll find a showcase of my projects ranging from AI-driven applications to full-stack development. Each project reflects my commitment to quality, efficiency, and user-centric design. Dive in to see how my work at Sebanda Insurance, as a Team Lead at Founders Deep Learning Startup, and various freelance endeavors have shaped my professional journey. I'm excited to share these experiences with you.
+          <p className="my-6 text-lg md:text-2xl lg:text-3xl font-medium mr-44">
+          I'm Kenneth Camacho, a software engineering student at Florida State University with a knack for developing innovative solutions. In this portfolio, you'll find a showcase of my projects ranging from AI-driven applications to full-stack development. Each project reflects my commitment to quality, efficiency, and user-centric design. Dive in to see how my work at Sebanda Insurance, as a Team Lead at Founders Deep Learning Startup, and various freelance endeavors have shaped my professional journey. I'm excited to share these experiences with you.
           </p>
-          <div className="flex items-center justify-center mt-2 mr-20">
+          <div className="flex items-center justify-center mt-2 mr-44">
             <Link href="/Kenneth_Camacho_Resume.pdf" target="_blank" className="bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light md:p-2 md:px-4 md:text-base">
               Resume
             </Link>
