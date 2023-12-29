@@ -5,10 +5,13 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import project1 from "../../public/images/projects/My project (1).png";
-import project2 from "../../public/images/projects/My project (2).png";
-import project3 from "../../public/images/projects/My project (3).png";
-import project4 from "../../public/images/projects/My project (6).png";
+
+import Uniface from "../../public/images/projects/UniFaceImage.png"
+import EmotionsClassifier from "../../public/images/projects/Ai Emotions Classifier.png"
+import CountrySorter from "../../public/images/projects/CountrySorterImage.png"
+import TextToImage from "../../public/images/projects/Ai Text to Image.png"
+import project1 from "../../public/images/projects/UniFace.png"
+
 import{motion} from "framer-motion";
 
 
@@ -94,94 +97,172 @@ const Project = ({title, type, img, link, github}) => {
 
     )
 }
+// ... existing imports ...
 
 const projects = () => {
-  return (
-    <>
-    <Head>
-    <title>Kenneth Camacho | Projects Page</title>
-    <meta name='description' content='Software Engineer' />
-</Head>
-    <main className='font-normal w-full mb-16 flex flex-col items-center justify-center dark:text-light'>
-        <Layout className='pt-12 font-normal items-center'>
-        <div className="text-container">
-
- {/* <AnimatedText text="Imagination" className='!text-5xl !text-center lg:!text-5xl sm:mb-8 sm:!text-4xl xs:!text-3xl'/>
- <AnimatedText text="==" className='!text-5xl !text-center lg:!text-5xl sm:mb-8 sm:!text-4xl xs:!text-3xl'/>
- <AnimatedText text="Innovative projects!" className='!text-5xl !text-center lg:!text-5xl sm:mb-8 sm:!text-4xl xs:!text-3xl'/> */}
-
-<br /> 
-
-</div>
+    return (
+      <>
+        <Head>
+          <title>Kenneth Camacho | Projects Page</title>
+          <meta name='description' content='Software Engineer' />
+        </Head>
+        <main className='font-normal w-full mb-16 flex flex-col items-center justify-center dark:text-light'>
+          <Layout className='pt-12 font-normal items-center'>
             <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
-                <div className='col-span-12'>
+              
+              {/* Featured Project */}
+              <div className='col-span-12'>
                 <FeaturedProject 
-title="AI Authenticator - Uniface"
-img={project1}
-summary="Uniface is a groundbreaking facial recognition authentication solution that harnesses AI-driven deep learning algorithms and advanced computer 
-vision techniques, including Convolutional Neural Networks (CNNs) and feature extraction. Designed for seamless integration across various industries, 
-it offers low-latency processing, adaptability, and resistance against adversarial attacks. Its modular and extensible nature allows customization to 
-meet unique enterprise needs, while liveness detection mechanisms counteract spoofing attempts. By implementing Uniface, organizations can strengthen 
-security, optimize access management, and enhance user experience, positioning themselves as leaders in the digital transformation era."
-link="https://github.com/Kennethcxv/UniFace-AI-Authenticator/tree/main/UniFace"
-github="https://github.com/Kennethcxv/UniFace-AI-Authenticator/tree/main/UniFace"
-type="Featured Project"
-                    />
-                </div>
+                  title="Social Media Application"
+                  img={Uniface}
+                  summary="Uniface is a groundbreaking facial recognition authentication solution..."
+                  link="https://github.com/kennethcxv/Social-Media-App"
+                  github="https://github.com/kennethcxv/Social-Media-App"
+                  type="Featured Project"
+                />
+              </div>
+  
+              {/* New Regular Project 1 */}
+              <div className='col-span-6 sm:col-span-12'>
+                <Project
+                  title="Audio Scribe AI"
+                  img={project1} // Replace with actual image import
+                  summary="Project summary 2. Brief description of the project."
+                  link="https://github.com/kennethcxv/Audio-Scribe-AI" // Replace with actual project link
+                  github="https://github.com/kennethcxv/Audio-Scribe-AI" // Replace with actual GitHub link
+                  type="Project"
+                />
+              </div>
+                {/* New Regular Project 1 */}
                 <div className='col-span-6 sm:col-span-12'>
                 <Project
-title="AI Text to Image - Imagin AI"
-img={project2}
-summary="The ImaginAI project is an avant-garde AI-driven endeavor that specializes in the generation of high-fidelity images based on textual prompts, 
-employing cutting-edge deep learning techniques and advanced generative adversarial networks (GANs). Utilizing a combination of transformer architectures 
-and conditioning mechanisms, ImaginAI's neural network efficiently translates complex semantic information from text prompts into intricate visual representations, 
-while maintaining coherence and context fidelity. The system incorporates state-of-the-art optimization algorithms, ensuring the generated images exhibit 
-photorealistic attributes and fine-grained details. Furthermore, ImaginAI's robust design enables the handling of diverse content domains, offering extensive 
-applicability across various industries. This groundbreaking technology paves the way for novel applications in visual storytelling, creative design, advertising,
-and content generation, empowering businesses to harness the full potential of AI-driven visual synthesis."
-link="https://github.com/Kennethcxv/AI-Image-Generator"
-github="https://github.com/Kennethcxv/AI-Image-Generator"
-type="Project"
-                    />
-                </div>
+                  title="Managing SystemSQL"
+                  img={project1} // Replace with actual image import
+                  summary="Project summary 2. Brief description of the project."
+                  link="https://github.com/kennethcxv/Managing-SystemSQL" // Replace with actual project link
+                  github="https://github.com/kennethcxv/Managing-SystemSQL" // Replace with actual GitHub link
+                  type="Project"
+                />
+              </div>
+              {/* Featured Project */}
+              <div className='col-span-12'>
+                <FeaturedProject 
+                  title="Twitter"
+                  img={project1}
+                  summary="Uniface is a groundbreaking facial recognition authentication solution..."
+                  link="https://github.com/kennethcxv/Twitter"
+                  github="https://github.com/kennethcxv/Twitter"
+                  type="Featured Project"
+                />
+              </div>
+  
+              {/* Regular Project 1 */}
+              <div className='col-span-6 sm:col-span-12'>
+                <Project
+                  title="Cryptocurrency Trading Bot"
+                  img={project1}
+                  summary="The ImaginAI project is an avant-garde AI-driven endeavor..."
+                  link="https://github.com/kennethcxv/Cryptocurrency-Trading-Bot"
+                  github="https://github.com/kennethcxv/Cryptocurrency-Trading-Bot"
+                  type="Project"
+                />
+              </div>
+  
+              {/* Regular Project 2 */}
+              <div className='col-span-6 sm:col-span-12'>
+                <Project
+                  title="Precision Control Robotic Arm"
+                  img={project1}
+                  summary="The GeoSorter project is a sophisticated AI-based endeavor..."
+                  link="https://github.com/kennethcxv/Enabling-Precision-Control-Robotic-Arm"
+                  github="https://github.com/kennethcxv/Enabling-Precision-Control-Robotic-Arm"
+                  type="Project"
+                />
+              </div>
+
+            {/* Featured Project */}
+              <div className='col-span-12'>
+                <FeaturedProject 
+                  title="Ai Sign Language Translator"
+                  img={project1}
+                  summary="Uniface is a groundbreaking facial recognition authentication solution..."
+                  link="https://github.com/kennethcxv/AI-Sign-Language-Translator"
+                  github="https://github.com/kennethcxv/AI-Sign-Language-Translator"
+                  type="Featured Project"
+                />
+              </div>
+              {/* Regular Project 1 */}
+              <div className='col-span-6 sm:col-span-12'>
+                <Project
+                  title="Kendrick Lamar Website"
+                  img={project1}
+                  summary="The GeoSorter project is a sophisticated AI-based endeavor..."
+                  link="https://github.com/kennethcxv/Kendrick-Lamar-Website"
+                  github="https://github.com/kennethcxv/Kendrick-Lamar-Website"
+                  type="Project"
+                />
+              </div>
+                {/* Regular Project 2 */}
                 <div className='col-span-6 sm:col-span-12'>
                 <Project
-title="Country Sorter - GeoSorter"
-img={project3}
-summary="The GeoSorter project is a sophisticated AI-based endeavor that focuses on the efficient sorting and organization of countries using advanced 
-search algorithms and data-driven optimization techniques. By employing a combination of heuristics, machine learning models, and graph theory, GeoSorter's 
-innovative system analyzes a multitude of factors, including geographical proximity, political relationships, and socio-economic indicators, to generate an 
-optimized sorting sequence. The implementation of parallel computing and distributed processing methodologies further enhances the solution's computational 
-efficiency, allowing for real-time responsiveness and adaptability to evolving data. With its highly modular and extensible architecture, GeoSorter offers 
-seamless integration across various industries and applications, such as geopolitical analysis, international trade, logistics, and travel planning, enabling 
-organizations to harness the full potential of AI-driven geographical data management and optimization.
-"
-link="https://github.com/Kennethcxv/Country-Sorter"
-github="https://github.com/Kennethcxv/Country-Sorter"
-type="Project"
-                    />
-                </div>
-                <div className='col-span-12'>
+                  title="Country Sorter"
+                  img={CountrySorter}
+                  summary="The GeoSorter project is a sophisticated AI-based endeavor..."
+                  link="https://github.com/kennethcxv/Country-Sorter"
+                  github="https://github.com/kennethcxv/Country-Sorter"
+                  type="Project"
+                />
+              </div>
+              {/* Featured Project */}
+              <div className='col-span-12'>
                 <FeaturedProject 
-title="Emotion Detecting AI - FaceFlow"
-img={project4}
-summary="The FaceFlow project is an innovative AI-driven initiative that specializes in facial recognition and muscle-based analysis, utilizing state-of-the-art 
-deep learning algorithms and advanced computer vision methodologies. By employing a combination of Convolutional Neural Networks (CNNs) and cutting-edge 
-electromyography (EMG) signal processing techniques, FaceFlow's robust system accurately discerns individuals based on their unique facial features and muscle 
-patterns. The integration of multi-modal data fusion and real-time sensor fusion technologies further enhances the solution's precision, allowing for 
-seamless detection even under diverse environmental conditions and varying facial expressions."
-link="https://github.com/Kennethcxv/AI-Emotions-Classifier"
-github="https://github.com/Kennethcxv/AI-Emotions-Classifier"
-type="Featured Project"
-                    />
-                </div>
-                
+                  title="Pulse Tactical Warfare"
+                  img={project1}
+                  summary="Uniface is a groundbreaking facial recognition authentication solution..."
+                  link="https://github.com/kennethcxv/Pulse-Tactical-Warfare"
+                  github="https://github.com/kennethcxv/Pulse-Tactical-Warfare"
+                  type="Featured Project"
+                />
+              </div>
+              {/* Regular Project 1 */}
+              <div className='col-span-6 sm:col-span-12'>
+                <Project
+                  title="AI Emotions Classifier"
+                  img={EmotionsClassifier}
+                  summary="The GeoSorter project is a sophisticated AI-based endeavor..."
+                  link="https://github.com/kennethcxv/AI-Emotions-Classifier"
+                  github="https://github.com/kennethcxv/AI-Emotions-Classifier"
+                  type="Project"
+                />
+              </div>
+               {/* Regular Project 2 */}
+               <div className='col-span-6 sm:col-span-12'>
+                <Project
+                  title="AI Text to Image Generator"
+                  img={TextToImage}
+                  summary="The GeoSorter project is a sophisticated AI-based endeavor..."
+                  link="https://github.com/kennethcxv/AI-Text-To-Image-Generater"
+                  github="https://github.com/kennethcxv/AI-Text-To-Image-Generater"
+                  type="Project"
+                />
+              </div>
+              {/* Featured Project */}
+              <div className='col-span-12'>
+                <FeaturedProject 
+                  title="Uni-Face"
+                  img={project1}
+                  summary="Uniface is a groundbreaking facial recognition authentication solution..."
+                  link="https://github.com/kennethcxv/Emerge-Hackathon"
+                  github="https://github.com/kennethcxv/Emerge-Hackathon"
+                  type="Featured Project"
+                />
+              </div>
             </div>
-
-        </Layout>
-    </main>
-</>
-  )
-}
-
-export default projects
+          </Layout>
+        </main>
+      </>
+    )
+  }
+  
+  export default projects;
+  

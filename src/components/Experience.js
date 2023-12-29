@@ -32,61 +32,44 @@ const Details =({position, company , companyLink, time, address, work}) => {
 
 const Experience = () => {
     const ref = useRef(null);
-    const{scrollYProgress} = useScroll(
-        {
-            target:ref,
-            offset:["start end","center start"]
-        }
-    )
-  return (
-    <div className='my-64'>
-        <h2 className='font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16'>Experience
-            </h2>
-            <div ref={ref} className='w-[75%] mx-auto relative lg:w-[90%] md:w-full'>
+    const { scrollYProgress } = useScroll({
+        target: ref,
+        offset: ["start end", "center start"]
+    });
 
+    return (
+        <div className='my-64'>
+            <h2 className='font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16'>Experience</h2>
+            <div ref={ref} className='w-[75%] mx-auto relative lg:w-[90%] md:w-full'>
                 <motion.div
-                style={{scaleY: scrollYProgress}}
-                className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light
-                md:w-[2px] md:left-[30px] xs:left-[20px]
-                '/>
+                    style={{ scaleY: scrollYProgress }}
+                    className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[20px]'
+                />
                 <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
-                <Details 
-                
-position="Software Engineer Intern" company= "Sebanda Insurance"
-companyLink="https://www.sebandainsurance.com/"
-time="Mar 2019 - Feb 2023"  address="| Miami, FL"
-work="I played a pivotal role in the design and development of a robust accounting software system using Python, which led to a 20% increase in data entry accuracy and enhanced financial 
-reporting capabilities. This, in turn, facilitated informed decision-making and improved management. In addition to the software development, I conducted hands-on technical training to 
-ensure smooth adoption of the new system, resulting in high user satisfaction and empowering employees with the skills needed to effectively utilize the software. Furthermore, I was 
-instrumental in optimizing workflow processes by integrating the new accounting software system, eliminating manual tasks, and boosting overall efficiency by 15%. This fostered a more 
-streamlined work environment and increased productivity across the board."
-/>
-<Details 
-                
-position="Software Engineer" company= "Freelancer"
-                time="May 2021 - Jan 2023 | Remote" 
-                work="As a software engineer freelancer, I skillfully designed and developed custom software solutions using Python, C++, and Java to 
-                address clients' unique requirements and preferences, showcasing my expertise across various programming languages and platforms. By 
-                collaborating closely with clients, I was able to create tailored software solutions that enhanced database performance by 40% and 
-                improved the efficiency of meal planning and task organization apps, ultimately increasing user satisfaction and streamlining operations. 
-                In addition, my ability to facilitate seamless communication with cross-functional teams allowed me to employ my technical expertise and 
-                interpersonal skills to improve project management by 25%, ensuring on-time delivery of software solutions and fostering a collaborative 
-                work environment that encouraged innovation and creative problem-solving."
-                />
-                <Details 
-                
-                position="Founder & Owner" company= "Code Culture"
-                time="Aug 2022 – Present | Miami, FL" 
-                work="I took the initiative to create a non-profit Discord server that rapidly grew into a thriving 
-                community of more than 500+ dedicated developers and programmers. Our members, coming from diverse backgrounds and skill levels, leverage cutting-edge 
-                technologies to provide innovative solutions to an array of complex technical problems.I meticulously customized and implemented advanced bots equipped with features such as automated moderation and personalized 
-                role management. These enhancements not only contributed to a 20% increase in user engagement but also led to a 30% reduction in the moderation workload 
-                for our dedicated staff. Code Culture remains at the forefront of technology and serves as an indispensable resource for the ever-expanding tech community."
-                />
+                    <Details 
+                        position="Software Engineer Intern"
+                        company="Sebanda Insurance"
+                        companyLink="https://www.sebandainsurance.com/"
+                        time="Mar 2021 – Dec 2023 | Miami, FL"
+                        work="Developed AI accounting software with Python, reducing errors by 35%, reporting time by 25%, and improving efficiency by 15%. Partnered to set up a cloud infrastructure, achieving 99.5% stability and cutting costs by 20%. Implemented OCR and NLP for faster claims processing, enhancing speed by 30% and elevating customer satisfaction."
+                    />
+                    <Details 
+                        position="Software Engineer Team Lead"
+                        company="Founders Deep Learning Startup"
+                        time="Jun 2023 – Aug 2023 | Remote"
+                        work="Led a team to create a system predicting disease outbreaks using medical records, social media, and weather data. Applied State-of-the-Art Deep Learning Techniques, including neural networks and Natural Language Processing, to accurately predict disease outbreaks, aiding proactive healthcare responses."
+                    />
+                    <Details 
+                        position="Software Engineer"
+                        company="Freelancer"
+                        time="Apr 2021 – March 2023 | Remote"
+                        work="Led e-commerce backend improvements, reducing load times by 15% and increasing transactions by 10%, while also crafting a dashboard that boosted sales insights by 25%. Executed a 50+ GB data transition to AWS, decreasing retrieval times by 20% with a consistent 99.9% uptime."
+                    />
+                    {/* Add more <Details /> components for other experiences as needed */}
                 </ul>
             </div>
         </div>
-  )
+    );
 }
 
-export default Experience
+export default Experience;

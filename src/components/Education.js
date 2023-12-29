@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { motion, useScroll } from "framer-motion";
 import LiIcon from './LiIcon';
 
-const Details = ({ type, time, info, link }) => {
+const Details = ({ type, time, info, link, label }) => {
     const ref = useRef(null);
     return (
         <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]'>
@@ -13,7 +13,7 @@ const Details = ({ type, time, info, link }) => {
                 transition={{ duration: 0.5, type: "spring" }}
             >
                 <h3 className='capitalize font-bold text-2xl sm:text-xl xs:text-lg'>
-                    Graduate @ <a href={link} target='_blank' className='text-primary'>{type}</a>
+                    <span className='text-black'>{label}</span> @ <a href={link} target='_blank' className='text-primary'>{type}</a>
                 </h3>
                 
                 <span className='capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm'>
@@ -44,12 +44,14 @@ const Education = () => {
                 />
                 <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
                     <Details
+                        label="Student"
                         type="Florida State University"
                         time="Expected Graduation: Jun 2026 | B.S. Computer Science"
                         link="https://www.fsu.edu"
                         info="At Florida State University, my journey in Computer Science has been marked by academic excellence and active involvement in extracurricular activities. I've engaged in various clubs, including Init Build AI Team and Code Culture, where I've honed my skills in AI and software development. My coursework in Data Structures, Computer Architecture, and Software Engineering, complemented by a strong GPA of 3.9/4.0, has laid a solid foundation for my technical expertise. My participation in Pencils for Latin America and Silver Knights has also allowed me to contribute over 1,000 volunteer hours, demonstrating my commitment to community service."
                     />
                     <Details
+                        label="Graduate"
                         type="Doral College"
                         time="Aug 2021 - Jun 2023 | A.A. Computer Science"
                         link="https://www.doral.edu/"

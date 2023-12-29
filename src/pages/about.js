@@ -8,6 +8,7 @@ import profilePic from "../../public/images/UpperHalf.png";
 import { Truculenta } from 'next/font/google'
 import Skills from '@/components/Skills'
 import Experience from '@/components/Experience'
+import Leadership from '@/components/Leadership'
 import Education from '@/components/Education'
 
 
@@ -92,8 +93,9 @@ bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span
 
             <Skills />
             <Experience />
+            <Leadership />
             <Education />
-            </Layout>
+        </Layout>
     </main>
     </>
   )
