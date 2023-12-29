@@ -6,11 +6,19 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-import Uniface from "../../public/images/projects/UniFaceImage.png"
-import EmotionsClassifier from "../../public/images/projects/Ai Emotions Classifier.png"
-import CountrySorter from "../../public/images/projects/CountrySorterImage.png"
-import TextToImage from "../../public/images/projects/Ai Text to Image.png"
-import project1 from "../../public/images/projects/UniFace.png"
+import Uniface from "../../public/images/projects/UniFace.png";
+import Emotion from "../../public/images/projects/EmotionDetectingAi.png";
+import TextToImage from "../../public/images/projects/TextToImage.png";
+import Pulse from "../../public/images/projects/Pulse.png";
+import KendrickLamar from "../../public/images/projects/KendrickLamar.png";
+import CountrySorter from "../../public/images/projects/CountrySorter.png";
+import SignLanguage from "../../public/images/projects/SignLanguageTranslator.png";
+import Crypto from "../../public/images/projects/CryptocurrencyTradingBot.png";
+import Robotic from "../../public/images/projects/RoboticArm.png";
+import Twitch from "../../public/images/projects/Twitch.png";
+import Audio from "../../public/images/projects/Audio.png";
+import SQL from "../../public/images/projects/SQL.png";
+import SocialMediaApp from "../../public/images/projects/SocialMediaApp.png";
 
 import{motion} from "framer-motion";
 
@@ -114,7 +122,7 @@ const projects = () => {
               <div className='col-span-12'>
                 <FeaturedProject 
                   title="Social Media Application"
-                  img={Uniface}
+                  img={SocialMediaApp}
                   summary="Uniface is a groundbreaking facial recognition authentication solution..."
                   link="https://github.com/kennethcxv/Social-Media-App"
                   github="https://github.com/kennethcxv/Social-Media-App"
@@ -126,7 +134,7 @@ const projects = () => {
               <div className='col-span-6 sm:col-span-12'>
                 <Project
                   title="Audio Scribe AI"
-                  img={project1} // Replace with actual image import
+                  img={Audio} // Replace with actual image import
                   summary="Project summary 2. Brief description of the project."
                   link="https://github.com/kennethcxv/Audio-Scribe-AI" // Replace with actual project link
                   github="https://github.com/kennethcxv/Audio-Scribe-AI" // Replace with actual GitHub link
@@ -137,7 +145,7 @@ const projects = () => {
                 <div className='col-span-6 sm:col-span-12'>
                 <Project
                   title="Managing SystemSQL"
-                  img={project1} // Replace with actual image import
+                  img={SQL} // Replace with actual image import
                   summary="Project summary 2. Brief description of the project."
                   link="https://github.com/kennethcxv/Managing-SystemSQL" // Replace with actual project link
                   github="https://github.com/kennethcxv/Managing-SystemSQL" // Replace with actual GitHub link
@@ -147,11 +155,11 @@ const projects = () => {
               {/* Featured Project */}
               <div className='col-span-12'>
                 <FeaturedProject 
-                  title="Twitter"
-                  img={project1}
+                  title="Twitch"
+                  img={Twitch}
                   summary="Uniface is a groundbreaking facial recognition authentication solution..."
-                  link="https://github.com/kennethcxv/Twitter"
-                  github="https://github.com/kennethcxv/Twitter"
+                  link="https://github.com/kennethcxv/Twitch"
+                  github="https://github.com/kennethcxv/Twitch"
                   type="Featured Project"
                 />
               </div>
@@ -160,7 +168,7 @@ const projects = () => {
               <div className='col-span-6 sm:col-span-12'>
                 <Project
                   title="Cryptocurrency Trading Bot"
-                  img={project1}
+                  img={Crypto}
                   summary="The ImaginAI project is an avant-garde AI-driven endeavor..."
                   link="https://github.com/kennethcxv/Cryptocurrency-Trading-Bot"
                   github="https://github.com/kennethcxv/Cryptocurrency-Trading-Bot"
@@ -172,7 +180,7 @@ const projects = () => {
               <div className='col-span-6 sm:col-span-12'>
                 <Project
                   title="Precision Control Robotic Arm"
-                  img={project1}
+                  img={Robotic}
                   summary="The GeoSorter project is a sophisticated AI-based endeavor..."
                   link="https://github.com/kennethcxv/Enabling-Precision-Control-Robotic-Arm"
                   github="https://github.com/kennethcxv/Enabling-Precision-Control-Robotic-Arm"
@@ -184,7 +192,7 @@ const projects = () => {
               <div className='col-span-12'>
                 <FeaturedProject 
                   title="Ai Sign Language Translator"
-                  img={project1}
+                  img={SignLanguage}
                   summary="Uniface is a groundbreaking facial recognition authentication solution..."
                   link="https://github.com/kennethcxv/AI-Sign-Language-Translator"
                   github="https://github.com/kennethcxv/AI-Sign-Language-Translator"
@@ -195,7 +203,7 @@ const projects = () => {
               <div className='col-span-6 sm:col-span-12'>
                 <Project
                   title="Kendrick Lamar Website"
-                  img={project1}
+                  img={KendrickLamar}
                   summary="The GeoSorter project is a sophisticated AI-based endeavor..."
                   link="https://github.com/kennethcxv/Kendrick-Lamar-Website"
                   github="https://github.com/kennethcxv/Kendrick-Lamar-Website"
@@ -217,7 +225,7 @@ const projects = () => {
               <div className='col-span-12'>
                 <FeaturedProject 
                   title="Pulse Tactical Warfare"
-                  img={project1}
+                  img={Pulse}
                   summary="Uniface is a groundbreaking facial recognition authentication solution..."
                   link="https://github.com/kennethcxv/Pulse-Tactical-Warfare"
                   github="https://github.com/kennethcxv/Pulse-Tactical-Warfare"
@@ -228,7 +236,7 @@ const projects = () => {
               <div className='col-span-6 sm:col-span-12'>
                 <Project
                   title="AI Emotions Classifier"
-                  img={EmotionsClassifier}
+                  img={Emotion}
                   summary="The GeoSorter project is a sophisticated AI-based endeavor..."
                   link="https://github.com/kennethcxv/AI-Emotions-Classifier"
                   github="https://github.com/kennethcxv/AI-Emotions-Classifier"
@@ -250,7 +258,7 @@ const projects = () => {
               <div className='col-span-12'>
                 <FeaturedProject 
                   title="Uni-Face"
-                  img={project1}
+                  img={Uniface}
                   summary="Uniface is a groundbreaking facial recognition authentication solution..."
                   link="https://github.com/kennethcxv/Emerge-Hackathon"
                   github="https://github.com/kennethcxv/Emerge-Hackathon"
