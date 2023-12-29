@@ -6,7 +6,16 @@
   padding: 6rem;
   min-height: 100vh;
 }
-
+.intro-text p {
+  text-align: left; /* Align text to the left */
+  margin-right: 0; /* Remove right margin if any */
+  padding-left: 0;
+}
+@media (max-width: 768px) {
+  .intro-text {
+    font-size: 0.9rem;
+  }
+}
 .description {
   display: inherit;
   justify-content: inherit;
