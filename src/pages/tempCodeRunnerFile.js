@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Typewriter from 'typewriter-effect';
-import SphereTagCloud from '../components/sphere.js';
+import SphereTagCloud from '../components/SphereTagCloud.js';
 
 export default function Home() {
   return (
