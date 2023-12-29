@@ -1,10 +1,10 @@
-import AnimatedText from '@/components/AnimatedText'
+
 import Layout from '@/components/Layout'
 import {useInView, useMotionValue, useSpring } from 'framer-motion'
 import Head from 'next/head'
 import Image from 'next/image'
 import React, { useEffect, useRef } from 'react'
-import profilePic from "../../public/images/profile/developer-pic-2.jpg";
+import profilePic from "../../public/images/UpperHalf.png";
 import { Truculenta } from 'next/font/google'
 import Skills from '@/components/Skills'
 import Experience from '@/components/Experience'
@@ -47,7 +47,7 @@ const about = () => {
     </Head>
     <main className='flex w-full flex-col items-center justify-center dark:text-light'>
         <Layout className='pt-16'>
-        <AnimatedText text="Unleashing the Power of Technology!" className='mb-16 !text-5xl !text-center lg:!text-5xl sm:!text-4xl xs:!text-3xl sm:mb-8'/> 
+        {/* <AnimatedText text="Unleashing the Power of Technology!" className='mb-16 !text-5xl !text-center lg:!text-5xl sm:!text-4xl xs:!text-3xl sm:mb-8'/>  */}
             <div className='grid w-full grid-cols-8 gap-16 sm:gap-8'>
                 <div className='col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8'>
                     <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'>About Me</h2>

@@ -1,4 +1,4 @@
-import AnimatedText from '@/components/AnimatedText'
+// import AnimatedText from '@/components/TypingText'
 import { GithubIcon } from '@/components/Icons'
 import Layout from '@/components/Layout'
 import Head from 'next/head'
@@ -106,9 +106,9 @@ const projects = () => {
         <Layout className='pt-12 font-normal items-center'>
         <div className="text-container">
 
- <AnimatedText text="Imagination" className='!text-5xl !text-center lg:!text-5xl sm:mb-8 sm:!text-4xl xs:!text-3xl'/>
+ {/* <AnimatedText text="Imagination" className='!text-5xl !text-center lg:!text-5xl sm:mb-8 sm:!text-4xl xs:!text-3xl'/>
  <AnimatedText text="==" className='!text-5xl !text-center lg:!text-5xl sm:mb-8 sm:!text-4xl xs:!text-3xl'/>
- <AnimatedText text="Innovative projects!" className='!text-5xl !text-center lg:!text-5xl sm:mb-8 sm:!text-4xl xs:!text-3xl'/>
+ <AnimatedText text="Innovative projects!" className='!text-5xl !text-center lg:!text-5xl sm:mb-8 sm:!text-4xl xs:!text-3xl'/> */}
 
 <br /> 
 

@@ -1,4 +1,4 @@
-import AnimatedText from '@/components/AnimatedText'
+
 import Layout from '@/components/Layout'
 import Head from 'next/head'
 import Image from 'next/image'
@@ -103,7 +103,7 @@ const articles = () => {
     </Head>
     <main className='w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light'>
         <Layout className='pt-16'>
-            <AnimatedText text="The power of words " className='mb-16 !text-5xl !text-center lg:!text-5xl sm:mb-8 sm:!text-4xl xs:!text-3xl' />
+            {/* <AnimatedText text="The power of words " className='mb-16 !text-5xl !text-center lg:!text-5xl sm:mb-8 sm:!text-4xl xs:!text-3xl' /> */}
             <ul className='grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16'>
                 
                 <FeaturedArticle 
