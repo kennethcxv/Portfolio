@@ -28,7 +28,7 @@ const SphereTagCloud = () => {
           'Data Structures', 'Computer Architecture', 'Database Management', 'Software Engineering', 'Statistics for ML',
           'AI Accounting Software', 'Cloud Infrastructure', 'OCR', 'NLP', 'Disease Outbreak Prediction',
           'Deep Learning', 'Neural Networks', 'E-commerce Backend', 'AWS', 'Culture Coder',
-          'TypeScript', 'PostgreSQL', 
+          'TypeScript', 'PostgreSQL',
           // ... add more tags as needed
         ];
         const options = {
@@ -45,9 +45,21 @@ const SphereTagCloud = () => {
     };
 
     loadTagCloudScript();
+
+    return () => {
+      if (sphereContainer.current) {
+        sphereContainer.current.innerHTML = '';
+      }
+    };
   }, []);
 
-  return <div ref={sphereContainer} className="sphere-container" style={{width: '300px', height: '700px' }}></div>;
+  return (
+    <div 
+      ref={sphereContainer} 
+      className="sphere-container dark:text-white text-black" 
+      style={{width: '300px', height: '700px'}}
+    ></div>
+  );
 };
 
 export default SphereTagCloud;
