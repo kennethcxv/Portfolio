@@ -19,6 +19,8 @@ import Twitch from "../../public/images/projects/Twitch.png";
 import Audio from "../../public/images/projects/Audio.png";
 import SQL from "../../public/images/projects/SQL.png";
 import SocialMediaApp from "../../public/images/projects/SocialMediaApp.png";
+import IssueTracker from "../../public/images/projects/IssueTracker.png";
+import GameHub from "../../public/images/projects/GameHub.png";
 
 import{motion} from "framer-motion";
 
@@ -123,7 +125,7 @@ const projects = () => {
                 <FeaturedProject 
                   title="Social Media Application"
                   img={SocialMediaApp}
-                  summary="Uniface is a groundbreaking facial recognition authentication solution..."
+                  summary="This app is a specialized social media platform designed for programmers, offering unique features tailored to their needs. Users can share code snippets, ideas, and updates in a tweet-like format, allowing for quick and efficient communication within the programming community. Additionally, the app includes interactive features such as liking, upvoting, downvoting, and the ability to reply directly to code, fostering a collaborative and engaging environment for developers."
                   link="https://github.com/kennethcxv/Social-Media-App"
                   github="https://github.com/kennethcxv/Social-Media-App"
                   type="Featured Project"
@@ -135,7 +137,7 @@ const projects = () => {
                 <Project
                   title="Audio Scribe AI"
                   img={Audio} // Replace with actual image import
-                  summary="Project summary 2. Brief description of the project."
+                  summary=""
                   link="https://github.com/kennethcxv/Audio-Scribe-AI" // Replace with actual project link
                   github="https://github.com/kennethcxv/Audio-Scribe-AI" // Replace with actual GitHub link
                   type="Project"
@@ -144,9 +146,9 @@ const projects = () => {
                 {/* New Regular Project 1 */}
                 <div className='col-span-6 sm:col-span-12'>
                 <Project
-                  title="Managing SystemSQL"
+                  title="Managin SystemSQL"
                   img={SQL} // Replace with actual image import
-                  summary="Project summary 2. Brief description of the project."
+                  summary=""
                   link="https://github.com/kennethcxv/Managing-SystemSQL" // Replace with actual project link
                   github="https://github.com/kennethcxv/Managing-SystemSQL" // Replace with actual GitHub link
                   type="Project"
@@ -157,7 +159,7 @@ const projects = () => {
                 <FeaturedProject 
                   title="Twitch"
                   img={Twitch}
-                  summary="Uniface is a groundbreaking facial recognition authentication solution..."
+                  summary="This app is a clone of Twitch, offering live streaming services primarily focused on video game broadcasting, e-sports competitions, and creative content. It enables users to broadcast their gameplay or other activities, interact with viewers through a chat interface, and build a community around shared interests. Additionally, the platform provides features for monetization, such as subscriptions, donations, and advertisements, allowing streamers to earn revenue from their content."
                   link="https://github.com/kennethcxv/Twitch"
                   github="https://github.com/kennethcxv/Twitch"
                   type="Featured Project"
@@ -169,7 +171,7 @@ const projects = () => {
                 <Project
                   title="Cryptocurrency Trading Bot"
                   img={Crypto}
-                  summary="The ImaginAI project is an avant-garde AI-driven endeavor..."
+                  summary=""
                   link="https://github.com/kennethcxv/Cryptocurrency-Trading-Bot"
                   github="https://github.com/kennethcxv/Cryptocurrency-Trading-Bot"
                   type="Project"
@@ -181,7 +183,7 @@ const projects = () => {
                 <Project
                   title="Precision Control Robotic Arm"
                   img={Robotic}
-                  summary="The GeoSorter project is a sophisticated AI-based endeavor..."
+                  summary=""
                   link="https://github.com/kennethcxv/Enabling-Precision-Control-Robotic-Arm"
                   github="https://github.com/kennethcxv/Enabling-Precision-Control-Robotic-Arm"
                   type="Project"
@@ -193,20 +195,19 @@ const projects = () => {
                 <FeaturedProject 
                   title="Ai Sign Language Translator"
                   img={SignLanguage}
-                  summary="Uniface is a groundbreaking facial recognition authentication solution..."
+                  summary="This app is an AI-powered sign language translator, capable of translating American Sign Language (ASL) into spoken language in real-time. It features advanced hand-tracking technology that can be resized for accuracy, ensuring effective interpretation of ASL gestures. Additionally, the app provides a transcript of the translation and allows users to either view the text or hear it voiced by AI, enhancing accessibility for both deaf and hearing individuals."
                   link="https://github.com/kennethcxv/AI-Sign-Language-Translator"
                   github="https://github.com/kennethcxv/AI-Sign-Language-Translator"
                   type="Featured Project"
                 />
               </div>
-              {/* Regular Project 1 */}
               <div className='col-span-6 sm:col-span-12'>
                 <Project
-                  title="Kendrick Lamar Website"
-                  img={KendrickLamar}
-                  summary="The GeoSorter project is a sophisticated AI-based endeavor..."
-                  link="https://github.com/kennethcxv/Kendrick-Lamar-Website"
-                  github="https://github.com/kennethcxv/Kendrick-Lamar-Website"
+                  title="Game Hub"
+                  img={GameHub} // Replace with actual image import
+                  summary=""
+                  link="https://github.com/kennethcxv/Game-Hub" // Replace with actual project link
+                  github="https://github.com/kennethcxv/Game-Hub" // Replace with actual GitHub link
                   type="Project"
                 />
               </div>
@@ -215,7 +216,7 @@ const projects = () => {
                 <Project
                   title="Country Sorter"
                   img={CountrySorter}
-                  summary="The GeoSorter project is a sophisticated AI-based endeavor..."
+                  summary=""
                   link="https://github.com/kennethcxv/Country-Sorter"
                   github="https://github.com/kennethcxv/Country-Sorter"
                   type="Project"
@@ -226,31 +227,33 @@ const projects = () => {
                 <FeaturedProject 
                   title="Pulse Tactical Warfare"
                   img={Pulse}
-                  summary="Uniface is a groundbreaking facial recognition authentication solution..."
+                  summary="Pulse Tactical Warfare is a dynamic first-person shooter (FPS) game that offers a variety of fast-paced gaming modes, including a thrilling battle royale, classic multiplayer, and an engaging zombies mode. Players can also enjoy solo play, where they face off against advanced AI opponents, adding depth to the gaming experience. The game is known for its intense action, strategic gameplay, and diverse environments, catering to a wide range of FPS enthusiasts."
                   link="https://github.com/kennethcxv/Pulse-Tactical-Warfare"
                   github="https://github.com/kennethcxv/Pulse-Tactical-Warfare"
                   type="Featured Project"
                 />
               </div>
               {/* Regular Project 1 */}
-              <div className='col-span-6 sm:col-span-12'>
-                <Project
-                  title="AI Emotions Classifier"
-                  img={Emotion}
-                  summary="The GeoSorter project is a sophisticated AI-based endeavor..."
-                  link="https://github.com/kennethcxv/AI-Emotions-Classifier"
-                  github="https://github.com/kennethcxv/AI-Emotions-Classifier"
-                  type="Project"
-                />
-              </div>
+
                {/* Regular Project 2 */}
                <div className='col-span-6 sm:col-span-12'>
                 <Project
                   title="AI Text to Image Generator"
                   img={TextToImage}
-                  summary="The GeoSorter project is a sophisticated AI-based endeavor..."
+                  summary=""
                   link="https://github.com/kennethcxv/AI-Text-To-Image-Generater"
                   github="https://github.com/kennethcxv/AI-Text-To-Image-Generater"
+                  type="Project"
+                />
+              </div>
+               {/* Regular Project 1 */}
+              <div className='col-span-6 sm:col-span-12'>
+                <Project
+                  title="Kendrick Lamar Website"
+                  img={KendrickLamar}
+                  summary=""
+                  link="https://github.com/kennethcxv/Kendrick-Lamar-Website"
+                  github="https://github.com/kennethcxv/Kendrick-Lamar-Website"
                   type="Project"
                 />
               </div>
@@ -259,10 +262,30 @@ const projects = () => {
                 <FeaturedProject 
                   title="Uni-Face"
                   img={Uniface}
-                  summary="Uniface is a groundbreaking facial recognition authentication solution..."
+                  summary="This AI Authenticator app, which secured 2nd place in a highly competitive 10,000-participant hackathon, is a cutting-edge facial recognition tool boasting an impressive 98% accuracy rate. Developed using Convolutional Neural Networks (CNNs) and OpenCV, it excels in real-time feature extraction, making it a top contender among 100 innovative solutions. Its advanced technology and reliable performance make it an outstanding achievement in the field of AI-driven security and authentication systems."
                   link="https://github.com/kennethcxv/Emerge-Hackathon"
                   github="https://github.com/kennethcxv/Emerge-Hackathon"
                   type="Featured Project"
+                />
+              </div>
+              <div className='col-span-6 sm:col-span-12'>
+                <Project
+                  title="AI Emotions Classifier"
+                  img={Emotion}
+                  summary=""
+                  link="https://github.com/kennethcxv/AI-Emotions-Classifier"
+                  github="https://github.com/kennethcxv/AI-Emotions-Classifier"
+                  type="Project"
+                />
+              </div>
+              <div className='col-span-6 sm:col-span-12'>
+                <Project
+                  title="Issue Tracker"
+                  img={IssueTracker}
+                  summary=""
+                  link="https://github.com/kennethcxv/Issue-Tracker"
+                  github="https://github.com/kennethcxv/Issue-Tracker"
+                  type="Project"
                 />
               </div>
             </div>
