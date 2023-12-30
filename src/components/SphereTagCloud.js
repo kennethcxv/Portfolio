@@ -1,11 +1,19 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 const SphereTagCloud = () => {
   const sphereContainer = useRef(null);
+  const [radius, setRadius] = useState(350); // Default radius is 350px
 
   useEffect(() => {
     let scriptLoaded = false;
     const scriptId = 'tag-cloud-script';
+
+    const updateRadiusBasedOnScreenSize = () => {
+      // Define the breakpoint for XL screen size (e.g., 1200px)
+      const breakpointXL = 1535; 
+      const newRadius = window.innerWidth <= breakpointXL ? 275 : 350;
+      setRadius(newRadius);
+    };
 
     const initializeSphere = () => {
       if (sphereContainer.current && window.TagCloud) {
@@ -19,16 +27,15 @@ const SphereTagCloud = () => {
           // ... add more tags as needed
         ];
         const options = {
-          radius: 350,
+          radius: radius,
           maxSpeed: 'fast',
           initSpeed: 'fast',
           direction: 135,
-          keep: true
-        };
-
-        window.TagCloud(sphereContainer.current, tags, options);
-      }
-    };
+          keep: true,
+      };
+      window.TagCloud(sphereContainer.current, tags, options);
+    }
+  };
 
     const loadTagCloudScript = () => {
       if (!document.getElementById(scriptId)) {
@@ -48,21 +55,25 @@ const SphereTagCloud = () => {
     };
 
     loadTagCloudScript();
+    updateRadiusBasedOnScreenSize();
+    window.addEventListener('resize', updateRadiusBasedOnScreenSize);
 
     return () => {
       if (sphereContainer.current) {
         sphereContainer.current.innerHTML = '';
       }
+      window.removeEventListener('resize', updateRadiusBasedOnScreenSize);
     };
-  }, []);
+  }, [radius]);
 
   return (
-    <div 
-      ref={sphereContainer} 
-      className="flex flex-col sphere-container dark:text-white text-black" 
-      style={{width: '300px', height: '700px'}}
-    ></div>
+    <div className="flex justify-center items-center h-screen">
+      <div 
+        ref={sphereContainer} 
+        className="flex  sphere-container dark:text-white text-black xl:hidden  " 
+        style={{width: '300px', height: '700px'}}
+      ></div>
+    </div>
   );
 };
-
 export default SphereTagCloud;
