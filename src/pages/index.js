@@ -32,9 +32,9 @@ export default function Home() {
         <SphereTagCloud />
       </div>
       {/* Content on the right */}
-        <div className="w-3/5 xl:text-center xl:w-full text-center">
-          <h1 className="text-5xl font-semibold mr-44 text-dark dark:text-light">
-            <Typewriter
+        <div className="xl:text-center w-3/5 xl:items-center xl:w-full text-center  xl:ml-10 xl:mr-10 xl:text-xl">
+        <h1 className="text-5xl font-semibold text-dark xl:mr-10 xl:ml-10 mr-44 dark:text-light">
+    <Typewriter
               options={{
                 strings: [
                   'Welcome to my Portfolio!',
@@ -44,22 +44,23 @@ export default function Home() {
                 ],
                 autoStart: true,
                 loop: true,
+                
               }}
             />
           </h1>
           <p 
           className="my-6
-            sm:text-sm md:text-md xl:text-2xl lg:text-lg  2xl:text-lg 2xl:ml-5 2xl:mb-60  text-lg font-medium mr-44 text-dark dark:text-light">
+            sm:text-sm md:text-md xl:align-top xl:full xl:ml-10 xl:mr-10 xl:text-xl lg:text-lg  2xl:text-lg 2xl:ml-5 2xl:mb-60  text-lg font-medium mr-44 text-dark dark:text-light">
             I'm Kenneth Camacho, a software engineering student at Florida State University with a knack for developing innovative solutions. In this portfolio, you'll find a showcase of my projects ranging from AI-driven applications to full-stack development. Each project reflects my commitment to quality, efficiency, and user-centric design. Dive in to see how my work at Sebanda Insurance, as a Team Lead at Founders Deep Learning Startup, and various freelance endeavors have shaped my professional journey. I'm excited to share these experiences with you.
           </p>
           <div className="flex items-center justify-center mt-2 mr-44">
           <Link href="/Kenneth_Camacho_Resume.pdf" target="_blank" 
-          className=" flex bg-dark 2xl:-mt-96 text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light md:p-2 md:px-4 md:text-base">
+          className=" xl:mr-10 xl:ml-10 flex bg-dark 2xl:-mt-96 text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light md:p-2 md:px-4 md:text-base">
               Resume
             </Link>
             <a href="mailto:kennethcxv@outlook.com" target="_blank" 
       
-            className=" flex 2xl:-mt-96 ml-4 text-lg font-medium capitalize text-dark underline dark:text-light md:text-base">
+            className="xl:-mr-10 xl:-ml-5 flex 2xl:-mt-96 ml-4 text-lg font-medium capitalize text-dark underline dark:text-light md:text-base">
               Contact
             </a>
           </div>
