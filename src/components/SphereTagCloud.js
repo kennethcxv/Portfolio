@@ -94,7 +94,7 @@ const SphereTagCloud = () => {
     <div className="flex justify-center items-center h-screen">
       <div 
         ref={sphereContainer} 
-        className="flex sphere-container dark:text-white text-black xl:ml-[500px] xl:mt-[1000px] xl:items-end  " 
+        className="flex sphere-container lg:ml-[800px] lg:mt-[400px] dark:text-white text-black  xl:ml-[850px] xl:mt-[700px] xl:items-end  " 
         style={{width: '300px', height: '700px'}}
       ></div>
     </div>
