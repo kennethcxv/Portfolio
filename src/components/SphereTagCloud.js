@@ -2,26 +2,13 @@ import React, { useEffect, useRef } from 'react';
 
 const SphereTagCloud = () => {
   const sphereContainer = useRef(null);
-  const initialized = useRef(false);
 
   useEffect(() => {
-    const loadTagCloudScript = () => {
-      if (document.getElementById('tag-cloud-script')) {
-        // If script is already present, just initialize the sphere
-        initializeSphere();
-      } else {
-        const script = document.createElement('script');
-        script.id = 'tag-cloud-script';
-        script.src = 'https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js';
-        script.async = true;
-        script.onload = initializeSphere;
-
-        document.body.appendChild(script);
-      }
-    };
+    let scriptLoaded = false;
+    const scriptId = 'tag-cloud-script';
 
     const initializeSphere = () => {
-      if (!initialized.current && sphereContainer.current && window.TagCloud) {
+      if (sphereContainer.current && window.TagCloud) {
         const tags = [
           'JavaScript', 'React', 'Node.js', 'Python', 'Machine Learning',
           'C', 'C++', 'Java', 'C#', 'MySQL', 'Visual Basic', 'Ruby', '.NET', 'Next.js', 'TypeScript',
@@ -40,7 +27,23 @@ const SphereTagCloud = () => {
         };
 
         window.TagCloud(sphereContainer.current, tags, options);
-        initialized.current = true;
+      }
+    };
+
+    const loadTagCloudScript = () => {
+      if (!document.getElementById(scriptId)) {
+        const script = document.createElement('script');
+        script.id = scriptId;
+        script.src = 'https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js';
+        script.async = true;
+        script.onload = () => {
+          scriptLoaded = true;
+          initializeSphere();
+        };
+
+        document.body.appendChild(script);
+      } else if (!scriptLoaded) {
+        initializeSphere();
       }
     };
 
