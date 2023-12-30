@@ -59,7 +59,7 @@ const SphereTagCloud = () => {
   return (
     <div 
       ref={sphereContainer} 
-      className="sphere-container dark:text-white text-black" 
+      className="flex flex-col sphere-container dark:text-white text-black" 
       style={{width: '300px', height: '700px'}}
     ></div>
   );
