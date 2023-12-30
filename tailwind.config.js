@@ -15,8 +15,10 @@ content: [
         mont: ['var(--font-mont)', ...fontFamily.sans],
       },
       colors:{
-        dark: "#1b1b1b",
-        light: "#f5f5f5",
+        dark: "#000000",
+        white: "#FFFFFF",
+        black: "#000000",
+        light: "#FFFFFF",
         primary: "#B63E96", // 240,86,199
         primaryDark: "#58E6D9", // 80,230,217
       },
