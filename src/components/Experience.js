@@ -55,7 +55,7 @@ const Experience = () => {
                     />
                     <Details 
                         position="Software Engineer Team Lead"
-                        company="Founders Deep Learning Startup"
+                        company="Deep Learning Startup"
                         time="Jun 2023 – Aug 2023 | Remote"
                         work="Led a team to create a system predicting disease outbreaks using medical records, social media, and weather data. Applied State-of-the-Art Deep Learning Techniques, including neural networks and Natural Language Processing, to accurately predict disease outbreaks, aiding proactive healthcare responses."
                     />

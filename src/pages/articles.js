@@ -10,7 +10,13 @@ import{motion, useMotionValue} from "framer-motion";
 import article3 from "../../public/images/articles/Knneth_Cybersecurity_and_Machine_Learning_62adf7a4-4b28-473e-a480-90d6eea7015e.png";
 import article4 from "../../public/images/articles/Knneth_Enhancing_User_Experience_with_Human-Centered_Design_in_22a2f567-809e-487c-89dc-c55486a4ae82.png";
 import article5 from "../../public/images/articles/Knneth_Bridging_the_Digital_Divide_How_Computer_Science_Can_Fo_d0265d97-e167-4657-ae13-7962f86d41b0.png";
-import article6 from "../../public/images/articles/Knneth_Paving_the_Path_for_Ethical_AI_Addressing_Bias_and_Ensu_9a46b7df-c11d-4346-86d5-68c92351cf12.png";
+import article6 from "../../public/images/articles/Advantages_and_Disadvantages_of_artificial_intelligence.jpg";
+import article7 from "../../public/images/articles/Knneth_AI_deep_learning_a5a007be-2cae-4989-bc28-32bf18480753.png";
+import article8 from "../../public/images/articles/Knneth_Paving_the_Path_for_Ethical_AI_Addressing_Bias_and_Ensu_9a46b7df-c11d-4346-86d5-68c92351cf12.png";
+import article9 from "../../public/images/articles/Knneth_AI_Renaissance_c8ff558c-a92c-45c3-bb9c-a4906da5992e.png";
+import article10 from "../../public/images/articles/Knneth_Social_Impact_of_Artificial_Intelligence_a49f0f6d-368f-4abc-ad81-1d05b64ad6fa.png";
+import article11 from "../../public/images/articles/Knneth_Digital_Divide_in_Computer_Science_364786e6-0869-4531-a77d-0807fe89e4a8.png";
+
 const FramerImage = motion(Image);
 
 
@@ -134,7 +140,7 @@ img={article2}
             <ul>
             <Article 
                 title="Unraveling the Black Box: Demystifying Machine Learning for the Everyday User"
-                date="April 22, 2023"
+                date="April 23, 2023"
                 link="https://KennethCamachoblog.blogspot.com/2023/04/unraveling-black-box-demystifying.html"
                 img={article1}
                 />
@@ -152,7 +158,7 @@ img={article2}
                 />
                 <Article 
                 title="Enhancing User Experience with Human-Centered Design in Computer Science"
-                date="January 9, 2023"
+                date="January 10, 2023"
                 link="https://KennethCamachoblog.blogspot.com/2023/01/enhancing-user-experience-with-human.html"
                 img={article4}
                 />
@@ -162,11 +168,41 @@ img={article2}
                 link="https://KennethCamachoblog.blogspot.com/2022/12/bridging-digital-divide-how-computer.html"
                 img={article5}
                 />
+                                <Article 
+                title="Bridging the Gap: The Future of AI and Computer Science Integration"
+                date="November 9, 2022"
+                link="https://kennethcamachoblog.blogspot.com/2022/11/bridging-gap-future-of-ai-and-computer.html"
+                img={article6}
+                />
+                                <Article 
+                title="Harnessing the Power of AI: How Artificial Intelligence is Revolutionizing Computer Science"
+                date="October 21,2022"
+                link="https://kennethcamachoblog.blogspot.com/2022/10/harnessing-power-of-ai-how-artificial.html"
+                img={article7}
+                />
                 <Article 
                 title=" Paving the Path for Ethical AI: Addressing Bias and Ensuring Fairness in Computer Science"
                 date="September 8, 2022"
                 link="https://kennethcamachoblog.blogspot.com/2022/09/paving-path-for-ethical-ai-addressing.html"
-                img={article6}
+                img={article8}
+                />
+                                                <Article 
+                title="The AI Renaissance: Unleashing the Creative Potential of Artificial Intelligence in Computer Science"
+                date="August 22,2022"
+                link="https://kennethcamachoblog.blogspot.com/2022/08/the-ai-renaissance-unleashing-creative.html"
+                img={article9}
+                />
+                                                <Article 
+                title="Empowering Human Progress: Exploring the Social Impact of Artificial Intelligence in Computer Science"
+                date="July 18,2022"
+                link="https://kennethcamachoblog.blogspot.com/2022/07/empowering-human-progress-exploring.html"
+                img={article10}
+                />
+                                                <Article 
+                title="The Democratization of AI: Bridging the Digital Divide in Computer Science"
+                date="June 19, 2022"
+                link="https://kennethcamachoblog.blogspot.com/2022/06/the-democratization-of-ai-bridging.html"
+                img={article11}
                 />
                 
             </ul>

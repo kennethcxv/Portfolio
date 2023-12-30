@@ -52,10 +52,11 @@ const about = () => {
             <div className='grid w-full grid-cols-8 gap-16 sm:gap-8'>
                 <div className='col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8'>
                     <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'>About Me</h2>
-                    <p className='font-medium'>I'm Kenneth Camacho, a Computer Science major at Florida State University with a GPA of 3.9/4.0. I specialize in machine learning, backend engineering, and have a strong foundation in data structures, computer architecture, and software engineering.</p>
-                    <p className='my-4 font-medium'>As a Software Engineer Intern at Sebanda Insurance, I developed AI accounting software and implemented OCR and NLP for faster claims processing. I also led a team at Founders Deep Learning Startup, creating a system for predicting disease outbreaks.</p>
-                    <p className='font-medium'>  My projects include Culture Coder, a full-stack social media platform for programmers, Hand Companion AI for interpreting ASL, Audio Scribe AI for audio transcription, and Uni-Face AI, a facial recognition app. I'm also the founder of Code Culture, a programming club at FSU.</p>
-                </div>
+                    <p className='font-medium'>I'm Kenneth Camacho, a Computer Science major at Florida State University with a GPA of 3.9/4.0. My expertise lies in machine learning, backend engineering, and I have a robust foundation in data structures, computer architecture, and software engineering.</p>
+                    <p className='my-4 font-medium'>During my internship at Sebanda Insurance, I developed AI accounting software, enhancing efficiency and accuracy significantly. My role at Founders Deep Learning Startup as a team lead involved creating a system for predicting disease outbreaks, utilizing advanced deep learning techniques.</p>
+                    <p className='font-medium'>I'm skilled in languages like C, C++, Python, Java, and JavaScript, and I'm proficient in React, .NET, Next.js, and TypeScript. My education and experiences have honed my abilities in database management, software engineering, and machine learning applications.</p><br />
+                    <p className='font-medium'>I'm passionate about leveraging technology to solve real-world problems and am always eager to explore new challenges in the field of computer science.</p>
+            </div>
 
 <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark
 bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8'>
