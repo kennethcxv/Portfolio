@@ -16,8 +16,7 @@ content: [
       },
       colors:{
         dark: "#000000",
-        white: "#FFFFFF",
-        black: "#000000",
+
         light: "#FFFFFF",
         primary: "#B63E96", // 240,86,199
         primaryDark: "#58E6D9", // 80,230,217
