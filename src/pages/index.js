@@ -53,7 +53,7 @@ export default function Home() {
           </h1>
           <p 
           className=" md:text-[20px] lg:pl-10 lg:pr-10 md:pr-10 md:pl-40 sm:pr-6  sm:pl-60 sm:w-full my-6 lg:justify-center lg:w-full  md:text-sm lg:ml-10  lg:mr-10 md:ml-10 lg:text-md  xl:translate-x-[-280px] xl:w-full xl:mr-[600px]  sm:text-sm md:text-md xl:align-top   xl:text-xl   2xl:text-lg 2xl:ml-5 2xl:mb-60  text-lg font-medium mr-44 text-dark dark:text-light">
-            I'm Kenneth Camacho, a software engineering student at Florida State University with a knack for developing innovative solutions. In this portfolio, you'll find a showcase of my projects ranging from AI-driven applications to full-stack development. Each project reflects my commitment to quality, efficiency, and user-centric design. Dive in to see how my work at Sebanda Insurance, as a Team Lead at Founders Deep Learning Startup, and various freelance endeavors have shaped my professional journey. I'm excited to share these experiences with you.
+            lol I'm Kenneth Camacho, a software engineering student at Florida State University with a knack for developing innovative solutions. In this portfolio, you'll find a showcase of my projects ranging from AI-driven applications to full-stack development. Each project reflects my commitment to quality, efficiency, and user-centric design. Dive in to see how my work at Sebanda Insurance, as a Team Lead at Founders Deep Learning Startup, and various freelance endeavors have shaped my professional journey. I'm excited to share these experiences with you.
           </p>
           <div className="xl:mr-60 flex items-center justify-center mt-2 mr-44">
           <Link href="/Kenneth_Camacho_Resume.pdf" target="_blank" 
