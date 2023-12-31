@@ -33,8 +33,9 @@ export default function Home() {
         <SphereTagCloud />
       </div>
       {/* Content on the right */}
-      <div className="w-3/5 text-center xl:w-full xl:mx-auto   lg:mx-auto xl:text-center  xl:text-md">
-        <h1 className=" xl:w-full xl:text-md xl:mt-20  text-5xl 2xl:text-[40px] 2xl:mr-20 font-semibold text-dark  mr-44 dark:text-light">
+      <div className="w-3/5 text-center xl:w-full xl:mx-auto xl  lg:mx-auto xl:text-center  xl:text-md">
+        <h1 className=" xl:w-full xl:text-[30px] xl:text-center xl:mt-20  text-5xl 2xl:text-[40px] 2xl:mr-20 font-semibold text-dark  mr-44 dark:text-light">
+          <div className='xl:translate-x-[-300px] lg: xl:w-full '>
           <Typewriter
               options={{
                 strings: [
@@ -48,9 +49,10 @@ export default function Home() {
                 
               }}
             />
+            </div>
           </h1>
           <p 
-          className="my-6 lg:justify-center lg:w-full sm:bg-red-600 md:text-sm lg:ml-10  lg:mr-10 md:ml-10 lg:text-md  xl:translate-x-[-280px] xl:w-full xl:mr-[600px] md:bg-purple-500 lg:bg-blue-500 2xl:bg-orange-500  2xl:mr-20 xl:bg-green-500 sm:text-sm md:text-md xl:align-top   xl:text-xl   2xl:text-lg 2xl:ml-5 2xl:mb-60  text-lg font-medium mr-44 text-dark dark:text-light">
+          className="my-6 lg:justify-center lg:w-full xs:bg-pink-500 sm:bg-red-600 md:text-sm lg:ml-10  lg:mr-10 md:ml-10 lg:text-md  xl:translate-x-[-280px] xl:w-full xl:mr-[600px] md:bg-purple-500 lg:bg-blue-500 2xl:bg-orange-500  2xl:mr-20 xl:bg-green-500 sm:text-sm md:text-md xl:align-top   xl:text-xl   2xl:text-lg 2xl:ml-5 2xl:mb-60  text-lg font-medium mr-44 text-dark dark:text-light">
             I'm Kenneth Camacho, a software engineering student at Florida State University with a knack for developing innovative solutions. In this portfolio, you'll find a showcase of my projects ranging from AI-driven applications to full-stack development. Each project reflects my commitment to quality, efficiency, and user-centric design. Dive in to see how my work at Sebanda Insurance, as a Team Lead at Founders Deep Learning Startup, and various freelance endeavors have shaped my professional journey. I'm excited to share these experiences with you.
           </p>
           <div className="flex items-center justify-center mt-2 mr-44">
