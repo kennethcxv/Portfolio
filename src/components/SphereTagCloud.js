@@ -2,43 +2,41 @@ import React, { useEffect, useRef, useState } from 'react';
 
 const SphereTagCloud = () => {
   const sphereContainer = useRef(null);
-  const [radius, setRadius] = useState(350); // Default radius is 350px
+  const [radius, setRadius] = useState(350); // Default radius
+  const [isReady, setIsReady] = useState(false); // State to track if the component is ready to render the sphere
+
+  // Function to determine the initial radius based on screen size
+  const getInitialRadius = () => {
+    const breakpoint2XL = 1536; // 2xl
+    const breakpointXL = 1280; // xl
+    const breakpointLG = 1024; // lg
+    const breakpointMD = 768; // md
+    const breakpointSM = 640; // sm
+
+    if (typeof window !== 'undefined') {
+      if (window.innerWidth >= breakpoint2XL) {
+        return 350;
+      } else if (window.innerWidth >= breakpointXL) {
+        return 300;
+      } else if (window.innerWidth >= breakpointLG) {
+        return 250;
+      } else if (window.innerWidth >= breakpointMD) {
+        return 200;
+      } else if (window.innerWidth >= breakpointSM) {
+        return 150;
+      }
+      return 100; // Default for smaller screens
+    }
+    return 350; // Fallback radius for server-side rendering
+  };
 
   useEffect(() => {
+    setRadius(getInitialRadius()); // Set radius on client side
+    setIsReady(true); // Set the component as ready to render the sphere
+
     let scriptLoaded = false;
     const scriptId = 'tag-cloud-script';
 
-    const updateRadiusBasedOnScreenSize = () => {
-      // Define breakpoints for different screen sizes
-      const breakpoint2XL = 1536; // 2xl
-      const breakpointXL = 1280; // xl
-      const breakpointLG = 1024; // lg
-      const breakpointMD = 768; // md
-      const breakpointSM = 640; // sm
-    
-      let newRadius;
-    
-      if (window.innerWidth >= breakpoint2XL) {
-        newRadius = 350; // Regular size (above 2xl)
-      } else if (window.innerWidth >= breakpointXL && window.innerWidth < breakpoint2XL) {
-        newRadius = 300; // 2xl screens
-      } else if (window.innerWidth >= breakpointLG && window.innerWidth < breakpointXL) {
-        newRadius = 350; // xl screens
-      } else if (window.innerWidth >= breakpointMD && window.innerWidth < breakpointLG) {
-        newRadius = 275; // lg screens
-      } else if (window.innerWidth >= breakpointSM && window.innerWidth < breakpointMD) {
-        newRadius = 200; // md screens
-      } else if (window.innerWidth < breakpointSM) {
-        newRadius = 170; // sm screens
-      } else {
-        newRadius = 350; // Default for other sizes
-      }
-    
-      setRadius(newRadius);
-    };
-    
-    
-    
     const initializeSphere = () => {
       if (sphereContainer.current && window.TagCloud) {
         const tags = [
@@ -56,10 +54,10 @@ const SphereTagCloud = () => {
           initSpeed: 'fast',
           direction: 135,
           keep: true,
-      };
-      window.TagCloud(sphereContainer.current, tags, options);
-    }
-  };
+        };
+        window.TagCloud(sphereContainer.current, tags, options);
+      }
+    };
 
     const loadTagCloudScript = () => {
       if (!document.getElementById(scriptId)) {
@@ -71,33 +69,39 @@ const SphereTagCloud = () => {
           scriptLoaded = true;
           initializeSphere();
         };
-
         document.body.appendChild(script);
       } else if (!scriptLoaded) {
         initializeSphere();
       }
     };
 
-    loadTagCloudScript();
-    updateRadiusBasedOnScreenSize();
-    window.addEventListener('resize', updateRadiusBasedOnScreenSize);
+    if (isReady) {
+      loadTagCloudScript();
+    }
+
+    window.addEventListener('resize', () => setRadius(getInitialRadius()));
 
     return () => {
       if (sphereContainer.current) {
         sphereContainer.current.innerHTML = '';
       }
-      window.removeEventListener('resize', updateRadiusBasedOnScreenSize);
+      window.removeEventListener('resize', () => setRadius(getInitialRadius()));
     };
-  }, [radius]);
+  }, [isReady, radius]);
+
+  if (!isReady) {
+    return null; // Don't render the sphere until the component is ready
+  }
 
   return (
     <div className="flex justify-center items-center h-screen">
       <div 
         ref={sphereContainer} 
-        className="flex sphere-container sm:mt-[500px] sm:mr-[210px] lg:ml-[800px] lg:mt-[500px] md:ml-[650px] md:mt-[350px] dark:text-white text-black  xl:ml-[1000px] xl:mt-[700px] xl:items-end  " 
+        className="flex sphere-container sm:mt-[500px] sm:mr-[210px] lg:ml-[800px] lg:mt-[500px] md:ml-[650px] md:mt-[350px] dark:text-white text-black  xl:ml-[1000px] xl:mt-[700px] xl:items-end " 
         style={{width: '300px', height: '700px'}}
       ></div>
     </div>
   );
 };
+
 export default SphereTagCloud;
