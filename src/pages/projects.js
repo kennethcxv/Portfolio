@@ -6,7 +6,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-import Uniface from "../../public/images/projects/UniFace.png";
+import Uniface from "../../public/images/projects/Uniface.png";
 import Emotion from "../../public/images/projects/EmotionDetectingAi.png";
 import TextToImage from "../../public/images/projects/TextToImage.png";
 import Pulse from "../../public/images/projects/Pulse.png";
@@ -260,7 +260,7 @@ const projects = () => {
               {/* Featured Project */}
               <div className='col-span-12'>
                 <FeaturedProject 
-                  title="Uni-Face"
+                  title="Uniface"
                   img={Uniface}
                   summary="This AI Authenticator app, which secured 2nd place in a highly competitive 10,000-participant hackathon, is a cutting-edge facial recognition tool boasting an impressive 98% accuracy rate. Developed using Convolutional Neural Networks (CNNs) and OpenCV, it excels in real-time feature extraction, making it a top contender among 100 innovative solutions. Its advanced technology and reliable performance make it an outstanding achievement in the field of AI-driven security and authentication systems."
                   link="https://github.com/kennethcxv/Emerge-Hackathon"
