@@ -34,6 +34,7 @@ This project is open source and available under the MIT License.
 
 ## Contact
 Feel free to reach out to me for any inquiries or collaborations:
-Email: Kennethcxv@gmail.com
-LinkedIn: https://www.linkedin.com/in/kennethcxv/
-GitHub: https://github.com/kennethcxv
+
+- **Email:** Kennethcxv@gmail.com
+- **LinkedIn:** https://www.linkedin.com/in/kennethcxv/
+- **GitHub:** https://github.com/kennethcxv
