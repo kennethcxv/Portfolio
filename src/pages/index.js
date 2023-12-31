@@ -34,8 +34,8 @@ export default function Home() {
       </div>
       {/* Content on the right */}
       <div className="w-3/5 text-center xl:w-full xl:mx-auto xl  lg:mx-auto xl:text-center  xl:text-md">
-        <h1 className=" xl:w-full xl:text-[30px] xl:text-center xl:mt-20  text-5xl 2xl:text-[40px] 2xl:mr-20 font-semibold text-dark  mr-44 dark:text-light">
-          <div className='xl:translate-x-[-300px] lg: xl:w-full '>
+        <h1 className=" md:-ml-[-80px] md:w-full first-letter:xl:w-full xl:text-[30px] sm:ml-28 xl:ml-40 sm:text-[20px] xl:text-center xl:mt-20  text-5xl 2xl:text-[40px] 2xl:mr-30 font-semibold text-dark  mr-44 dark:text-light">
+          <div className='  xl:translate-x-[-250px] lg: xl:w-full '>
           <Typewriter
               options={{
                 strings: [
@@ -52,12 +52,12 @@ export default function Home() {
             </div>
           </h1>
           <p 
-          className="my-6 lg:justify-center lg:w-full xs:bg-pink-500 sm:bg-red-600 md:text-sm lg:ml-10  lg:mr-10 md:ml-10 lg:text-md  xl:translate-x-[-280px] xl:w-full xl:mr-[600px] md:bg-purple-500 lg:bg-blue-500 2xl:bg-orange-500  2xl:mr-20 xl:bg-green-500 sm:text-sm md:text-md xl:align-top   xl:text-xl   2xl:text-lg 2xl:ml-5 2xl:mb-60  text-lg font-medium mr-44 text-dark dark:text-light">
+          className=" md:text-[20px] lg:pl-10 lg:pr-10 md:pr-10 md:pl-40 sm:pr-6  sm:pl-60 sm:w-full my-6 lg:justify-center lg:w-full  md:text-sm lg:ml-10  lg:mr-10 md:ml-10 lg:text-md  xl:translate-x-[-280px] xl:w-full xl:mr-[600px]  sm:text-sm md:text-md xl:align-top   xl:text-xl   2xl:text-lg 2xl:ml-5 2xl:mb-60  text-lg font-medium mr-44 text-dark dark:text-light">
             I'm Kenneth Camacho, a software engineering student at Florida State University with a knack for developing innovative solutions. In this portfolio, you'll find a showcase of my projects ranging from AI-driven applications to full-stack development. Each project reflects my commitment to quality, efficiency, and user-centric design. Dive in to see how my work at Sebanda Insurance, as a Team Lead at Founders Deep Learning Startup, and various freelance endeavors have shaped my professional journey. I'm excited to share these experiences with you.
           </p>
-          <div className="flex items-center justify-center mt-2 mr-44">
+          <div className="xl:mr-60 flex items-center justify-center mt-2 mr-44">
           <Link href="/Kenneth_Camacho_Resume.pdf" target="_blank" 
-          className="2xl:mr-5 2xl:ml-20 xl:mr-10 xl:ml-10 flex bg-dark 2xl:-mt-96 text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light md:p-2 md:px-4 md:text-base">
+          className="2xl:mr-5 2xl:ml-20 xl:mr-10 xl:ml-40  md:mr-10 md:ml-52 sm:mr-10 sm:ml-96 flex bg-dark 2xl:-mt-96 text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light md:p-2 md:px-4 md:text-base">
               Resume
             </Link>
             <a href="mailto:kennethcxv@outlook.com" target="_blank" 

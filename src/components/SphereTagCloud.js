@@ -29,7 +29,7 @@ const SphereTagCloud = () => {
       } else if (window.innerWidth >= breakpointSM && window.innerWidth < breakpointMD) {
         newRadius = 200; // md screens
       } else if (window.innerWidth < breakpointSM) {
-        newRadius = 200; // sm screens
+        newRadius = 170; // sm screens
       } else {
         newRadius = 350; // Default for other sizes
       }
@@ -94,7 +94,7 @@ const SphereTagCloud = () => {
     <div className="flex justify-center items-center h-screen">
       <div 
         ref={sphereContainer} 
-        className="flex sphere-container sm:mt-[750px] sm:mr-[500px] lg:ml-[800px] lg:mt-[500px] dark:text-white text-black  xl:ml-[850px] xl:mt-[700px] xl:items-end  " 
+        className="flex sphere-container sm:mt-[500px] sm:mr-[210px] lg:ml-[800px] lg:mt-[500px] md:ml-[650px] md:mt-[350px] dark:text-white text-black  xl:ml-[1000px] xl:mt-[700px] xl:items-end  " 
         style={{width: '300px', height: '700px'}}
       ></div>
     </div>
