@@ -16,12 +16,12 @@ import CountrySorter from "../../public/images/projects/CountrySorter.png";
 import SignLanguage from "../../public/images/projects/SignLanguageTranslator.png";
 import Crypto from "../../public/images/projects/CryptocurrencyTradingBot.png";
 import Robotic from "../../public/images/projects/RoboticArm.png";
-import Twitch from "../../public/images/projects/Twitch.png";
 import Audio from "../../public/images/projects/Audio.png";
 import SQL from "../../public/images/projects/SQL.png";
 import SocialMediaApp from "../../public/images/projects/SocialMediaApp.png";
-import IssueTracker from "../../public/images/projects/IssueTracker.png";
+import LiveStreaming from "../../public/images/projects/Live Streaming.png";
 import GameHub from "../../public/images/projects/GameHub.png";
+import ECommerce from "../../public/images/projects/ECommerce.png";
 
 import{motion} from "framer-motion";
 
@@ -124,11 +124,11 @@ const projects = () => {
               {/* Featured Project */}
               <div className='col-span-12'>
                 <FeaturedProject 
-                  title="Social Media Application"
-                  img={SocialMediaApp}
-                  summary="This app is a specialized social media platform designed for programmers, offering unique features tailored to their needs. Users can share code snippets, ideas, and updates in a tweet-like format, allowing for quick and efficient communication within the programming community. Additionally, the app includes interactive features such as liking, upvoting, downvoting, and the ability to reply directly to code, fostering a collaborative and engaging environment for developers."
-                  link="https://github.com/kennethcxv/Social-Media-App"
-                  github="https://github.com/kennethcxv/Social-Media-App"
+                  title="Full Stack Live Streaming Platform"
+                  img={LiveStreaming}
+                  summary="Engineered an advanced live streaming platform. Featured RTMP/WHIP protocols for high-quality broadcasting, real-time chat, and a dynamic streamer dashboard, revolutionizing interactive media technology.Developed live streaming advancements with real-time viewer analytics, interactive chats, and server-side rendering in a sleek, high-performance interface, elevating interactive media and community engagement."
+                  link="https://github.com/kennethcxv/Full-Stack-Live-Streaming-Platform"
+                  github="https://github.com/kennethcxv/Full-Stack-Live-Streaming-Platform"
                   type="Featured Project"
                 />
               </div>
@@ -158,11 +158,11 @@ const projects = () => {
               {/* Featured Project */}
               <div className='col-span-12'>
                 <FeaturedProject 
-                  title="Twitch"
-                  img={Twitch}
-                  summary="This app is a clone of Twitch, offering live streaming services primarily focused on video game broadcasting, e-sports competitions, and creative content. It enables users to broadcast their gameplay or other activities, interact with viewers through a chat interface, and build a community around shared interests. Additionally, the platform provides features for monetization, such as subscriptions, donations, and advertisements, allowing streamers to earn revenue from their content."
-                  link="https://github.com/kennethcxv/Twitch"
-                  github="https://github.com/kennethcxv/Twitch"
+                  title="Full Stack E-Commerce"
+                  img={ECommerce}
+                  summary="Architected an innovative full-stack E-Commerce platform with a dynamic, Tailwind-enhanced admin dashboard, revolutionizing online retail by offering unmatched real-time control over a vast array of vendor stores and products. Implemented advanced features like Clerk Authentication and Stripe integration, enhancing transaction security and providing comprehensive analytics, leading to a significant boost in operational efficiency and user engagement."
+                  link="https://github.com/kennethcxv/Full-Stack-E-Commerce"
+                  github="https://github.com/kennethcxv/Full-Stack-E-Commerce"
                   type="Featured Project"
                 />
               </div>
@@ -194,11 +194,11 @@ const projects = () => {
             {/* Featured Project */}
               <div className='col-span-12'>
                 <FeaturedProject 
-                  title="Ai Sign Language Translator"
-                  img={SignLanguage}
-                  summary="This app is an AI-powered sign language translator, capable of translating American Sign Language (ASL) into spoken language in real-time. It features advanced hand-tracking technology that can be resized for accuracy, ensuring effective interpretation of ASL gestures. Additionally, the app provides a transcript of the translation and allows users to either view the text or hear it voiced by AI, enhancing accessibility for both deaf and hearing individuals."
-                  link="https://github.com/kennethcxv/AI-Sign-Language-Translator"
-                  github="https://github.com/kennethcxv/AI-Sign-Language-Translator"
+                  title="Social Media Application"
+                  img={SocialMediaApp}
+                  summary="This app is a specialized social media platform designed for programmers, offering unique features tailored to their needs. Users can share code snippets, ideas, and updates in a tweet-like format, allowing for quick and efficient communication within the programming community. Additionally, the app includes interactive features such as liking, upvoting, downvoting, and the ability to reply directly to code, fostering a collaborative and engaging environment for developers."
+                  link="https://github.com/kennethcxv/Social-Media-App"
+                  github="https://github.com/kennethcxv/Social-Media-App"
                   type="Featured Project"
                 />
               </div>
@@ -226,11 +226,11 @@ const projects = () => {
               {/* Featured Project */}
               <div className='col-span-12'>
                 <FeaturedProject 
-                  title="Pulse Tactical Warfare"
-                  img={Pulse}
-                  summary="Pulse Tactical Warfare is a dynamic first-person shooter (FPS) game that offers a variety of fast-paced gaming modes, including a thrilling battle royale, classic multiplayer, and an engaging zombies mode. Players can also enjoy solo play, where they face off against advanced AI opponents, adding depth to the gaming experience. The game is known for its intense action, strategic gameplay, and diverse environments, catering to a wide range of FPS enthusiasts."
-                  link="https://github.com/kennethcxv/Pulse-Tactical-Warfare"
-                  github="https://github.com/kennethcxv/Pulse-Tactical-Warfare"
+                  title="AI Sign Language Translator "
+                  img={SignLanguage}
+                  summary="This app is an AI-powered sign language translator, capable of translating American Sign Language (ASL) into spoken language in real-time. It features advanced hand-tracking technology that can be resized for accuracy, ensuring effective interpretation of ASL gestures. Additionally, the app provides a transcript of the translation and allows users to either view the text or hear it voiced by AI, enhancing accessibility for both deaf and hearing individuals."
+                  link="https://github.com/kennethcxv/AI-Sign-Language-Translator"
+                  github="https://github.com/kennethcxv/AI-Sign-Language-Translator"
                   type="Featured Project"
                 />
               </div>
@@ -261,11 +261,11 @@ const projects = () => {
               {/* Featured Project */}
               <div className='col-span-12'>
                 <FeaturedProject 
-                  title="UniFace"
-                  img={Auth}
-                  summary="This AI Authenticator app, which secured 2nd place in a highly competitive 10,000-participant hackathon, is a cutting-edge facial recognition tool boasting an impressive 98% accuracy rate. Developed using Convolutional Neural Networks (CNNs) and OpenCV, it excels in real-time feature extraction, making it a top contender among 100 innovative solutions. Its advanced technology and reliable performance make it an outstanding achievement in the field of AI-driven security and authentication systems."
-                  link="https://github.com/kennethcxv/Emerge-Hackathon"
-                  github="https://github.com/kennethcxv/Emerge-Hackathon"
+                  title="Pulse Tactical Warfare"
+                  img={Pulse}
+                  summary="Pulse Tactical Warfare is a dynamic first-person shooter (FPS) game that offers a variety of fast-paced gaming modes, including a thrilling battle royale, classic multiplayer, and an engaging zombies mode. Players can also enjoy solo play, where they face off against advanced AI opponents, adding depth to the gaming experience. The game is known for its intense action, strategic gameplay, and diverse environments, catering to a wide range of FPS enthusiasts."
+                  link="https://github.com/kennethcxv/Pulse-Tactical-Warfare"
+                  github="https://github.com/kennethcxv/Pulse-Tactical-Warfare"
                   type="Featured Project"
                 />
               </div>
@@ -281,11 +281,11 @@ const projects = () => {
               </div>
               <div className='col-span-6 sm:col-span-12'>
                 <Project
-                  title="Issue Tracker"
-                  img={IssueTracker}
+                  title="AI Authenticator"
+                  img={Auth}
                   summary=""
-                  link="https://github.com/kennethcxv/Issue-Tracker"
-                  github="https://github.com/kennethcxv/Issue-Tracker"
+                  link="https://github.com/kennethcxv/AI-Authenticator"
+                  github="https://github.com/kennethcxv/AI-Authenticator"
                   type="Project"
                 />
               </div>
