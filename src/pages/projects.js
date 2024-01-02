@@ -215,11 +215,11 @@ const projects = () => {
                 {/* Regular Project 2 */}
                 <div className='col-span-6 sm:col-span-12'>
                 <Project
-                  title="Country Sorter"
-                  img={CountrySorter}
+                  title="AI Authenticator"
+                  img={Auth}
                   summary=""
-                  link="https://github.com/kennethcxv/Country-Sorter"
-                  github="https://github.com/kennethcxv/Country-Sorter"
+                  link="https://github.com/kennethcxv/AI-Authenticator"
+                  github="https://github.com/kennethcxv/AI-Authenticator"
                   type="Project"
                 />
               </div>
@@ -248,13 +248,13 @@ const projects = () => {
                 />
               </div>
                {/* Regular Project 1 */}
-              <div className='col-span-6 sm:col-span-12'>
+               <div className='col-span-6 sm:col-span-12'>
                 <Project
-                  title="Kendrick Lamar Website"
-                  img={KendrickLamar}
+                  title="AI Emotions Classifier"
+                  img={Emotion}
                   summary=""
-                  link="https://github.com/kennethcxv/Kendrick-Lamar-Website"
-                  github="https://github.com/kennethcxv/Kendrick-Lamar-Website"
+                  link="https://github.com/kennethcxv/AI-Emotions-Classifier"
+                  github="https://github.com/kennethcxv/AI-Emotions-Classifier"
                   type="Project"
                 />
               </div>
@@ -269,26 +269,8 @@ const projects = () => {
                   type="Featured Project"
                 />
               </div>
-              <div className='col-span-6 sm:col-span-12'>
-                <Project
-                  title="AI Emotions Classifier"
-                  img={Emotion}
-                  summary=""
-                  link="https://github.com/kennethcxv/AI-Emotions-Classifier"
-                  github="https://github.com/kennethcxv/AI-Emotions-Classifier"
-                  type="Project"
-                />
-              </div>
-              <div className='col-span-6 sm:col-span-12'>
-                <Project
-                  title="AI Authenticator"
-                  img={Auth}
-                  summary=""
-                  link="https://github.com/kennethcxv/AI-Authenticator"
-                  github="https://github.com/kennethcxv/AI-Authenticator"
-                  type="Project"
-                />
-              </div>
+
+
             </div>
           </Layout>
         </main>

@@ -42,9 +42,9 @@ const SphereTagCloud = () => {
         const tags = [
           'JavaScript', 'React', 'Node.js', 'Python', 'Machine Learning',
           'C', 'C++', 'Java', 'C#', 'MySQL', 'Visual Basic', 'Ruby', '.NET', 'Next.js', 'TypeScript',
-          'Data Structures', 'Computer Architecture', 'Database Management', 'Software Engineering', 'Statistics for ML',
-          'AI Accounting Software', 'Cloud Infrastructure', 'OCR', 'NLP', 'Disease Outbreak Prediction',
-          'Deep Learning', 'Neural Networks', 'E-commerce Backend', 'AWS', 'Culture Coder',
+          'Data Structures', 'Computer Architecture', 'Database Management', 'Software Engineering',
+           'Cloud Infrastructure', 'OCR', 'NLP',
+          'Deep Learning', 'Neural Networks', 'AWS',
           'TypeScript', 'PostgreSQL',
           // ... add more tags as needed
         ];

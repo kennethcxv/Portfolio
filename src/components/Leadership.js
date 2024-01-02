@@ -57,23 +57,23 @@ const Leadership = () => {
                     />
                     <Details 
                         position="Founder & Owner"
-                        company="Culture Coder"
-                        companyLink="https://github.com/kennethcxv/Social-Media-App"
-                        time="Dec 2022 – Present | Remote"
-                        work="Established and grew a full-stack social media platform tailored for programmers. Oversaw all aspects of the project, including development, funding, and user engagement. Successfully built a platform that not only serves as a social network but also as a learning resource for the programming community."
-                    />
-                    <Details 
-                        position="Founder & Owner"
                         company="Pulse Tactical Warfare"
                         companyLink="https://github.com/kennethcxv/Pulse-Tactical-Warfare"
-                        time="Apr 2021 – Present | Remote"
+                        time="Apr 2021 – Present | Miami,Fl"
                         work="Initiated and managed the development of a complex FPS game, demonstrating leadership in project management, technical direction, and community engagement. Actively involved in all aspects of game development from concept to execution, including programming, design, and marketing strategies."
+                    />
+                    <Details 
+                        position="Lead Full Stack"
+                        company="Google Student Developer"
+                        companyLink=""
+                        time="Jan 2023 – Present | Miami,Fl"
+                        work="As the Chief Full Stack Developer at FSU's Google Student Developer Club, I lead a dynamic team in creating innovative web and mobile applications, focusing on cutting-edge technology. My role encompasses mentoring and fostering professional growth, allowing me to significantly enhance our technical projects and my skills in project management and advanced full-stack development, thus reinforcing my standing in FSU's tech community.                        "
                     />
                     <Details 
                         position="Founder & Owner"
                         company="Pencils For Latin America"
                         companyLink="https://www.gofundme.com/f/pencils-for-latin-america-Dominican-Republic"
-                        time="Apr 2018 – Present"
+                        time="Apr 2018 – Present | Miami, FL"
                         address=""
                         work="Co-founded a non-profit initiative, raising $3000+ and distributing 700lbs of educational resources for the underprivileged school the Escuela de Primaria Cabrera de Toro in Dominican Republic. Amplified donor engagement and expanded organizational impact through data-driven marketing, social media, and community partnerships. Established and nurtured relationships with Latin American schools, enhancing the alignment of initiatives with community educational needs."
                     />

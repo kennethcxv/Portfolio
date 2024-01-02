@@ -92,10 +92,9 @@ bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span
             </div>
 
 
-            <Skills />
-            <Experience />
-            <Leadership />
-            <Education />
+  
+
+
         </Layout>
     </main>
     </>
