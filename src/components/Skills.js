@@ -51,7 +51,7 @@ const Skills = () => {
     <Skill name="C" x="26vw" y="0vw" />
     <Skill name="Java" x="-26vw" y="0vw" />
     <Skill name="TensorFlow" x="0vw" y="-15vw" />
-    <Skill name="PHP" x="0vw" y="15vw" />
+    <Skill name="C#" x="0vw" y="15vw" />
     <Skill name="PyTorch" x="5vw" y="11vw" />
 
 

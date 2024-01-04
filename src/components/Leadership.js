@@ -69,14 +69,7 @@ const Leadership = () => {
                         time="Jan 2023 – Present | Miami,Fl"
                         work="As the Chief Full Stack Developer at FSU's Google Student Developer Club, I lead a dynamic team in creating innovative web and mobile applications, focusing on cutting-edge technology. My role encompasses mentoring and fostering professional growth, allowing me to significantly enhance our technical projects and my skills in project management and advanced full-stack development, thus reinforcing my standing in FSU's tech community.                        "
                     />
-                    <Details 
-                        position="Founder & Owner"
-                        company="Pencils For Latin America"
-                        companyLink="https://www.gofundme.com/f/pencils-for-latin-america-Dominican-Republic"
-                        time="Apr 2018 – Present | Miami, FL"
-                        address=""
-                        work="Co-founded a non-profit initiative, raising $3000+ and distributing 700lbs of educational resources for the underprivileged school the Escuela de Primaria Cabrera de Toro in Dominican Republic. Amplified donor engagement and expanded organizational impact through data-driven marketing, social media, and community partnerships. Established and nurtured relationships with Latin American schools, enhancing the alignment of initiatives with community educational needs."
-                    />
+
 
                 </ul>
             </div>
