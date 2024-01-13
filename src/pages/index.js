@@ -56,14 +56,10 @@ export default function Home() {
             I'm Kenneth Camacho, a software engineering student at Florida State University with a knack for developing innovative solutions. In this portfolio, you'll find a showcase of my projects ranging from AI-driven applications to full-stack development. Each project reflects my commitment to quality, efficiency, and user-centric design. Dive in to see how my work at Sebanda Insurance, as a Team Lead at Founders Deep Learning Startup, and various freelance endeavors have shaped my professional journey. I'm excited to share these experiences with you.
           </p>
           <div className="xl:mr-60 flex items-center justify-center mt-2 mr-44">
-          <Link href="/Kenneth_Camacho_Resume.pdf" target="_blank" 
-          className="2xl:mr-5 2xl:ml-20 xl:mr-10 xl:ml-40  md:mr-10 md:ml-52 sm:mr-10 sm:ml-96 flex bg-dark 2xl:-mt-96 text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light md:p-2 md:px-4 md:text-base">
-              Resume
-            </Link>
-            <a href="mailto:kennethcxv@outlook.com" target="_blank" 
-      
-            className="2xl:-ml-0 2xl:mr-15 xl:mr-96 xl:-ml-5 flex 2xl:-mt-96 ml-4 text-lg font-medium capitalize text-dark underline dark:text-light md:text-base">
+          <a href="mailto:kennethcxv@gmail.com" target="_blank" 
+          className="2xl:mr-5 2xl:ml-20 xl:mr-10 xl:ml-[-250px]  md:mr-96 md:ml-52 sm:mr-10 sm:ml-0 flex bg-dark 2xl:-mt-96 text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light md:p-2 md:px-4 ">
               Contact
+
             </a>
           </div>
        
