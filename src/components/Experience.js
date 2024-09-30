@@ -46,24 +46,39 @@ const Experience = () => {
                     className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[20px]'
                 />
                 <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
+                <Details 
+                        position="Software Engineer"
+                        company="EloStack"
+                        companyLink="https://www.elostack.com/"
+                        time="Sept 2023 – July 2024 | Miami, FL"
+                        work="Developed advanced full-stack applications improving scalability and user experience with responsive, intuitive designs. Leveraged expertise in full-stack programming to optimize site performance, resulting in a 40% reduction in load times and a 25% increase in user retention rates.
+"
+                    />
+                    <Details 
+                        position="Software Engineer Intern"
+                        company="Founders"
+                        time="Jun 2023 – Aug 2023 | Miami, FL"
+                        work="Developed a real-time collaboration tool using WebSockets, Node.js, and React, increasing team productivity by 40%. The tool integrated real-time editing, video conferencing (WebRTC), and project management. Engineered a data visualization dashboard with D3.js, React, Python, and Flask. It consolidated data from SQL databases and APIs into interactive visuals, improving decision-making efficiency by 35% for business users.
+"
+                    />
                     <Details 
                         position="Software Engineer Intern"
                         company="Sebanda Insurance"
                         companyLink="https://www.sebandainsurance.com/"
-                        time="Mar 2021 – Dec 2023 | Miami, FL"
-                        work="Developed AI accounting software with Python, reducing errors by 35%, reporting time by 25%, and improving efficiency by 15%. Partnered to set up a cloud infrastructure, achieving 99.5% stability and cutting costs by 20%. Implemented OCR and NLP for faster claims processing, enhancing speed by 30% and elevating customer satisfaction."
+                        time="Mar 2021 – May 2023 | Miami, FL"
+                        work="Developed an accounting system using Python, PostgreSQL, and Flask APIs. The system includes robust data validation, which reduced data entry errors by 20%, improved financial reporting accuracy, and increased efficiency by 15% through streamlined workflows and task automation. `To drive system adoption adoption, I delivered hands-on training, boosting user satisfaction and enabling employees to use the software effectively. This increased productivity and informed decision-making across the organization.
+"
                     />
+                    
+                    
                     <Details 
-                        position="Software Engineer Team Lead"
-                        company="Founders"
-                        time="Jun 2023 – Aug 2023 | Miami, FL"
-                        work="Led a team to create a system predicting disease outbreaks using medical records, social media, and weather data. Applied State-of-the-Art Deep Learning Techniques, including neural networks and Natural Language Processing, to accurately predict disease outbreaks, aiding proactive healthcare responses."
-                    />
-                    <Details 
-                        position="Software Engineer"
-                        company="Freelancer"
-                        time="Apr 2021 – March 2023 | Remote"
-                        work="Led e-commerce backend improvements, reducing load times by 15% and increasing transactions by 10%, while also crafting a dashboard that boosted sales insights by 25%. Executed a 50+ GB data transition to AWS, decreasing retrieval times by 20% with a consistent 99.9% uptime."
+                        position="Lead Competitive Programmer "
+                        company="Doral Academy "
+                        companyLink="https://www.doralacademyprep.org/"
+                        time="Sept 2020 – May 2022 | Miami, FL"
+                        work="Led Doral Academy's elite competitive programming team to multiple victories, securing first place in hackathons and consistently ranking in the top 5% at algorithmic contests. Spearheaded weekly training sessions for novice programmers, expertly teaching advanced data structures and algorithms, resulting in an accelerated progression to competitive-level programming
+
+"
                     />
                     {/* Add more <Details /> components for other experiences as needed */}
                 </ul>

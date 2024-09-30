@@ -45,14 +45,18 @@ const Skills = () => {
     <Skill name="JavaScript" x="0vw" y="6vw" />
     <Skill name="React" x="0vw" y="-6vw" />
     <Skill name="Next.js" x="-15vw" y="8vw" />
-    <Skill name="Tailwind CSS" x="15vw" y="-8vw" />
+    <Skill name="Kubernetes " x="15vw" y="-8vw" />
     <Skill name="Python" x="-15vw" y="-8vw" />
     <Skill name="C++" x="15vw" y="8vw" />
     <Skill name="C" x="26vw" y="0vw" />
     <Skill name="Java" x="-26vw" y="0vw" />
-    <Skill name="TensorFlow" x="0vw" y="-15vw" />
+    <Skill name="SQL" x="0vw" y="-15vw" />
     <Skill name="C#" x="0vw" y="15vw" />
     <Skill name="PyTorch" x="5vw" y="11vw" />
+    <Skill name ="Golang" x="12vw" y="15vw" />
+    <Skill name =".NET" x="12vw" y="-15vw" />
+    <Skill name ="PowerBI" x="-12vw" y="15vw" />
+  
 
 
 

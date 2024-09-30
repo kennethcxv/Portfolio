@@ -53,7 +53,8 @@ const Leadership = () => {
                         company="Code Culture"
                         companyLink="https://discord.gg/code-culture"
                         time="Aug 2022 – Present | Miami, FL"
-                        work="Led the creation and growth of Code Culture, a non-profit Discord server. Focused on fostering a community of developers and programmers, providing a platform for collaboration, learning, and sharing of ideas. Successfully managed a team of moderators and implemented innovative features to enhance user experience."
+                        work="Founded a non-profit Discord server, now the largest programming club at FSU, with over 3,500+ developers. Implemented advanced bots with features such as automated moderation and customized role management, leading to a 20% increase in user engagement and 30% reduction in moderation workload.
+"
                     />
                     <Details 
                         position="Founder & Owner"
@@ -65,9 +66,16 @@ const Leadership = () => {
                     <Details 
                         position="Lead Full Stack"
                         company="Google Student Developer"
-                        companyLink=""
+                        companyLink="https://developers.google.com/community/gdsc"
                         time="Jan 2023 – Present | Miami,Fl"
-                        work="As the Chief Full Stack Developer at FSU's Google Student Developer Club, I lead a dynamic team in creating innovative web and mobile applications, focusing on cutting-edge technology. My role encompasses mentoring and fostering professional growth, allowing me to significantly enhance our technical projects and my skills in project management and advanced full-stack development, thus reinforcing my standing in FSU's tech community.                        "
+                        work="As a Google Student Developer, I work on web/mobile projects, mentor developers, and boost our tech skills."
+                    />
+                    <Details    
+                        position="Interview Prep"
+                        company="CodePath"
+                        companyLink="https://www.codepath.org/"
+                        time="Feb 2024 – May 2024 | Miami,Fl"
+                        work="Mastered advanced algorithms and data structures while achieving a 95th percentile ranking in technical interviews"
                     />
 
 

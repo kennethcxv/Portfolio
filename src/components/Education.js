@@ -46,14 +46,14 @@ const Education = () => {
                     <Details
                         label="Student"
                         type="Florida State University"
-                        time="Expected Graduation: Jun 2026 | B.S. Computer Science"
+                        time="Expected Graduation: Dec 2025 | B.S. Computer Science"
                         link="https://www.fsu.edu"
                         info="At Florida State University, my journey in Computer Science has been marked by academic excellence and active involvement in extracurricular activities. I've engaged in various clubs, including Init Build AI Team and Code Culture, where I've honed my skills in AI and software development. My coursework in Data Structures, Computer Architecture, and Software Engineering, complemented by a strong GPA of 3.9/4.0, has laid a solid foundation for my technical expertise. My participation in Pencils for Latin America and Silver Knights has also allowed me to contribute over 1,000 volunteer hours, demonstrating my commitment to community service."
                     />
                     <Details
                         label="Graduate"
                         type="Doral College"
-                        time="Aug 2021 - Jun 2023 | A.A. Computer Science"
+                        time="Aug 2021 - Jun 2024 | A.A. Computer Science"
                         link="https://www.doral.edu/"
                         info="During my time at Doral College, I completed my Associate of Arts in Computer Science, where I delved into the fundamentals of programming and software development. This period was crucial for my academic growth, allowing me to explore various aspects of computer science and its practical applications. My studies here served as a stepping stone to my further education in computer science at Florida State University, providing me with the necessary knowledge and skills to excel in my ongoing academic endeavors."
                     />
