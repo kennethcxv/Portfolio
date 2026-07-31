@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Emotion classifier">
+  <rect width="1200" height="675" fill="#fbf3e4"/>
+  <g fill="#33302b" opacity="0.05">
+    <circle cx="80" cy="80" r="26"/><circle cx="1130" cy="120" r="40"/><circle cx="1060" cy="600" r="30"/><circle cx="150" cy="580" r="45"/>
+  </g>
+
+  <!-- Big face, left -->
+  <circle cx="330" cy="330" r="200" fill="#eab308"/>
+  <circle cx="330" cy="330" r="200" fill="none" stroke="#33302b" stroke-width="6"/>
+  <circle cx="262" cy="280" r="20" fill="#33302b"/>
+  <circle cx="398" cy="280" r="20" fill="#33302b"/>
+  <path d="M 230 390 q 100 90 200 0" fill="none" stroke="#33302b" stroke-width="10" stroke-linecap="round"/>
+  <!-- scan brackets over face -->
+  <g stroke="#dc2626" stroke-width="4" fill="none" opacity="0.85">
+    <path d="M 110 170 h 44 M 110 170 v 44"/>
+    <path d="M 550 170 h -44 M 550 170 v 44"/>
+    <path d="M 110 490 h 44 M 110 490 v -44"/>
+    <path d="M 550 490 h -44 M 550 490 v -44"/>
+  </g>
+
+  <text x="130" y="600" font-family="Comic Sans MS, Segoe UI, sans-serif" font-size="26" fill="#33302b">&#8220;we actually shipped it!&#8221;</text>
+
+  <!-- Results, right -->
+  <text x="660" y="130" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="800" fill="#33302b">How does it feel?</text>
+  <text x="660" y="168" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#7d766a">one model, text and faces both</text>
+
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="22">
+    <text x="660" y="250" fill="#33302b" font-weight="700">joy</text>
+    <rect x="800" y="228" width="300" height="30" rx="15" fill="#eab308"/>
+    <text x="1115" y="251" fill="#33302b" font-weight="700">0.82</text>
+
+    <text x="660" y="320" fill="#33302b">surprise</text>
+    <rect x="800" y="298" width="66" height="30" rx="15" fill="#3b82f6"/>
+    <text x="880" y="321" fill="#7d766a">0.09</text>
+
+    <text x="660" y="390" fill="#33302b">neutral</text>
+    <rect x="800" y="368" width="38" height="30" rx="15" fill="#9ca3af"/>
+    <text x="850" y="391" fill="#7d766a">0.05</text>
+
+    <text x="660" y="460" fill="#33302b">anger</text>
+    <rect x="800" y="438" width="24" height="30" rx="12" fill="#dc2626"/>
+    <text x="838" y="461" fill="#7d766a">0.04</text>
+  </g>
+
+  <rect x="660" y="520" width="440" height="70" rx="35" fill="#33302b"/>
+  <text x="880" y="565" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#eab308" text-anchor="middle">verdict: joy, and it shows</text>
+</svg>

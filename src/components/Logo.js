@@ -9,10 +9,11 @@ const Logo = () => {
     <div className="flex items-center justify-center mt-2">
       <MotionLink
         href="/"
-        className="w-16 h-16 bg-dark text-light flex items-center justify-center rounded-full text-2xl font-bold border border-solid border-transparent dark:border-light hover:bg-white 
-        hover:text-dark hover:border-dark dark:hover:bg-white dark:hover:border-black"
-        
-      >KC</MotionLink>
+        aria-label="Kenneth Camacho, home"
+        className="flex h-16 w-16 items-center justify-center rounded-full border border-solid border-transparent bg-dark text-2xl font-bold text-light transition-colors hover:border-dark hover:bg-light hover:text-dark dark:border-light dark:hover:bg-light dark:hover:text-dark md:h-14 md:w-14 md:text-xl"
+      >
+        KC
+      </MotionLink>
 
 
         </div>

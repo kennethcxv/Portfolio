@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Two sides of the digital divide">
+  <!-- hard two-tone split -->
+  <rect x="0" y="0" width="600" height="675" fill="#083b5c"/>
+  <rect x="600" y="0" width="600" height="675" fill="#242120"/>
+
+  <!-- Left: lit, connected city -->
+  <g stroke="#39c0f0" stroke-width="2" opacity="0.7">
+    <line x1="120" y1="250" x2="240" y2="190"/><line x1="240" y1="190" x2="360" y2="240"/>
+    <line x1="120" y1="250" x2="200" y2="350"/><line x1="240" y1="190" x2="200" y2="350"/>
+    <line x1="360" y1="240" x2="200" y2="350"/><line x1="200" y1="350" x2="320" y2="420"/>
+    <line x1="360" y1="240" x2="320" y2="420"/><line x1="320" y1="420" x2="180" y2="470"/>
+    <line x1="120" y1="250" x2="180" y2="470"/>
+  </g>
+  <g fill="#39c0f0">
+    <circle cx="120" cy="250" r="14"/><circle cx="240" cy="190" r="14"/><circle cx="360" cy="240" r="14"/>
+    <circle cx="200" cy="350" r="14"/><circle cx="320" cy="420" r="14"/><circle cx="180" cy="470" r="14"/>
+  </g>
+  <g fill="#bfeafc" font-family="Segoe UI, Arial, sans-serif" font-size="17">
+    <text x="110" y="560">gigabit at home &#183; laptop per kid</text>
+  </g>
+
+  <!-- Right: dim, sparse -->
+  <g stroke="#57504c" stroke-width="2" stroke-dasharray="5 7">
+    <line x1="760" y1="260" x2="900" y2="210"/>
+    <line x1="900" y1="210" x2="1010" y2="320"/>
+  </g>
+  <g fill="none" stroke="#8a817b" stroke-width="2.5">
+    <circle cx="760" cy="260" r="14"/><circle cx="900" cy="210" r="14"/><circle cx="1010" cy="320" r="14"/>
+    <circle cx="840" cy="430" r="14" stroke-dasharray="4 5"/><circle cx="990" cy="480" r="14" stroke-dasharray="4 5"/>
+  </g>
+  <text x="770" y="560" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#8a817b">one bar of signal &#183; library wifi after close</text>
+
+  <!-- The bridge across the seam -->
+  <g>
+    <path d="M 430 120 C 520 60 680 60 770 120" fill="none" stroke="#fbbf24" stroke-width="5" stroke-linecap="round"/>
+    <line x1="470" y1="103" x2="470" y2="135" stroke="#fbbf24" stroke-width="3"/>
+    <line x1="540" y1="82" x2="540" y2="120" stroke="#fbbf24" stroke-width="3"/>
+    <line x1="600" y1="76" x2="600" y2="115" stroke="#fbbf24" stroke-width="3"/>
+    <line x1="660" y1="82" x2="660" y2="120" stroke="#fbbf24" stroke-width="3"/>
+    <line x1="730" y1="103" x2="730" y2="135" stroke="#fbbf24" stroke-width="3"/>
+  </g>
+
+  <!-- Centered title on the seam -->
+  <g text-anchor="middle">
+    <rect x="330" y="270" width="540" height="130" rx="14" fill="#0c0a09" opacity="0.82"/>
+    <text x="600" y="330" font-family="Georgia, serif" font-size="40" font-weight="700" fill="#fefce8">Same city, different internet</text>
+    <text x="600" y="372" font-family="Segoe UI, Arial, sans-serif" font-size="19" fill="#d6c8a2">2.6 billion people are still on the far side</text>
+  </g>
+</svg>

@@ -1,67 +1,84 @@
-import React, { useRef } from 'react';
+import React, { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
-import LiIcon from './LiIcon';
+import LiIcon from "./LiIcon";
 
-const Details = ({ type, time, info, link, label }) => {
-    const ref = useRef(null);
-    return (
-        <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]'>
-            <LiIcon reference={ref} />
-            <motion.div
-                initial={{ y: 50 }}
-                whileInView={{ y: 0 }}
-                transition={{ duration: 0.5, type: "spring" }}
-            >
-                <h3 className='capitalize font-bold text-2xl sm:text-xl xs:text-lg'>
-                    <span className='text-dark dark:text-light'>{label}</span> @ <a href={link} target='_blank' className='text-primary dark:text-primaryDark'>{type}</a>
-                </h3>
-                
-                <span className='capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm'>
-                    {time}
-                </span>
-                <p className='font-medium w-full md:text-sm'>
-                    {info}
-                </p>
-            </motion.div>
-        </li>
-    );
+const EDUCATION = [
+  {
+    label: "M.S. Computer Science",
+    school: "Georgia Institute of Technology",
+    link: "https://www.gatech.edu/",
+    time: "Expected Jun 2027 | Atlanta, GA",
+    info: "Specializing in Computing Systems with a 3.9/4.0 GPA. Coursework spans Distributed Systems, Advanced Operating Systems, and Database Internals, which is the theory behind the consensus protocols, storage engines, and schedulers I build in my own projects.",
+  },
+  {
+    label: "B.S. Computer Science",
+    school: "Florida State University",
+    link: "https://www.fsu.edu/",
+    time: "Graduated Dec 2025 | Tallahassee, FL",
+    info: "Graduated summa cum laude with a 3.8/4.0 GPA, earning Dean's List honors every semester. Coursework included Operating Systems, Compilers, Algorithms, Networks, and Computer Architecture. Founded Code Culture, FSU's largest student programming community, along the way.",
+  },
+];
+
+const Details = ({ label, school, link, time, info }) => {
+  const ref = useRef(null);
+  return (
+    <li
+      ref={ref}
+      className="mx-auto my-8 flex w-[60%] flex-col items-center justify-between first:mt-0 last:mb-0 md:w-[80%]"
+    >
+      <LiIcon reference={ref} />
+      <motion.div
+        initial={{ y: 50 }}
+        whileInView={{ y: 0 }}
+        transition={{ duration: 0.5, type: "spring" }}
+        className="w-full"
+      >
+        <h3 className="text-2xl font-bold capitalize sm:text-xl xs:text-lg">
+          <span className="text-dark dark:text-light">{label}</span>{" "}
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary dark:text-primaryDark"
+          >
+            @{school}
+          </a>
+        </h3>
+        <span className="font-medium text-dark/75 dark:text-light/75 xs:text-sm">
+          {time}
+        </span>
+        <p className="w-full font-medium md:text-sm">{info}</p>
+      </motion.div>
+    </li>
+  );
 };
 
 const Education = () => {
-    const ref = useRef(null);
-    const { scrollYProgress } = useScroll({
-        target: ref,
-        offset: ["start end", "center start"]
-    });
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "center start"],
+  });
 
-    return (
-        <div className='my-64'>
-            <h2 className='font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16'>Education</h2>
-            <div ref={ref} className='w-[75%] mx-auto relative lg:w-[90%] md:w-full'>
-                <motion.div
-                    style={{ scaleY: scrollYProgress }}
-                    className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[20px]'
-                />
-                <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
-                    <Details
-                        label="Student"
-                        type="Florida State University"
-                        time="Expected Graduation: Dec 2025 | B.S. Computer Science"
-                        link="https://www.fsu.edu"
-                        info="At Florida State University, my journey in Computer Science has been marked by academic excellence and active involvement in extracurricular activities. I've engaged in various clubs, including Init Build AI Team and Code Culture, where I've honed my skills in AI and software development. My coursework in Data Structures, Computer Architecture, and Software Engineering, complemented by a strong GPA of 3.9/4.0, has laid a solid foundation for my technical expertise. My participation in Pencils for Latin America and Silver Knights has also allowed me to contribute over 1,000 volunteer hours, demonstrating my commitment to community service."
-                    />
-                    <Details
-                        label="Graduate"
-                        type="Doral College"
-                        time="Aug 2021 - Jun 2024 | A.A. Computer Science"
-                        link="https://www.doral.edu/"
-                        info="During my time at Doral College, I completed my Associate of Arts in Computer Science, where I delved into the fundamentals of programming and software development. This period was crucial for my academic growth, allowing me to explore various aspects of computer science and its practical applications. My studies here served as a stepping stone to my further education in computer science at Florida State University, providing me with the necessary knowledge and skills to excel in my ongoing academic endeavors."
-                    />
-                    {/* Add more <Details /> components for other education or experiences as needed */}
-                </ul>
-            </div>
-        </div>
-    );
+  return (
+    <div className="my-64">
+      <h2 className="mb-32 w-full text-center text-8xl font-bold md:mb-16 md:text-6xl xs:text-4xl">
+        Education
+      </h2>
+      <div ref={ref} className="relative mx-auto w-[75%] lg:w-[90%] md:w-full">
+        <motion.div
+          style={{ scaleY: scrollYProgress }}
+          className="absolute left-9 top-0 h-full w-[4px] origin-top bg-dark dark:bg-light md:left-[30px] md:w-[2px] xs:left-[20px]"
+          aria-hidden="true"
+        />
+        <ul className="ml-4 flex w-full flex-col items-start justify-between xs:ml-2">
+          {EDUCATION.map((entry) => (
+            <Details key={entry.school} {...entry} />
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
 };
 
 export default Education;

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Pulse Tactical Warfare game">
+  <rect width="1200" height="675" fill="#10130a"/>
+  <!-- terrain contours -->
+  <g fill="none" stroke="#1d2413" stroke-width="2">
+    <path d="M -50 520 C 200 460 350 560 620 500 S 1000 560 1250 480"/>
+    <path d="M -50 570 C 250 520 420 610 700 560 S 1050 610 1250 540"/>
+    <path d="M 150 120 C 260 60 420 110 480 60"/>
+    <path d="M 820 90 C 940 150 1080 80 1200 140"/>
+  </g>
+
+  <!-- Game logo, center top -->
+  <g text-anchor="middle">
+    <text x="600" y="120" font-family="Impact, Segoe UI, sans-serif" font-size="76" fill="#84cc16" letter-spacing="4">PULSE</text>
+    <rect x="435" y="140" width="330" height="34" fill="#f97316"/>
+    <text x="600" y="166" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700" fill="#10130a" letter-spacing="6">TACTICAL WARFARE</text>
+  </g>
+
+  <!-- Crosshair -->
+  <g stroke="#e7f5ce" stroke-width="2.5">
+    <line x1="600" y1="300" x2="600" y2="330"/>
+    <line x1="600" y1="390" x2="600" y2="420"/>
+    <line x1="540" y1="360" x2="570" y2="360"/>
+    <line x1="630" y1="360" x2="660" y2="360"/>
+  </g>
+  <circle cx="600" cy="360" r="4" fill="#f97316"/>
+
+  <!-- Minimap bottom-left -->
+  <g>
+    <circle cx="170" cy="510" r="110" fill="#161b0e" stroke="#2c3618" stroke-width="3"/>
+    <circle cx="170" cy="510" r="78" fill="none" stroke="#84cc16" stroke-width="2" stroke-dasharray="10 7"/>
+    <circle cx="185" cy="522" r="42" fill="none" stroke="#ef4444" stroke-width="2.5"/>
+    <g fill="#84cc16">
+      <circle cx="150" cy="480" r="5"/><circle cx="210" cy="530" r="5"/><circle cx="140" cy="550" r="5"/>
+    </g>
+    <path d="M 185 516 l 7 14 h -14 z" fill="#e7f5ce"/>
+    <text x="170" y="650" font-family="Consolas, ui-monospace, monospace" font-size="16" fill="#7a8a55" text-anchor="middle">zone closes 0:42</text>
+  </g>
+
+  <!-- Kill feed top right -->
+  <g font-family="Consolas, ui-monospace, monospace" font-size="16" text-anchor="end">
+    <text x="1150" y="220" fill="#7a8a55">kilo &#10013; raven</text>
+    <text x="1150" y="248" fill="#f97316" font-weight="700">YOU &#10013; ghost_7</text>
+    <text x="1150" y="276" fill="#7a8a55">nova &#10013; tank22</text>
+  </g>
+
+  <!-- Bottom HUD -->
+  <g font-family="Consolas, ui-monospace, monospace">
+    <rect x="360" y="590" width="330" height="16" rx="8" fill="#1d2413"/>
+    <rect x="360" y="590" width="238" height="16" rx="8" fill="#84cc16"/>
+    <text x="360" y="640" font-size="18" fill="#84cc16">HP 72</text>
+    <text x="1150" y="630" font-size="30" font-weight="700" fill="#e7f5ce" text-anchor="end">27<tspan fill="#5a6a3f" font-size="20">/90</tspan></text>
+    <text x="1150" y="656" font-size="15" fill="#7a8a55" text-anchor="end">M4 &#183; burst</text>
+  </g>
+
+  <!-- Mode selector -->
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">
+    <rect x="760" y="586" width="110" height="42" rx="6" fill="#f97316"/>
+    <text x="815" y="614" fill="#10130a">ROYALE</text>
+    <rect x="880" y="586" width="80" height="42" rx="6" fill="none" stroke="#84cc16" stroke-width="2"/>
+    <text x="920" y="614" fill="#84cc16">TDM</text>
+  </g>
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">
+    <rect x="970" y="586" width="120" height="42" rx="6" fill="none" stroke="#3d4a26" stroke-width="2"/>
+    <text x="1030" y="614" fill="#7a8a55" text-anchor="middle">ZOMBIES</text>
+  </g>
+</svg>

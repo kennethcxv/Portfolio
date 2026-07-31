@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Crypto trading bot terminal">
+  <rect width="1200" height="675" fill="#04070a"/>
+
+  <!-- Ticker tape top -->
+  <rect x="0" y="0" width="1200" height="46" fill="#0a1210"/>
+  <g font-family="Consolas, ui-monospace, monospace" font-size="18">
+    <text x="30" y="30" fill="#22c55e">BTC 64,210 &#9650;1.8%</text>
+    <text x="300" y="30" fill="#ef4444">ETH 3,105 &#9660;0.6%</text>
+    <text x="560" y="30" fill="#22c55e">SOL 148.22 &#9650;4.1%</text>
+    <text x="830" y="30" fill="#8b9dab">24h vol $2.1B</text>
+    <text x="1080" y="30" fill="#f59e0b">&#9679; LIVE</text>
+  </g>
+
+  <!-- Right-aligned title -->
+  <text x="1140" y="110" font-family="Consolas, ui-monospace, monospace" font-size="42" font-weight="700" fill="#22c55e" text-anchor="end">bot@trading:~$</text>
+  <text x="1140" y="145" font-family="Consolas, ui-monospace, monospace" font-size="20" fill="#8b9dab" text-anchor="end">signals in, orders out, risk limits always on</text>
+
+  <!-- Chart -->
+  <g stroke="#13202b" stroke-width="1">
+    <line x1="60" y1="220" x2="1140" y2="220"/><line x1="60" y1="320" x2="1140" y2="320"/>
+    <line x1="60" y1="420" x2="1140" y2="420"/><line x1="60" y1="520" x2="1140" y2="520"/>
+  </g>
+  <g stroke-width="2">
+    <g stroke="#22c55e" fill="#22c55e">
+      <line x1="120" y1="430" x2="120" y2="530"/><rect x="106" y="455" width="28" height="55"/>
+      <line x1="190" y1="400" x2="190" y2="500"/><rect x="176" y="420" width="28" height="52"/>
+      <line x1="330" y1="360" x2="330" y2="470"/><rect x="316" y="385" width="28" height="58"/>
+      <line x1="470" y1="300" x2="470" y2="420"/><rect x="456" y="325" width="28" height="66"/>
+      <line x1="540" y1="270" x2="540" y2="380"/><rect x="526" y="290" width="28" height="60"/>
+      <line x1="750" y1="290" x2="750" y2="400"/><rect x="736" y="315" width="28" height="55"/>
+      <line x1="890" y1="240" x2="890" y2="350"/><rect x="876" y="262" width="28" height="60"/>
+      <line x1="960" y1="215" x2="960" y2="320"/><rect x="946" y="235" width="28" height="58"/>
+    </g>
+    <g stroke="#ef4444" fill="none">
+      <line x1="260" y1="390" x2="260" y2="490"/><rect x="246" y="415" width="28" height="48"/>
+      <line x1="400" y1="330" x2="400" y2="440"/><rect x="386" y="355" width="28" height="52"/>
+      <line x1="610" y1="290" x2="610" y2="410"/><rect x="596" y="318" width="28" height="58"/>
+      <line x1="680" y1="320" x2="680" y2="430"/><rect x="666" y="345" width="28" height="52"/>
+      <line x1="1030" y1="240" x2="1030" y2="345"/><rect x="1016" y="262" width="28" height="50"/>
+    </g>
+  </g>
+  <polyline points="106,500 250,460 390,420 530,340 670,360 810,340 950,270 1090,285"
+    fill="none" stroke="#f59e0b" stroke-width="2.5" opacity="0.9"/>
+
+  <!-- Signal flags -->
+  <g font-family="Consolas, ui-monospace, monospace" font-size="17" font-weight="700">
+    <rect x="432" y="440" width="76" height="30" rx="4" fill="#22c55e"/>
+    <text x="470" y="461" fill="#04070a" text-anchor="middle">BUY</text>
+    <rect x="572" y="248" width="76" height="30" rx="4" fill="#ef4444"/>
+    <text x="610" y="269" fill="#ffffff" text-anchor="middle">SELL</text>
+  </g>
+
+  <!-- Bottom log -->
+  <g font-family="Consolas, ui-monospace, monospace" font-size="17">
+    <rect x="0" y="580" width="1200" height="95" fill="#0a1210"/>
+    <text x="30" y="614" fill="#8b9dab">14:02:11 signal=momentum entry=64,180 size=0.05</text>
+    <text x="30" y="644" fill="#22c55e">14:02:12 order filled &#183; stop-loss set &#183; max drawdown 2% enforced</text>
+  </g>
+</svg>

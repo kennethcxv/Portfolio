@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Fairness scales over data">
+  <rect width="1200" height="675" fill="#1c1026"/>
+  <circle cx="600" cy="180" r="300" fill="#241534" opacity="0.7"/>
+
+  <text x="600" y="90" font-family="Georgia, serif" font-size="46" fill="#f5edd8" text-anchor="middle">Weighed, and found wanting</text>
+  <text x="600" y="128" font-family="Segoe UI, Arial, sans-serif" font-size="19" fill="#9b8bb0" text-anchor="middle">bias hides in the data a model inherits</text>
+
+  <!-- Grand centered scale -->
+  <g stroke="#eab308" stroke-width="4" fill="none" stroke-linecap="round">
+    <line x1="600" y1="170" x2="600" y2="470"/>
+    <line x1="380" y1="215" x2="820" y2="245"/>
+    <line x1="500" y1="500" x2="700" y2="500"/>
+    <line x1="600" y1="470" x2="600" y2="500"/>
+    <line x1="380" y1="215" x2="330" y2="310"/><line x1="380" y1="215" x2="430" y2="310"/>
+    <line x1="820" y1="245" x2="770" y2="340"/><line x1="820" y1="245" x2="870" y2="340"/>
+  </g>
+  <circle cx="600" cy="170" r="10" fill="#eab308"/>
+
+  <!-- Left pan lower: overrepresented data -->
+  <path d="M 310 310 h 240 a 120 44 0 0 1 -240 0 z" fill="#2a1a3a" stroke="#eab308" stroke-width="3"/>
+  <g fill="#c084fc">
+    <rect x="345" y="272" width="20" height="36" rx="4"/>
+    <rect x="373" y="256" width="20" height="52" rx="4"/>
+    <rect x="401" y="242" width="20" height="66" rx="4"/>
+    <rect x="429" y="262" width="20" height="46" rx="4"/>
+    <rect x="457" y="284" width="20" height="24" rx="4"/>
+  </g>
+  <text x="430" y="405" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#9b8bb0" text-anchor="middle">the data we happened to have</text>
+
+  <!-- Right pan higher: balanced outcome -->
+  <path d="M 750 340 h 240 a 120 44 0 0 1 -240 0 z" fill="#2a1a3a" stroke="#eab308" stroke-width="3"/>
+  <g fill="#fcd34d">
+    <rect x="790" y="300" width="20" height="38" rx="4"/>
+    <rect x="822" y="300" width="20" height="38" rx="4"/>
+    <rect x="854" y="300" width="20" height="38" rx="4"/>
+    <rect x="886" y="300" width="20" height="38" rx="4"/>
+    <rect x="918" y="300" width="20" height="38" rx="4"/>
+  </g>
+  <text x="870" y="435" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#9b8bb0" text-anchor="middle">the outcomes people deserve</text>
+
+  <!-- Audit ticker along the bottom -->
+  <rect x="0" y="560" width="1200" height="115" fill="#140a1c"/>
+  <g font-family="Consolas, ui-monospace, monospace" font-size="19">
+    <text x="90" y="608" fill="#c084fc">audit: approval gap 22%</text>
+    <text x="470" y="608" fill="#fcd34d">reweight + threshold review</text>
+    <text x="920" y="608" fill="#86efac">gap now 1%</text>
+    <text x="90" y="645" fill="#5f5273">shipped with a model card, reviewed quarterly, argued about weekly</text>
+  </g>
+</svg>

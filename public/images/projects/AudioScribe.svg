@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Audio transcription tool">
+  <rect width="1200" height="675" fill="#0b1626"/>
+
+  <text x="600" y="90" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="300" fill="#e2ecf8" text-anchor="middle" letter-spacing="10">AUDIO SCRIBE</text>
+  <line x1="480" y1="115" x2="720" y2="115" stroke="#fbbf24" stroke-width="3"/>
+
+  <!-- Full-width waveform, amber played / slate ahead -->
+  <g stroke-linecap="round">
+    <g stroke="#fbbf24" stroke-width="7">
+      <line x1="60" y1="280" x2="60" y2="320"/><line x1="88" y1="262" x2="88" y2="338"/>
+      <line x1="116" y1="245" x2="116" y2="355"/><line x1="144" y1="270" x2="144" y2="330"/>
+      <line x1="172" y1="232" x2="172" y2="368"/><line x1="200" y1="255" x2="200" y2="345"/>
+      <line x1="228" y1="282" x2="228" y2="318"/><line x1="256" y1="248" x2="256" y2="352"/>
+      <line x1="284" y1="225" x2="284" y2="375"/><line x1="312" y1="265" x2="312" y2="335"/>
+      <line x1="340" y1="243" x2="340" y2="357"/><line x1="368" y1="277" x2="368" y2="323"/>
+      <line x1="396" y1="238" x2="396" y2="362"/><line x1="424" y1="260" x2="424" y2="340"/>
+      <line x1="452" y1="284" x2="452" y2="316"/><line x1="480" y1="250" x2="480" y2="350"/>
+      <line x1="508" y1="230" x2="508" y2="370"/><line x1="536" y1="268" x2="536" y2="332"/>
+    </g>
+    <g stroke="#2b3c55" stroke-width="7">
+      <line x1="564" y1="240" x2="564" y2="360"/><line x1="592" y1="272" x2="592" y2="328"/>
+      <line x1="620" y1="252" x2="620" y2="348"/><line x1="648" y1="280" x2="648" y2="320"/>
+      <line x1="676" y1="258" x2="676" y2="342"/><line x1="704" y1="236" x2="704" y2="364"/>
+      <line x1="732" y1="270" x2="732" y2="330"/><line x1="760" y1="250" x2="760" y2="350"/>
+      <line x1="788" y1="282" x2="788" y2="318"/><line x1="816" y1="262" x2="816" y2="338"/>
+      <line x1="844" y1="244" x2="844" y2="356"/><line x1="872" y1="274" x2="872" y2="326"/>
+      <line x1="900" y1="254" x2="900" y2="346"/><line x1="928" y1="280" x2="928" y2="320"/>
+      <line x1="956" y1="262" x2="956" y2="338"/><line x1="984" y1="240" x2="984" y2="360"/>
+      <line x1="1012" y1="272" x2="1012" y2="328"/><line x1="1040" y1="252" x2="1040" y2="348"/>
+      <line x1="1068" y1="278" x2="1068" y2="322"/><line x1="1096" y1="258" x2="1096" y2="342"/>
+      <line x1="1124" y1="270" x2="1124" y2="330"/>
+    </g>
+  </g>
+  <!-- Playhead -->
+  <g>
+    <line x1="550" y1="200" x2="550" y2="400" stroke="#38bdf8" stroke-width="3"/>
+    <rect x="516" y="170" width="68" height="30" rx="15" fill="#38bdf8"/>
+    <text x="550" y="191" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#0b1626" text-anchor="middle">02:41</text>
+  </g>
+
+  <!-- Transcript band -->
+  <g font-family="Georgia, serif" font-size="24">
+    <rect x="0" y="440" width="1200" height="235" fill="#101d33"/>
+    <line x1="0" y1="440" x2="1200" y2="440" stroke="#2b3c55" stroke-width="1.5"/>
+    <text x="90" y="500" fill="#7d90ab"><tspan font-family="Consolas, monospace" font-size="17" fill="#38bdf8">02:12  </tspan>...so the deadline moves to Thursday,</text>
+    <text x="90" y="545" fill="#7d90ab"><tspan font-family="Consolas, monospace" font-size="17" fill="#38bdf8">02:24  </tspan>and Dana owns the rollout checklist.</text>
+    <text x="90" y="590" fill="#e2ecf8"><tspan font-family="Consolas, monospace" font-size="17" fill="#fbbf24">02:41  </tspan>Next step is the vendor review<tspan fill="#fbbf24">&#9612;</tspan></text>
+    <text x="90" y="640" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#4a5d78">auto-punctuated &#183; speaker tags &#183; instant search</text>
+  </g>
+</svg>

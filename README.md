@@ -1,40 +1,51 @@
-# Kenneth Camacho's Portfolio
-Welcome to the GitHub repository of my personal portfolio! This repository contains the source code for my professional portfolio website, showcasing my skills, projects, and articles related to my work in technology and software development. The portfolio URL is https://kennethcamacho.com/ 
+# Kenneth Camacho — Portfolio
 
-## About the Portfolio
-My portfolio, available at kennethcamacho.com, is designed to provide a comprehensive overview of my professional journey, including my educational background, work experience, leadership roles, and technical skills. It also features a collection of my projects and articles, highlighting my contributions and insights in the field of technology.
+Personal portfolio of **Kenneth Camacho** — software engineer, M.S. Computer Science student at Georgia Tech (Computing Systems), and builder of distributed systems.
 
-### Features
-- **Professional Design:** A clean, modern, and responsive design that provides a seamless user experience across all devices.
-- **Project Showcase:** Detailed descriptions and demonstrations of my key projects, including their objectives, technologies used, and my role in their development.
-- **Article Library:** A curated collection of my written articles, offering insights into various technology topics and trends.
-- **Interactive Elements:** Engaging UI components, such as a sphere tag cloud and dynamic theme switcher, to enhance user engagement.
+**Live site:** [kennethcamacho.com](https://www.kennethcamacho.com)
 
-### Technologies Used
-- **Frontend:** Built using Next.js, React, and Tailwind CSS for a fast, interactive, and responsive user interface.
-- **Backend:** Server-side rendering and API integration for dynamic content delivery.
-- **Deployment:** Hosted on a reliable platform to ensure high availability and performance.
+## Stack
 
-## Getting Started
-To run this project locally:
+- [Next.js 14](https://nextjs.org/) (pages router) + React 18
+- [Tailwind CSS](https://tailwindcss.com/) with a custom desktop-first breakpoint scale
+- [Framer Motion](https://www.framer.com/motion/) for scroll and hover animation
+- Self-hosted [Montserrat](https://fonts.google.com/specimen/Montserrat) via `next/font` — no external font requests
+- Jest + React Testing Library
 
-Clone the repository: ```git clone https://github.com/kennethcxv/Portfolio.git```
+## Highlights
 
-Install dependencies: ```npm install```
+- **Zero third-party runtime requests.** The rotating skill sphere and typewriter headline are small in-house components (`WordSphere`, `TypeText`) instead of CDN scripts and npm widgets, so the site has no supply-chain exposure at runtime.
+- **Hardened HTTP headers.** `next.config.js` ships a Content-Security-Policy, `X-Frame-Options`, `X-Content-Type-Options`, `Referrer-Policy`, `Permissions-Policy`, and HSTS on every route, with `X-Powered-By` disabled.
+- **Accessible.** Keyboard-visible focus rings, `aria` labels on icon-only controls, `prefers-reduced-motion` support (animations collapse to static rendering), and a mobile menu with Escape-to-close and scroll locking.
+- **Dark mode** persisted in `localStorage`, synced across tabs, and applied before first paint to avoid theme flash.
 
-Run the development server: ```npm run dev```
+## Development
 
-Open http://localhost:3000 to view it in your browser.
+```bash
+npm install
+npm run dev      # http://localhost:3000
+```
 
-## Contributions
-While this is a personal portfolio, I welcome feedback and suggestions. If you have any ideas or find any issues, feel free to open an issue or submit a pull request.
+## Quality checks
+
+```bash
+npm run lint     # ESLint (next/core-web-vitals)
+npm test         # Jest + React Testing Library
+npm run build    # production build
+```
+
+## Project structure
+
+```
+src/
+  components/    # NavBar, Footer, WordSphere, TypeText, timelines, skills
+  pages/         # Home, About, Background, Projects, Articles
+  styles/        # Tailwind entry + global a11y/motion rules
+public/
+  images/        # project, article, and profile artwork
+  Kenneth_Camacho_Resume.pdf
+```
 
 ## License
-This project is open source and available under the MIT License.
 
-## Contact
-Feel free to reach out to me for any inquiries or collaborations:
-
-- **Email:** Kennethcxv@gmail.com
-- **LinkedIn:** https://www.linkedin.com/in/kennethcxv/
-- **GitHub:** https://github.com/kennethcxv
+MIT — see [LICENSE](LICENSE).

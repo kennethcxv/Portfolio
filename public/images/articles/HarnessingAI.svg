@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="AI as a circuit board powering fields">
+  <rect width="1200" height="675" fill="#07230f"/>
+  <!-- solder pads scattered -->
+  <g fill="#0e3a1c">
+    <circle cx="100" cy="100" r="7"/><circle cx="220" cy="620" r="7"/><circle cx="1120" cy="80" r="7"/>
+    <circle cx="1080" cy="600" r="7"/><circle cx="600" cy="60" r="7"/><circle cx="80" cy="400" r="7"/>
+  </g>
+
+  <!-- Central chip, rotated 45° -->
+  <g transform="rotate(45 600 330)">
+    <rect x="510" y="240" width="180" height="180" rx="12" fill="#0b2b15" stroke="#f2c14e" stroke-width="3.5"/>
+    <rect x="545" y="275" width="110" height="110" rx="8" fill="none" stroke="#f2c14e" stroke-width="2"/>
+  </g>
+  <text x="600" y="342" font-family="Consolas, ui-monospace, monospace" font-size="30" font-weight="700" fill="#f2c14e" text-anchor="middle">AI</text>
+
+  <!-- Copper traces with right-angle bends -->
+  <g stroke="#c87f2f" stroke-width="3" fill="none">
+    <path d="M 600 205 V 140 H 320 V 110"/>
+    <path d="M 600 455 V 520 H 320 V 550"/>
+    <path d="M 725 330 H 880 V 150 H 930"/>
+    <path d="M 475 330 H 320 V 470 H 260"/>
+    <path d="M 880 330 H 930 V 480 H 970"/>
+  </g>
+  <g fill="#f2c14e">
+    <circle cx="320" cy="110" r="6"/><circle cx="320" cy="550" r="6"/>
+    <circle cx="930" cy="150" r="6"/><circle cx="260" cy="470" r="6"/><circle cx="970" cy="480" r="6"/>
+  </g>
+
+  <!-- Component blocks at trace ends -->
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="18">
+    <rect x="150" y="60" width="340" height="70" rx="8" fill="#0b2b15" stroke="#1d5a30" stroke-width="2"/>
+    <path d="M 190 110 h 12 v -12 h 12 v 12 h 12 v 12 h -12 v 12 h -12 v -12 h -12 z" fill="#7ed99a" transform="translate(0,-16)"/>
+    <text x="250" y="103" fill="#d7f5e0">diagnostics that read scans</text>
+
+    <rect x="150" y="520" width="340" height="70" rx="8" fill="#0b2b15" stroke="#1d5a30" stroke-width="2"/>
+    <polyline points="185,575 210,545 230,562 255,532" fill="none" stroke="#7ed99a" stroke-width="3"/>
+    <text x="280" y="563" fill="#d7f5e0">fraud caught mid-swipe</text>
+
+    <rect x="760" y="90" width="340" height="70" rx="8" fill="#0b2b15" stroke="#1d5a30" stroke-width="2"/>
+    <rect x="795" y="112" width="42" height="24" rx="5" fill="none" stroke="#7ed99a" stroke-width="2.5"/>
+    <circle cx="803" cy="141" r="5" fill="#7ed99a"/><circle cx="829" cy="141" r="5" fill="#7ed99a"/>
+    <text x="860" y="133" fill="#d7f5e0">routes that plan themselves</text>
+
+    <rect x="760" y="440" width="340" height="70" rx="8" fill="#0b2b15" stroke="#1d5a30" stroke-width="2"/>
+    <path d="M 795 495 q 18 -34 36 0 q -18 -10 -36 0" fill="#7ed99a"/>
+    <text x="855" y="483" fill="#d7f5e0">crops watered by forecast</text>
+  </g>
+
+  <!-- Silkscreen title, bottom-left like a PCB label -->
+  <g font-family="Consolas, ui-monospace, monospace">
+    <text x="90" y="645" font-size="26" fill="#7ed99a">PCB-2022 &#183; HARNESSING AI</text>
+    <text x="700" y="645" font-size="17" fill="#3f7a52">same math, routed to every board that needs it</text>
+  </g>
+</svg>

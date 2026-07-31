@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Design sketchbook with user notes">
+  <rect width="1200" height="675" fill="#faf7f1"/>
+  <!-- notebook spiral edge -->
+  <line x1="70" y1="0" x2="70" y2="675" stroke="#e5ddcf" stroke-width="3"/>
+  <g fill="none" stroke="#b9ad97" stroke-width="3">
+    <circle cx="70" cy="60" r="10"/><circle cx="70" cy="140" r="10"/><circle cx="70" cy="220" r="10"/>
+    <circle cx="70" cy="300" r="10"/><circle cx="70" cy="380" r="10"/><circle cx="70" cy="460" r="10"/>
+    <circle cx="70" cy="540" r="10"/><circle cx="70" cy="620" r="10"/>
+  </g>
+
+  <text x="130" y="95" font-family="Georgia, serif" font-size="40" font-style="italic" fill="#37322a">Design is listening, then drawing</text>
+  <path d="M 130 115 q 200 12 400 4" fill="none" stroke="#ef6351" stroke-width="3"/>
+
+  <!-- Pencil wireframe -->
+  <g stroke="#6b6459" stroke-width="2.5" fill="none">
+    <rect x="140" y="170" width="440" height="330" rx="10"/>
+    <rect x="170" y="200" width="180" height="30" rx="4"/>
+    <line x1="170" y1="260" x2="550" y2="260"/>
+    <line x1="170" y1="285" x2="500" y2="285"/>
+    <rect x="170" y="330" width="170" height="110" rx="6"/>
+    <rect x="380" y="330" width="170" height="110" rx="6" stroke-dasharray="7 6"/>
+  </g>
+  <!-- redline correction -->
+  <g stroke="#ef6351" stroke-width="3" fill="none">
+    <path d="M 380 385 q -40 60 20 90"/>
+    <path d="M 392 468 l 10 10 l -16 4"/>
+  </g>
+  <text x="415" y="490" font-family="Comic Sans MS, cursive" font-size="17" fill="#ef6351">move CTA up here!</text>
+
+  <!-- Sticky notes column -->
+  <g transform="rotate(-4 800 220)">
+    <rect x="700" y="170" width="200" height="150" fill="#fde68a"/>
+    <text x="720" y="215" font-family="Comic Sans MS, cursive" font-size="19" fill="#57534e">&#8220;I&#8217;d tap this</text>
+    <text x="720" y="245" font-family="Comic Sans MS, cursive" font-size="19" fill="#57534e">first&#8221;</text>
+    <text x="720" y="295" font-family="Comic Sans MS, cursive" font-size="15" fill="#a8a29e">tester #3, min 12</text>
+  </g>
+  <g transform="rotate(3 1010 260)">
+    <rect x="930" y="200" width="200" height="150" fill="#bfdbfe"/>
+    <text x="950" y="245" font-family="Comic Sans MS, cursive" font-size="19" fill="#374151">nobody found</text>
+    <text x="950" y="275" font-family="Comic Sans MS, cursive" font-size="19" fill="#374151">the settings :(</text>
+  </g>
+  <g transform="rotate(-2 850 460)">
+    <rect x="750" y="400" width="200" height="150" fill="#bbf7d0"/>
+    <text x="770" y="445" font-family="Comic Sans MS, cursive" font-size="19" fill="#374151">task success</text>
+    <text x="770" y="482" font-family="Georgia, serif" font-size="38" font-weight="700" fill="#15803d">92%</text>
+    <text x="770" y="520" font-family="Comic Sans MS, cursive" font-size="15" fill="#6b7280">after round 4</text>
+  </g>
+
+  <!-- Loop stamp -->
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#6b6459">
+    <path d="M 1010 480 a 60 60 0 1 1 -8 -60" fill="none" stroke="#6b6459" stroke-width="2.5"/>
+    <path d="M 996 415 l 14 4 l -10 12" fill="none" stroke="#6b6459" stroke-width="2.5"/>
+    <text x="1035" y="500">research &#8594; sketch</text>
+    <text x="1035" y="525">&#8594; test &#8594; repeat</text>
+  </g>
+
+  <text x="140" y="610" font-family="Georgia, serif" font-size="20" font-style="italic" fill="#a8a29e">the best interface ideas come from watching real people struggle</text>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Machine learning versus attackers">
+  <rect width="1200" height="675" fill="#160b0d"/>
+  <!-- split: attack left, defense right -->
+  <rect x="0" y="0" width="600" height="675" fill="#1d0c0f"/>
+  <line x1="600" y1="0" x2="600" y2="675" stroke="#3f2229" stroke-width="2"/>
+
+  <text x="300" y="90" font-family="Consolas, ui-monospace, monospace" font-size="26" fill="#f87171" text-anchor="middle" letter-spacing="4">ATTACK</text>
+  <text x="900" y="90" font-family="Consolas, ui-monospace, monospace" font-size="26" fill="#34d399" text-anchor="middle" letter-spacing="4">DEFENSE</text>
+
+  <!-- Left: brute force stream -->
+  <g font-family="Consolas, ui-monospace, monospace" font-size="17" fill="#b45309">
+    <text x="80" y="160" opacity="0.9">try admin:123456</text>
+    <text x="120" y="195" opacity="0.75">try admin:qwerty</text>
+    <text x="90" y="230" opacity="0.6">try admin:letmein</text>
+    <text x="140" y="265" opacity="0.5">try root:toor</text>
+    <text x="100" y="300" opacity="0.4">try admin:password1</text>
+  </g>
+  <!-- red spike graph -->
+  <g stroke="#f87171" stroke-width="3" stroke-linecap="round">
+    <line x1="90" y1="480" x2="90" y2="450"/><line x1="130" y1="480" x2="130" y2="455"/>
+    <line x1="170" y1="480" x2="170" y2="448"/><line x1="210" y1="480" x2="210" y2="452"/>
+    <line x1="250" y1="480" x2="250" y2="440"/><line x1="290" y1="480" x2="290" y2="380"/>
+    <line x1="330" y1="480" x2="330" y2="300"/><line x1="370" y1="480" x2="370" y2="220"/>
+    <line x1="410" y1="480" x2="410" y2="180"/><line x1="450" y1="480" x2="450" y2="150"/>
+    <line x1="490" y1="480" x2="490" y2="140"/>
+  </g>
+  <line x1="70" y1="480" x2="530" y2="480" stroke="#3f2229" stroke-width="2"/>
+  <text x="300" y="530" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#9b6b6b" text-anchor="middle">412 attempts per second, one IP range</text>
+
+  <!-- Right: model catches the shape -->
+  <path d="M 830 180 l 70 -28 l 70 28 v 84 q 0 78 -70 110 q -70 -32 -70 -110 z" fill="#10231b" stroke="#34d399" stroke-width="3"/>
+  <path d="M 872 262 l 20 22 l 38 -44" fill="none" stroke="#34d399" stroke-width="4" stroke-linecap="round"/>
+  <g font-family="Consolas, ui-monospace, monospace" font-size="17">
+    <text x="700" y="440" fill="#6b9b85">anomaly score</text>
+    <rect x="700" y="455" width="400" height="18" rx="9" fill="#10231b"/>
+    <rect x="700" y="455" width="368" height="18" rx="9" fill="#34d399"/>
+    <text x="700" y="505" fill="#e7fff4">0.98 &#8594; block the range, alert on-call</text>
+    <text x="700" y="540" fill="#6b9b85">learned &#8220;normal&#8221; from 90 days of traffic</text>
+  </g>
+
+  <!-- Bottom title band -->
+  <rect x="0" y="585" width="1200" height="90" fill="#0d0608"/>
+  <text x="600" y="640" font-family="Georgia, serif" font-size="34" fill="#f3ddd2" text-anchor="middle">The firewall learned to notice things</text>
+</svg>

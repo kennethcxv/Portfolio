@@ -2,6 +2,65 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body, :root {
-    width: 100%;
+html,
+body,
+:root {
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: #b63e96;
+  color: #ffffff;
+}
+
+.dark ::selection {
+  background-color: #58e6d9;
+  color: #000000;
+}
+
+/* Visible keyboard focus without affecting mouse users */
+:focus-visible {
+  outline: 2px solid #b63e96;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.dark :focus-visible {
+  outline-color: #58e6d9;
+}
+
+/* Blinking caret for the typewriter headline */
+.type-cursor {
+  display: inline-block;
+  margin-left: 2px;
+  animation: type-blink 0.9s step-end infinite;
+}
+
+@keyframes type-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Honor users who prefer less motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

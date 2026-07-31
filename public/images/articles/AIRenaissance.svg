@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="AI renaissance manuscript">
+  <rect width="1200" height="675" fill="#f0e3c8"/>
+  <!-- parchment blotches -->
+  <g fill="#e2d0ab" opacity="0.6">
+    <ellipse cx="150" cy="120" rx="90" ry="40"/><ellipse cx="1050" cy="560" rx="120" ry="50"/>
+    <ellipse cx="1100" cy="150" rx="60" ry="90"/>
+  </g>
+  <!-- ornamental border -->
+  <rect x="26" y="26" width="1148" height="623" fill="none" stroke="#8a6a3b" stroke-width="3"/>
+  <rect x="40" y="40" width="1120" height="595" fill="none" stroke="#8a6a3b" stroke-width="1.5"/>
+
+  <!-- Illuminated drop cap -->
+  <rect x="80" y="90" width="120" height="120" fill="#b91c1c"/>
+  <rect x="86" y="96" width="108" height="108" fill="none" stroke="#f2c14e" stroke-width="3"/>
+  <text x="140" y="182" font-family="Georgia, serif" font-size="86" font-weight="700" fill="#f2c14e" text-anchor="middle">R</text>
+
+  <text x="230" y="140" font-family="Georgia, serif" font-size="46" fill="#4a3a28">enaissance, again</text>
+  <text x="230" y="184" font-family="Georgia, serif" font-size="21" font-style="italic" fill="#8a6a3b">on the creative potential of thinking machines</text>
+
+  <!-- Manuscript text lines -->
+  <g stroke="#c9b58a" stroke-width="3" stroke-linecap="round">
+    <line x1="80" y1="280" x2="560" y2="280"/>
+    <line x1="80" y1="320" x2="540" y2="320"/>
+    <line x1="80" y1="360" x2="555" y2="360"/>
+    <line x1="80" y1="400" x2="500" y2="400"/>
+    <line x1="80" y1="440" x2="548" y2="440"/>
+    <line x1="80" y1="480" x2="360" y2="480"/>
+  </g>
+
+  <!-- Vitruvian-style geometry, right page -->
+  <g stroke="#4a3a28" stroke-width="2.5" fill="none">
+    <circle cx="880" cy="360" r="150"/>
+    <rect x="775" y="255" width="210" height="210"/>
+    <!-- figure: simple da Vinci nod -->
+    <circle cx="880" cy="290" r="26"/>
+    <line x1="880" y1="316" x2="880" y2="420"/>
+    <line x1="880" y1="345" x2="800" y2="300"/><line x1="880" y1="345" x2="960" y2="300"/>
+    <line x1="880" y1="345" x2="795" y2="380"/><line x1="880" y1="345" x2="965" y2="380"/>
+    <line x1="880" y1="420" x2="830" y2="490"/><line x1="880" y1="420" x2="930" y2="490"/>
+  </g>
+  <!-- pixel corruption creeping in: the new medium -->
+  <g fill="#0f766e">
+    <rect x="1000" y="270" width="18" height="18"/><rect x="1022" y="292" width="18" height="18"/>
+    <rect x="1000" y="314" width="18" height="18"/><rect x="1044" y="270" width="18" height="18"/>
+    <rect x="1022" y="336" width="18" height="18"/><rect x="1044" y="358" width="18" height="18"/>
+  </g>
+
+  <!-- Scribe's caption -->
+  <text x="600" y="590" font-family="Georgia, serif" font-size="22" font-style="italic" fill="#4a3a28" text-anchor="middle">the workshop apprentice is now made of matrices &#183; anno 2022</text>
+</svg>

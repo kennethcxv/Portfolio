@@ -1,0 +1,79 @@
+- generic [active] [ref=e1]:
+  - main [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - navigation "Primary" [ref=e6]:
+          - link "Home" [ref=e7] [cursor=pointer]:
+            - /url: /
+          - link "About" [ref=e9] [cursor=pointer]:
+            - /url: /about
+          - link "Background" [ref=e10] [cursor=pointer]:
+            - /url: /background
+          - link "Projects" [ref=e11] [cursor=pointer]:
+            - /url: /projects
+          - link "Articles" [ref=e12] [cursor=pointer]:
+            - /url: /articles
+        - navigation "Social" [ref=e13]:
+          - link "Kenneth Camacho on GitHub" [ref=e14] [cursor=pointer]:
+            - /url: https://github.com/kennethcxv
+          - link "Kenneth Camacho on LinkedIn" [ref=e18] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/kennethcxv/
+          - button "Switch to dark mode" [ref=e25] [cursor=pointer]
+      - link "Kenneth Camacho, home" [ref=e36] [cursor=pointer]:
+        - /url: /
+        - text: KC
+    - main [ref=e37]:
+      - generic [ref=e38]:
+        - generic [ref=e40]:
+          - generic [ref=e41]: TypeScript
+          - generic [ref=e42]: JavaScript
+          - generic [ref=e43]: Python
+          - generic [ref=e44]: Go
+          - generic [ref=e45]: Java
+          - generic [ref=e46]: C++
+          - generic [ref=e47]: SQL
+          - generic [ref=e48]: React
+          - generic [ref=e49]: Next.js
+          - generic [ref=e50]: Node.js
+          - generic [ref=e51]: Express
+          - generic [ref=e52]: FastAPI
+          - generic [ref=e53]: GraphQL
+          - generic [ref=e54]: gRPC
+          - generic [ref=e55]: REST APIs
+          - generic [ref=e56]: PostgreSQL
+          - generic [ref=e57]: pgvector
+          - generic [ref=e58]: Redis
+          - generic [ref=e59]: RocksDB
+          - generic [ref=e60]: Kafka
+          - generic [ref=e61]: AWS
+          - generic [ref=e62]: Docker
+          - generic [ref=e63]: Kubernetes
+          - generic [ref=e64]: Linux
+          - generic [ref=e65]: Prometheus
+          - generic [ref=e66]: Grafana
+          - generic [ref=e67]: Bazel
+          - generic [ref=e68]: Tailwind CSS
+          - generic [ref=e69]: Git
+          - generic [ref=e70]: Distributed Systems
+        - generic [ref=e71]:
+          - heading [level=1] [ref=e72]:
+            - generic "Welcome to my Portfolio!" [ref=e73]: "|"
+          - paragraph [ref=e75]: "I'm Kenneth Camacho, a software engineer and M.S. Computer Science student at Georgia Tech, where I focus on computing systems. I've shipped production code at Rubrik and Chime, everything from cloud-security dashboards to payment services that move over $1.2M a month. For fun, I build distributed systems in Go: a Raft-backed key-value store, a fault-tolerant job queue, and a semantic code search engine. Have a look around at my projects, experience, and writing. It should give you a decent sense of how I like to build software: measured, tested, and made to scale."
+          - generic [ref=e76]:
+            - link "Resume" [ref=e77] [cursor=pointer]:
+              - /url: /Kenneth_Camacho_Resume.pdf
+            - link "Contact" [ref=e81] [cursor=pointer]:
+              - /url: mailto:kenneth.camacho.swe@gmail.com
+    - generic [ref=e83]:
+      - generic [ref=e84]: 2026 © All Rights Reserved
+      - generic [ref=e85]:
+        - text: Built by
+        - paragraph [ref=e86]: Kenneth Camacho
+      - generic [ref=e87]:
+        - link "GitHub" [ref=e88] [cursor=pointer]:
+          - /url: https://github.com/kennethcxv
+        - link "LinkedIn" [ref=e89] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/kennethcxv/
+        - link "Say Hello" [ref=e90] [cursor=pointer]:
+          - /url: mailto:kenneth.camacho.swe@gmail.com
+  - alert [ref=e91]

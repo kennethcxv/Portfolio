@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Distributed job queue as a factory line">
+  <rect width="1200" height="675" fill="#171207"/>
+  <!-- hazard stripe top -->
+  <g>
+    <rect x="0" y="0" width="1200" height="16" fill="#f59e0b"/>
+    <g fill="#171207">
+      <polygon points="0,0 28,0 12,16 -16,16"/><polygon points="56,0 84,0 68,16 40,16"/>
+      <polygon points="112,0 140,0 124,16 96,16"/><polygon points="168,0 196,0 180,16 152,16"/>
+      <polygon points="224,0 252,0 236,16 208,16"/><polygon points="280,0 308,0 292,16 264,16"/>
+      <polygon points="336,0 364,0 348,16 320,16"/><polygon points="392,0 420,0 404,16 376,16"/>
+      <polygon points="448,0 476,0 460,16 432,16"/><polygon points="504,0 532,0 516,16 488,16"/>
+      <polygon points="560,0 588,0 572,16 544,16"/><polygon points="616,0 644,0 628,16 600,16"/>
+      <polygon points="672,0 700,0 684,16 656,16"/><polygon points="728,0 756,0 740,16 712,16"/>
+      <polygon points="784,0 812,0 796,16 768,16"/><polygon points="840,0 868,0 852,16 824,16"/>
+      <polygon points="896,0 924,0 908,16 880,16"/><polygon points="952,0 980,0 964,16 936,16"/>
+      <polygon points="1008,0 1036,0 1020,16 992,16"/><polygon points="1064,0 1092,0 1076,16 1048,16"/>
+      <polygon points="1120,0 1148,0 1132,16 1104,16"/><polygon points="1176,0 1204,0 1188,16 1160,16"/>
+    </g>
+  </g>
+
+  <text x="70" y="95" font-family="Segoe UI, Arial, sans-serif" font-size="46" font-weight="800" fill="#fbe4b8">THE JOB FACTORY</text>
+  <text x="70" y="135" font-family="Segoe UI, Arial, sans-serif" font-size="21" fill="#a08a5f">a distributed queue in Go: priorities in, finished work out</text>
+
+  <!-- Conveyor belt -->
+  <rect x="70" y="300" width="740" height="14" rx="7" fill="#3a2f17"/>
+  <g fill="none" stroke="#3a2f17" stroke-width="4">
+    <circle cx="110" cy="330" r="16"/><circle cx="230" cy="330" r="16"/><circle cx="350" cy="330" r="16"/>
+    <circle cx="470" cy="330" r="16"/><circle cx="590" cy="330" r="16"/><circle cx="710" cy="330" r="16"/>
+  </g>
+
+  <!-- Job crates on the belt -->
+  <g font-family="Consolas, ui-monospace, monospace" font-size="16" text-anchor="middle">
+    <rect x="95" y="230" width="110" height="66" rx="8" fill="#f59e0b"/>
+    <text x="150" y="258" fill="#171207" font-weight="700">#9871</text>
+    <text x="150" y="280" fill="#6b4d10">HIGH</text>
+    <rect x="255" y="230" width="110" height="66" rx="8" fill="#2a2213" stroke="#f59e0b" stroke-width="2"/>
+    <text x="310" y="258" fill="#fbe4b8" font-weight="700">#9872</text>
+    <text x="310" y="280" fill="#a08a5f">NORM</text>
+    <rect x="415" y="230" width="110" height="66" rx="8" fill="#2a2213" stroke="#f59e0b" stroke-width="2"/>
+    <text x="470" y="258" fill="#fbe4b8" font-weight="700">#9873</text>
+    <text x="470" y="280" fill="#a08a5f">NORM</text>
+    <rect x="575" y="230" width="110" height="66" rx="8" fill="#2a2213" stroke="#57492a" stroke-width="2"/>
+    <text x="630" y="258" fill="#8a7a56" font-weight="700">#9874</text>
+    <text x="630" y="280" fill="#57492a">LOW</text>
+  </g>
+
+  <!-- Rate limiter gate -->
+  <g>
+    <rect x="740" y="180" width="16" height="140" fill="#94a3b8"/>
+    <rect x="700" y="168" width="96 " height="26" rx="6" fill="#94a3b8"/>
+    <text x="748" y="186" font-family="Consolas, ui-monospace, monospace" font-size="14" fill="#171207" text-anchor="middle" font-weight="700">GATE</text>
+    <text x="748" y="356" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#a08a5f" text-anchor="middle">token bucket</text>
+  </g>
+
+  <!-- Worker robots -->
+  <g font-family="Consolas, ui-monospace, monospace" font-size="15" text-anchor="middle">
+    <g>
+      <rect x="840" y="210" width="90" height="70" rx="10" fill="#2a2213" stroke="#94a3b8" stroke-width="2.5"/>
+      <circle cx="870" cy="238" r="7" fill="#4ade80"/><circle cx="900" cy="238" r="7" fill="#4ade80"/>
+      <rect x="862" y="256" width="46" height="8" rx="4" fill="#94a3b8"/>
+      <text x="885" y="300" fill="#a08a5f">w1 busy</text>
+    </g>
+    <g>
+      <rect x="960" y="210" width="90" height="70" rx="10" fill="#2a2213" stroke="#94a3b8" stroke-width="2.5"/>
+      <circle cx="990" cy="238" r="7" fill="#4ade80"/><circle cx="1020" cy="238" r="7" fill="#4ade80"/>
+      <rect x="982" y="256" width="46" height="8" rx="4" fill="#94a3b8"/>
+      <text x="1005" y="300" fill="#a08a5f">w2 busy</text>
+    </g>
+    <g>
+      <rect x="1080" y="210" width="90" height="70" rx="10" fill="#2a2213" stroke="#57492a" stroke-width="2.5"/>
+      <circle cx="1110" cy="238" r="7" fill="#57492a"/><circle cx="1140" cy="238" r="7" fill="#57492a"/>
+      <rect x="1102" y="256" width="46" height="8" rx="4" fill="#57492a"/>
+      <text x="1125" y="300" fill="#8a7a56">w3 idle</text>
+    </g>
+  </g>
+
+  <!-- Reject chute to DLQ -->
+  <path d="M 1005 285 C 1005 380 940 400 900 430" fill="none" stroke="#ef4444" stroke-width="3" stroke-dasharray="8 6"/>
+  <g>
+    <rect x="790" y="430" width="220" height="80" rx="10" fill="none" stroke="#ef4444" stroke-width="3"/>
+    <text x="900" y="465" font-family="Consolas, ui-monospace, monospace" font-size="18" fill="#ef4444" text-anchor="middle">DEAD LETTER BIN</text>
+    <text x="900" y="492" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#a08a5f" text-anchor="middle">3 retries, then the bin</text>
+  </g>
+
+  <!-- Output stats board -->
+  <g font-family="Consolas, ui-monospace, monospace">
+    <rect x="70" y="430" width="640" height="170" rx="12" fill="#211a0c" stroke="#3a2f17" stroke-width="2"/>
+    <text x="100" y="478" font-size="20" fill="#a08a5f">shift report</text>
+    <text x="100" y="520" font-size="24" fill="#fbe4b8">10,000 tasks/hour &#183; 5 workers</text>
+    <text x="100" y="560" font-size="19" fill="#4ade80">&#10003; Prometheus + Grafana on the floor cameras</text>
+  </g>
+</svg>

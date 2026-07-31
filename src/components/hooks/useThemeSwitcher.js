@@ -1,65 +1,70 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from "react";
+
+const PREFERS_DARK_QUERY = "(prefers-color-scheme: dark)";
+
+const applyTheme = (theme) => {
+  document.documentElement.classList.toggle("dark", theme === "dark");
+};
+
+const readStoredTheme = () => {
+  try {
+    return window.localStorage.getItem("theme");
+  } catch {
+    return null;
+  }
+};
+
+const storeTheme = (theme) => {
+  try {
+    window.localStorage.setItem("theme", theme);
+  } catch {
+    // Storage can be unavailable in private browsing; theme still applies for the session.
+  }
+};
 
 const useThemeSwitcher = () => {
+  const [mode, setMode] = useState("");
 
+  useEffect(() => {
+    const mediaQuery = window.matchMedia(PREFERS_DARK_QUERY);
 
-    const preferDarkQuery = "(prefer-color-scheme:dark)";
-    const [mode,setMode] = useState("");
+    const initialTheme =
+      readStoredTheme() ?? (mediaQuery.matches ? "dark" : "light");
+    setMode(initialTheme);
+    applyTheme(initialTheme);
 
-    useEffect(() => {
-        const mediaQuery = window.matchMedia(preferDarkQuery);
-        const userPref = window.localStorage.getItem("theme");
+    // Follow OS-level changes only while the user has not made an explicit choice.
+    const handleSystemChange = (event) => {
+      if (!readStoredTheme()) {
+        const next = event.matches ? "dark" : "light";
+        setMode(next);
+        applyTheme(next);
+      }
+    };
 
-        const handleChange = () => {
-            if(userPref){
-                let check = userPref === "dark" ? "dark" : "light";
-                setMode(check);
-                if(check==="dark"){
-                    document.documentElement.classList.add("dark")
-                }else{
-                    document.documentElement.classList.remove("dark")
-                }
+    // Keep multiple open tabs in sync.
+    const handleStorage = (event) => {
+      if (event.key === "theme" && (event.newValue === "dark" || event.newValue === "light")) {
+        setMode(event.newValue);
+        applyTheme(event.newValue);
+      }
+    };
 
-            }else{
-                let check = mediaQuery.matches ? "dark" : "light"
-                setMode(check);
-                window.localStorage.setItem(
-                    "theme",
-                    check
-                )
-                if(check==="dark"){
-                    document.documentElement.classList.add("dark")
-                }else{
-                    document.documentElement.classList.remove("dark")
-                }
-            }
-        }
+    mediaQuery.addEventListener("change", handleSystemChange);
+    window.addEventListener("storage", handleStorage);
+    return () => {
+      mediaQuery.removeEventListener("change", handleSystemChange);
+      window.removeEventListener("storage", handleStorage);
+    };
+  }, []);
 
-        handleChange();
+  useEffect(() => {
+    if (mode !== "dark" && mode !== "light") return;
+    storeTheme(mode);
+    applyTheme(mode);
+  }, [mode]);
 
-        mediaQuery.addEventListener("change", handleChange)
+  return [mode, setMode];
+};
 
-        return() => mediaQuery.removeEventListener("change",handleChange)
-    }, [])
-
-    useEffect(() => {
-        if(mode === "dark"){
-            window.localStorage.setItem("theme","dark");
-            document.documentElement.classList.add("dark")
-        }
-        
-        
-        
-        if(mode === "light"){
-            window.localStorage.setItem("theme","light");
-            document.documentElement.classList.remove("dark")
-        }
-    }, [mode])
-    
-
-
-
-  return[mode, setMode]
-}
-
-export default useThemeSwitcher
+export default useThemeSwitcher;

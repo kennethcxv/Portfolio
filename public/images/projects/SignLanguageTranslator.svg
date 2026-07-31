@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Sign language translator">
+  <rect width="1200" height="675" fill="#eaf4fb"/>
+  <circle cx="1050" cy="90" r="160" fill="#d5e9f7"/>
+  <circle cx="120" cy="600" r="200" fill="#d5e9f7"/>
+
+  <!-- Hand: 21 landmarks -->
+  <g stroke="#16324f" stroke-width="3" fill="none" stroke-linecap="round">
+    <polyline points="320,520 280,450 255,395 243,350"/>
+    <polyline points="320,520 320,430 320,365 320,310"/>
+    <polyline points="320,520 362,435 374,370 380,320"/>
+    <polyline points="320,520 398,450 422,395 434,350"/>
+    <polyline points="320,520 235,490 195,462 168,440"/>
+    <polyline points="243,350 320,310 380,320 434,350"/>
+  </g>
+  <g fill="#ff6b57">
+    <circle cx="320" cy="520" r="11"/>
+    <circle cx="168" cy="440" r="8"/><circle cx="195" cy="462" r="7"/><circle cx="235" cy="490" r="7"/>
+    <circle cx="243" cy="350" r="8"/><circle cx="255" cy="395" r="7"/><circle cx="280" cy="450" r="7"/>
+    <circle cx="320" cy="310" r="8"/><circle cx="320" cy="365" r="7"/><circle cx="320" cy="430" r="7"/>
+    <circle cx="380" cy="320" r="8"/><circle cx="374" cy="370" r="7"/><circle cx="362" cy="435" r="7"/>
+    <circle cx="434" cy="350" r="8"/><circle cx="422" cy="395" r="7"/><circle cx="398" cy="450" r="7"/>
+  </g>
+  <text x="180" y="590" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#5a768e">21 landmarks &#183; 30 fps webcam</text>
+
+  <!-- Title, right side -->
+  <text x="560" y="150" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="800" fill="#16324f">Signs,</text>
+  <text x="560" y="210" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="800" fill="#ff6b57">spoken.</text>
+  <text x="560" y="252" font-family="Segoe UI, Arial, sans-serif" font-size="21" fill="#5a768e">real-time ASL translation with a live transcript</text>
+
+  <!-- Flow: dots to caption bubble -->
+  <g fill="#16324f">
+    <circle cx="480" cy="400" r="5"/><circle cx="510" cy="400" r="5"/><circle cx="540" cy="400" r="5"/>
+  </g>
+  <g>
+    <rect x="580" y="330" width="330" height="130" rx="20" fill="#16324f"/>
+    <path d="M 610 460 l -20 34 l 44 -34 z" fill="#16324f"/>
+    <text x="612" y="392" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700" fill="#ffffff">&#8220;Hello!&#8221;</text>
+    <text x="612" y="432" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#9fc3e0">confidence 96%</text>
+  </g>
+
+  <!-- Voice output -->
+  <g stroke="#ff6b57" stroke-width="5" stroke-linecap="round">
+    <line x1="960" y1="385" x2="960" y2="405"/>
+    <line x1="985" y1="370" x2="985" y2="420"/>
+    <line x1="1010" y1="355" x2="1010" y2="435"/>
+    <line x1="1035" y1="372" x2="1035" y2="418"/>
+    <line x1="1060" y1="385" x2="1060" y2="405"/>
+  </g>
+  <text x="955" y="470" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#5a768e">spoken aloud</text>
+
+  <!-- Transcript line -->
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="19">
+    <rect x="560" y="540" width="560" height="66" rx="33" fill="#ffffff" stroke="#c3d9ea" stroke-width="2"/>
+    <text x="595" y="580" fill="#16324f">Transcript: Hello! Nice to meet you</text>
+    <rect x="1010" y="560" width="10" height="26" fill="#ff6b57"/>
+  </g>
+</svg>

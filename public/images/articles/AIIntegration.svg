@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Two disciplines braiding together">
+  <rect width="1200" height="675" fill="#0f1626"/>
+
+  <!-- Braided rails -->
+  <path d="M 80 240 C 300 240 340 420 560 420 C 780 420 820 240 1040 240 C 1090 240 1120 260 1140 300"
+    fill="none" stroke="#22d3ee" stroke-width="6" stroke-linecap="round"/>
+  <path d="M 80 420 C 300 420 340 240 560 240 C 780 240 820 420 1040 420 C 1090 420 1120 400 1140 360"
+    fill="none" stroke="#a78bfa" stroke-width="6" stroke-linecap="round"/>
+  <!-- crossing sparks -->
+  <g fill="#ffffff">
+    <circle cx="450" cy="330" r="7"/>
+    <circle cx="672" cy="330" r="7"/>
+    <circle cx="1140" cy="330" r="10"/>
+  </g>
+
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="80" y="210" font-size="22" fill="#22d3ee" font-weight="700">classical computer science</text>
+    <text x="80" y="465" font-size="22" fill="#a78bfa" font-weight="700">machine learning</text>
+  </g>
+
+  <!-- Milestone flags along rails -->
+  <g font-family="Consolas, ui-monospace, monospace" font-size="15" fill="#64748b">
+    <line x1="220" y1="240" x2="220" y2="205" stroke="#22d3ee" stroke-width="2"/>
+    <text x="230" y="188">compilers &#8217;70s</text>
+    <line x1="220" y1="420" x2="220" y2="455" stroke="#a78bfa" stroke-width="2"/>
+    <text x="230" y="492">perceptron &#8217;58</text>
+    <line x1="560" y1="240" x2="560" y2="205" stroke="#a78bfa" stroke-width="2"/>
+    <text x="570" y="188">deep nets 2012</text>
+    <line x1="560" y1="420" x2="560" y2="455" stroke="#22d3ee" stroke-width="2"/>
+    <text x="570" y="492">distributed DBs</text>
+  </g>
+
+  <!-- Where they land together -->
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#cbd5e1">
+    <text x="900" y="120" fill="#e2e8f0" font-size="19" font-weight="700">what the braid makes:</text>
+    <text x="900" y="155">&#183; learned indexes</text>
+    <text x="900" y="185">&#183; ML query planners</text>
+    <text x="900" y="215">&#183; AI pair programmers</text>
+  </g>
+
+  <!-- Title -->
+  <text x="80" y="590" font-family="Georgia, serif" font-size="44" fill="#f1f5f9">Two curricula, one future</text>
+  <text x="80" y="628" font-family="Segoe UI, Arial, sans-serif" font-size="19" fill="#64748b">AI stopped being an elective in the CS story</text>
+</svg>

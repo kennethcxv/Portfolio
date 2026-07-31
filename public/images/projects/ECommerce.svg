@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="E-commerce platform">
+  <rect width="1200" height="675" fill="#f6f1e7"/>
+
+  <!-- Awning -->
+  <g>
+    <rect x="0" y="0" width="1200" height="70" fill="#e2590b"/>
+    <g fill="#f6f1e7">
+      <path d="M 0 70 h 100 a 50 26 0 0 1 -100 0 z" fill="#fdf0e3"/>
+      <path d="M 100 70 h 100 a 50 26 0 0 1 -100 0 z" fill="#e2590b"/>
+      <path d="M 200 70 h 100 a 50 26 0 0 1 -100 0 z" fill="#fdf0e3"/>
+      <path d="M 300 70 h 100 a 50 26 0 0 1 -100 0 z" fill="#e2590b"/>
+      <path d="M 400 70 h 100 a 50 26 0 0 1 -100 0 z" fill="#fdf0e3"/>
+      <path d="M 500 70 h 100 a 50 26 0 0 1 -100 0 z" fill="#e2590b"/>
+      <path d="M 600 70 h 100 a 50 26 0 0 1 -100 0 z" fill="#fdf0e3"/>
+      <path d="M 700 70 h 100 a 50 26 0 0 1 -100 0 z" fill="#e2590b"/>
+      <path d="M 800 70 h 100 a 50 26 0 0 1 -100 0 z" fill="#fdf0e3"/>
+      <path d="M 900 70 h 100 a 50 26 0 0 1 -100 0 z" fill="#e2590b"/>
+      <path d="M 1000 70 h 100 a 50 26 0 0 1 -100 0 z" fill="#fdf0e3"/>
+      <path d="M 1100 70 h 100 a 50 26 0 0 1 -100 0 z" fill="#e2590b"/>
+    </g>
+  </g>
+
+  <text x="600" y="160" font-family="Georgia, serif" font-size="46" font-weight="700" fill="#221d15" text-anchor="middle">The Everything Storefront</text>
+  <text x="600" y="196" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#847a68" text-anchor="middle">multi-vendor shops &#183; Clerk sign-in &#183; Stripe checkout</text>
+
+  <!-- Product cards with price tags -->
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="140" y="240" width="280" height="290" rx="14" fill="#ffffff" stroke="#ded4c2" stroke-width="2"/>
+    <circle cx="280" cy="340" r="58" fill="none" stroke="#e2590b" stroke-width="4"/>
+    <circle cx="280" cy="340" r="14" fill="#e2590b"/>
+    <text x="280" y="460" font-size="21" fill="#221d15" text-anchor="middle" font-weight="600">Vinyl LP</text>
+    <g transform="rotate(-8 395 265)">
+      <rect x="352" y="248" width="86" height="36" rx="6" fill="#2f9e44"/>
+      <circle cx="364" cy="266" r="4" fill="#f6f1e7"/>
+      <text x="398" y="272" font-size="19" fill="#ffffff" text-anchor="middle" font-weight="700">$24</text>
+    </g>
+
+    <rect x="460" y="240" width="280" height="290" rx="14" fill="#ffffff" stroke="#ded4c2" stroke-width="2"/>
+    <path d="M 545 320 h 110 l -14 90 h -82 z" fill="none" stroke="#221d15" stroke-width="4"/>
+    <path d="M 570 320 v -22 a 30 30 0 0 1 60 0 v 22" fill="none" stroke="#221d15" stroke-width="4"/>
+    <text x="600" y="460" font-size="21" fill="#221d15" text-anchor="middle" font-weight="600">Canvas Tote</text>
+    <g transform="rotate(6 715 265)">
+      <rect x="672" y="248" width="86" height="36" rx="6" fill="#2f9e44"/>
+      <circle cx="684" cy="266" r="4" fill="#f6f1e7"/>
+      <text x="718" y="272" font-size="19" fill="#ffffff" text-anchor="middle" font-weight="700">$18</text>
+    </g>
+
+    <rect x="780" y="240" width="280" height="290" rx="14" fill="#ffffff" stroke="#ded4c2" stroke-width="2"/>
+    <rect x="850" y="300" width="140" height="105" rx="6" fill="none" stroke="#e2590b" stroke-width="4"/>
+    <path d="M 850 380 l 45 -42 l 38 34 l 22 -20 l 35 28" fill="none" stroke="#e2590b" stroke-width="4" stroke-linejoin="round"/>
+    <circle cx="890" cy="330" r="10" fill="#e2590b"/>
+    <text x="920" y="460" font-size="21" fill="#221d15" text-anchor="middle" font-weight="600">Art Print</text>
+    <g transform="rotate(-5 1035 265)">
+      <rect x="992" y="248" width="86" height="36" rx="6" fill="#2f9e44"/>
+      <circle cx="1004" cy="266" r="4" fill="#f6f1e7"/>
+      <text x="1038" y="272" font-size="19" fill="#ffffff" text-anchor="middle" font-weight="700">$12</text>
+    </g>
+  </g>
+
+  <!-- Checkout strip -->
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="20">
+    <rect x="140" y="572" width="640" height="60" rx="30" fill="#221d15"/>
+    <text x="175" y="610" fill="#f6f1e7">Cart (2) &#183; $42.00</text>
+    <text x="480" y="610" fill="#9be89d">&#10003; paid with Stripe</text>
+    <rect x="810" y="572" width="250" height="60" rx="30" fill="#e2590b"/>
+    <text x="935" y="610" fill="#ffffff" text-anchor="middle" font-weight="700">Open your shop</text>
+  </g>
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="SQL workbench">
+  <rect width="1200" height="675" fill="#101828"/>
+
+  <!-- Window chrome -->
+  <rect x="0" y="0" width="1200" height="52" fill="#182338"/>
+  <circle cx="34" cy="26" r="8" fill="#fb7185"/>
+  <circle cx="62" cy="26" r="8" fill="#fbbf24"/>
+  <circle cx="90" cy="26" r="8" fill="#34d399"/>
+  <text x="600" y="34" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#7c8db0" text-anchor="middle">workbench.sql &#183; connected to prod-replica</text>
+
+  <!-- Left: schema tree -->
+  <g font-family="Consolas, ui-monospace, monospace" font-size="18">
+    <rect x="0" y="52" width="280" height="560" fill="#0b1220"/>
+    <text x="28" y="100" fill="#7c8db0">&#9662; tables</text>
+    <text x="52" y="140" fill="#38bdf8">&#9639; users</text>
+    <text x="52" y="176" fill="#fb923c">&#9639; orders</text>
+    <text x="52" y="212" fill="#7c8db0">&#9639; products</text>
+    <text x="52" y="248" fill="#7c8db0">&#9639; vendors</text>
+    <text x="28" y="300" fill="#7c8db0">&#9656; views</text>
+    <text x="28" y="340" fill="#7c8db0">&#9656; roles</text>
+  </g>
+
+  <!-- Center: ER cards with join -->
+  <g font-family="Consolas, ui-monospace, monospace" font-size="17">
+    <rect x="330" y="110" width="230" height="150" rx="8" fill="#0b1220" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="330" y="110" width="230" height="38" rx="8" fill="#38bdf8"/>
+    <text x="350" y="136" fill="#101828" font-weight="700">users</text>
+    <text x="350" y="180" fill="#fbbf24">&#128273; id</text>
+    <text x="350" y="210" fill="#c7d4ec">email</text>
+    <text x="350" y="240" fill="#c7d4ec">created_at</text>
+
+    <rect x="640" y="180" width="230" height="150" rx="8" fill="#0b1220" stroke="#fb923c" stroke-width="2"/>
+    <rect x="640" y="180" width="230" height="38" rx="8" fill="#fb923c"/>
+    <text x="660" y="206" fill="#101828" font-weight="700">orders</text>
+    <text x="660" y="250" fill="#fbbf24">&#128273; id</text>
+    <text x="660" y="280" fill="#38bdf8">&#8618; user_id</text>
+    <text x="660" y="310" fill="#c7d4ec">total</text>
+
+    <path d="M 560 185 C 610 185 595 275 640 275" fill="none" stroke="#7c8db0" stroke-width="2.5" stroke-dasharray="7 5"/>
+    <text x="575" y="220" fill="#7c8db0" font-size="15">1&#8594;N</text>
+  </g>
+
+  <!-- Query pane -->
+  <g font-family="Consolas, ui-monospace, monospace" font-size="19">
+    <rect x="330" y="370" width="810 " height="150" rx="8" fill="#0b1220" stroke="#243250" stroke-width="2"/>
+    <text x="360" y="410"><tspan fill="#38bdf8">SELECT</tspan><tspan fill="#c7d4ec"> u.email, </tspan><tspan fill="#fbbf24">SUM</tspan><tspan fill="#c7d4ec">(o.total)</tspan></text>
+    <text x="360" y="444"><tspan fill="#38bdf8">FROM</tspan><tspan fill="#c7d4ec"> users u </tspan><tspan fill="#38bdf8">JOIN</tspan><tspan fill="#c7d4ec"> orders o </tspan><tspan fill="#38bdf8">ON</tspan><tspan fill="#c7d4ec"> o.user_id = u.id</tspan></text>
+    <text x="360" y="478"><tspan fill="#38bdf8">GROUP BY</tspan><tspan fill="#c7d4ec"> u.email </tspan><tspan fill="#38bdf8">ORDER BY</tspan><tspan fill="#c7d4ec"> 2 </tspan><tspan fill="#38bdf8">DESC</tspan><tspan fill="#c7d4ec">;</tspan></text>
+  </g>
+
+  <!-- Status bar title -->
+  <rect x="0" y="612" width="1200" height="63" fill="#182338"/>
+  <text x="28" y="652" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#e2e9f7">SQL Management System</text>
+  <text x="1170" y="652" font-family="Consolas, ui-monospace, monospace" font-size="19" fill="#34d399" text-anchor="end">&#10003; 312 rows in 4 ms</text>
+</svg>

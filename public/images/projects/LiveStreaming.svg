@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Live streaming platform">
+  <rect width="1200" height="675" fill="#120a1e"/>
+  <g stroke="#ffffff" stroke-width="1" opacity="0.03">
+    <line x1="0" y1="90" x2="1200" y2="90"/><line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="270" x2="1200" y2="270"/><line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/><line x1="0" y1="540" x2="1200" y2="540"/>
+  </g>
+
+  <!-- Big player -->
+  <rect x="0" y="0" width="880" height="675" fill="#1a1027"/>
+  <polygon points="400,290 400,390 485,340" fill="#a970ff"/>
+  <circle cx="440" cy="340" r="95" fill="none" stroke="#a970ff" stroke-width="3" opacity="0.4"/>
+
+  <!-- Top overlay: live badge + viewers -->
+  <rect x="30" y="30" width="94" height="38" rx="8" fill="#ff4d4d"/>
+  <circle cx="55" cy="49" r="6" fill="#ffffff"/>
+  <text x="72" y="56" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#ffffff">LIVE</text>
+  <rect x="136" y="30" width="150" height="38" rx="8" fill="#000000" opacity="0.45"/>
+  <text x="156" y="56" font-family="Segoe UI, Arial, sans-serif" font-size="19" fill="#e9e2f7">&#128065; 1,214</text>
+
+  <!-- Lower-third title -->
+  <rect x="0" y="520" width="880" height="6" fill="#a970ff"/>
+  <rect x="0" y="526" width="880" height="149" fill="#000000" opacity="0.55"/>
+  <text x="36" y="590" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="800" fill="#ffffff" letter-spacing="1">LIVE STREAMING PLATFORM</text>
+  <text x="38" y="630" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#c4b5fd">RTMP + WHIP ingest, transcode ladder, chat that keeps up</text>
+
+  <!-- Quality picker overlay -->
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="17">
+    <rect x="700" y="404" width="150" height="100" rx="10" fill="#000000" opacity="0.6"/>
+    <text x="722" y="436" fill="#a970ff" font-weight="700">1080p60</text>
+    <text x="722" y="464" fill="#cbc3dd">720p30</text>
+    <text x="722" y="492" fill="#cbc3dd">480p30</text>
+  </g>
+
+  <!-- Chat column -->
+  <rect x="880" y="0" width="320" height="675" fill="#0d0716"/>
+  <line x1="880" y1="0" x2="880" y2="675" stroke="#a970ff" stroke-width="2" opacity="0.5"/>
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="18">
+    <text x="910" y="50" fill="#7c6f95" font-weight="700" letter-spacing="2">STREAM CHAT</text>
+    <text x="910" y="105" fill="#a970ff" font-weight="700">mika</text>
+    <text x="910" y="130" fill="#d8d1e8">no way that worked</text>
+    <text x="910" y="180" fill="#4dd0a7" font-weight="700">dev_ken</text>
+    <text x="910" y="205" fill="#d8d1e8">clip it. right now</text>
+    <text x="910" y="255" fill="#ffb454" font-weight="700">ana</text>
+    <text x="910" y="280" fill="#d8d1e8">chat is this real</text>
+    <text x="910" y="330" fill="#ff7ab8" font-weight="700">sam_codes</text>
+    <text x="910" y="355" fill="#d8d1e8">latency is unreal, what</text>
+    <text x="910" y="380" fill="#d8d1e8">ingest is this?</text>
+    <text x="910" y="430" fill="#a970ff" font-weight="700">mika</text>
+    <text x="910" y="455" fill="#d8d1e8">WHIP, sub-second</text>
+  </g>
+  <rect x="905" y="600" width="270" height="44" rx="10" fill="none" stroke="#463861" stroke-width="2"/>
+  <text x="925" y="629" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#7c6f95">Send a message</text>
+</svg>

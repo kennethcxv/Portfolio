@@ -1,71 +1,31 @@
+import Layout from "@/components/Layout";
+import Head from "next/head";
+import React from "react";
+import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
+import Leadership from "@/components/Leadership";
+import Education from "@/components/Education";
 
-import Layout from '@/components/Layout'
-import {useInView, useMotionValue, useSpring } from 'framer-motion'
-import Head from 'next/head'
-import Image from 'next/image'
-import React, { useEffect, useRef } from 'react'
-import profilePic from "../../public/images/UpperHalf.png";
-import { Truculenta } from 'next/font/google'
-import Skills from '@/components/Skills'
-import Experience from '@/components/Experience'
-import Leadership from '@/components/Leadership'
-import Education from '@/components/Education'
-
-
-
-const AnimatedNumbers = ({value}) => {
-    const ref = useRef(null);
-
-    const motionValue = useMotionValue(0);
-    const springValue = useSpring(motionValue,{duration:3000 })
-    const isInView = useInView(ref,{once:true});
-
-    useEffect(() => {
-        if(isInView){
-            motionValue.set(value);
-        }
-    }, [isInView, value, motionValue])
-    useEffect(() => {
-        springValue.on("change",(latest) =>{
-            if(ref.current && latest.toFixed(0) <= value){
-                ref.current.textContent = latest.toFixed(0);
-            }
-        })
-    }, [springValue,value])
-    
-
-     return <span ref={ref}></span>
- }
-
-
-
-const about = () => {
+const Background = () => {
   return (
     <>
-    <Head>
-        <title>Kenneth Camacho | About Page</title>
-        <meta name='description' content='Software Engineer' />
-    </Head>
-    <main className='flex w-full flex-col items-center justify-center dark:text-light'>
-        <Layout className='pt-16'>
-        
-                
-
-
-
-
-            
-
-
-            
-            <Experience />
-            <Leadership />
-            <Education />
-            <Skills />
+      <Head>
+        <title>Kenneth Camacho | Background</title>
+        <meta
+          name="description"
+          content="Kenneth Camacho's experience, awards, education, and skills: software engineering internships at Rubrik, Chime, EloStack, and Sebanda Insurance, an M.S. in Computer Science at Georgia Tech, hackathon wins, and founding Code Culture."
+        />
+      </Head>
+      <main className="flex w-full flex-col items-center justify-center dark:text-light">
+        <Layout className="pt-16">
+          <Experience />
+          <Leadership />
+          <Education />
+          <Skills />
         </Layout>
-    </main>
+      </main>
     </>
-  )
-}
+  );
+};
 
-export default about
+export default Background;
