@@ -79,8 +79,9 @@ const PROJECTS = [
     img: SocialMediaApp,
     summary:
       "A small network where programmers post code snippets and debate them in the replies. Votes decide what rises to the top.",
-    link: "https://github.com/kennethcxv/Social-Media-App",
-    github: "https://github.com/kennethcxv/Social-Media-App",
+    // TODO: repo not on GitHub yet; swap in the real URL once it's pushed
+    link: GITHUB_PROFILE,
+    github: GITHUB_PROFILE,
   },
   {
     title: "AI Sign Language Translator",
