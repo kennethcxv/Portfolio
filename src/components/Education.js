@@ -11,7 +11,7 @@ const EDUCATION = [
     info: "Specializing in Computing Systems with a 3.9/4.0 GPA. Coursework spans Distributed Systems, Advanced Operating Systems, and Database Internals, which is the theory behind the consensus protocols, storage engines, and schedulers I build in my own projects.",
   },
   {
-    label: "B.S. Computer Science",
+    label: "Bachelors in Computer Science",
     school: "Florida State University",
     link: "https://www.fsu.edu/",
     time: "Graduated Dec 2025 | Tallahassee, FL",

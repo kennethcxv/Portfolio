@@ -49,7 +49,7 @@ const About = () => {
         <title>Kenneth Camacho | About</title>
         <meta
           name="description"
-          content="About Kenneth Camacho, an M.S. Computer Science student at Georgia Tech with a B.S. summa cum laude from Florida State University and software engineering experience at Rubrik, Chime, EloStack, and Sebanda Insurance."
+          content="About Kenneth Camacho, an M.S. Computer Science student at Georgia Tech with a Bachelors summa cum laude from Florida State University and software engineering experience at Rubrik, Chime, EloStack, and Sebanda Insurance."
         />
       </Head>
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
@@ -65,7 +65,7 @@ const About = () => {
               <p className="font-medium">
                 I&apos;m Kenneth Camacho, a software engineer pursuing an M.S.
                 in Computer Science at Georgia Tech with a specialization in
-                Computing Systems. I earned my B.S. in Computer Science from
+                Computing Systems. I earned my Bachelors in Computer Science from
                 Florida State University summa cum laude, making the Dean&apos;s
                 List every semester. My work sits where backend engineering
                 meets distributed systems: designing services that stay fast,

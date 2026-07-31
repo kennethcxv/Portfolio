@@ -57,7 +57,7 @@ and graded exams and assignments.
 
 EDUCATION:
 
-Bachelor Of Science In Computer Science
+Bachelors In Computer Science
 2016-2020 | Massachusetts Institute Of Technology (MIT)
 Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
 Intelligence.
