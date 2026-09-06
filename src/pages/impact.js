@@ -179,38 +179,57 @@ const Arrow = ({ direction }) => (
   </span>
 );
 
-const MetricCard = ({ value, display, unit, direction, label, detail, source }) => (
+const MetricCard = ({
+  value,
+  display,
+  unit,
+  direction,
+  label,
+  detail,
+  source,
+}) => (
+  // The offset slab and the card are both positioned siblings painted in DOM
+  // order, so the card always covers the slab. Using a negative z-index here
+  // would flash black on entry: the animating `opacity`/`y` makes this wrapper
+  // a stacking context, which traps a -z-10 child above the card background
+  // until the animation ends and the stacking context disappears.
   <motion.article
     initial={{ y: 40, opacity: 0 }}
     whileInView={{ y: 0, opacity: 1 }}
     viewport={{ once: true, margin: "-40px" }}
     transition={{ duration: 0.45, type: "spring" }}
-    className="relative flex h-full flex-col items-start rounded-2xl border border-solid border-dark bg-light p-6 dark:border-light dark:bg-dark xs:p-4"
+    className="relative h-full"
   >
-    <div className="absolute top-0 -right-3 -z-10 h-[103%] w-[101%] rounded-[2rem] rounded-br-3xl bg-dark dark:bg-light md:-right-2 xs:h-[102%] xs:rounded-[1.5rem]" />
+    <div className="absolute top-0 -right-3 h-[103%] w-[101%] rounded-[2rem] rounded-br-3xl bg-dark dark:bg-light md:-right-2 xs:h-[102%] xs:rounded-[1.5rem]" />
 
-    <p className="flex items-baseline text-5xl font-bold text-primary dark:text-primaryDark lg:text-4xl xs:text-3xl">
-      <AnimatedNumber value={value} display={display} />
-      <span>{unit}</span>
-      {direction ? <Arrow direction={direction} /> : null}
-      <span className="sr-only">
-        {direction === "up" ? " increase in " : direction ? " reduction in " : " "}
-      </span>
-    </p>
+    <div className="relative flex h-full flex-col items-start rounded-2xl border border-solid border-dark bg-light p-6 dark:border-light dark:bg-dark xs:p-4">
+      <p className="flex items-baseline text-5xl font-bold text-primary dark:text-primaryDark lg:text-4xl xs:text-3xl">
+        <AnimatedNumber value={value} display={display} />
+        <span>{unit}</span>
+        {direction ? <Arrow direction={direction} /> : null}
+        <span className="sr-only">
+          {direction === "up"
+            ? " increase in "
+            : direction
+              ? " reduction in "
+              : " "}
+        </span>
+      </p>
 
-    <h3 className="mt-1 text-lg font-bold capitalize text-dark dark:text-light xs:text-base">
-      {label}
-    </h3>
+      <h3 className="mt-1 text-lg font-bold capitalize text-dark dark:text-light xs:text-base">
+        {label}
+      </h3>
 
-    {source ? (
-      <span className="mt-2 rounded-full bg-dark px-3 py-1 text-xs font-semibold uppercase tracking-wide text-light dark:bg-light dark:text-dark">
-        {source}
-      </span>
-    ) : null}
+      {source ? (
+        <span className="mt-2 rounded-full bg-dark px-3 py-1 text-xs font-semibold uppercase tracking-wide text-light dark:bg-light dark:text-dark">
+          {source}
+        </span>
+      ) : null}
 
-    <p className="mt-3 font-medium text-dark/75 dark:text-light/75 sm:text-sm">
-      {detail}
-    </p>
+      <p className="mt-3 font-medium text-dark/75 dark:text-light/75 sm:text-sm">
+        {detail}
+      </p>
+    </div>
   </motion.article>
 );
 
@@ -236,7 +255,10 @@ const Impact = () => {
           </p>
 
           {SECTIONS.map((section) => (
-            <section key={section.heading} className="mb-24 w-full last:mb-0 md:mb-16">
+            <section
+              key={section.heading}
+              className="mb-24 w-full last:mb-0 md:mb-16"
+            >
               <h2 className="text-4xl font-bold text-dark dark:text-light md:text-3xl xs:text-2xl">
                 {section.heading}
               </h2>
@@ -245,7 +267,9 @@ const Impact = () => {
               </p>
               <ul className="grid w-full grid-cols-2 gap-8 sm:grid-cols-1 sm:gap-6">
                 {section.metrics.map((metric) => (
-                  <li key={`${section.heading}-${metric.label}-${metric.source ?? ""}`}>
+                  <li
+                    key={`${section.heading}-${metric.label}-${metric.source ?? ""}`}
+                  >
                     <MetricCard {...metric} />
                   </li>
                 ))}
