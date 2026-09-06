@@ -13,7 +13,7 @@ const Background = () => {
         <title>Kenneth Camacho | Background</title>
         <meta
           name="description"
-          content="Kenneth Camacho's experience, awards, education, and skills: software engineering internships at Rubrik, Chime, EloStack, and Sebanda Insurance, an M.S. in Computer Science at Georgia Tech, hackathon wins, and founding Code Culture."
+          content="Kenneth Camacho's experience, awards, education, and skills: systems software engineering on NVIDIA DRIVE, prior software engineering internships at Rubrik and Chime, an M.S. in Computer Science at Georgia Tech, three first-place hackathon wins, and founding Code Culture."
         />
       </Head>
       <main className="flex w-full flex-col items-center justify-center dark:text-light">

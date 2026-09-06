@@ -49,7 +49,7 @@ const About = () => {
         <title>Kenneth Camacho | About</title>
         <meta
           name="description"
-          content="About Kenneth Camacho, an M.S. Computer Science student at Georgia Tech with a Bachelors summa cum laude from Florida State University and software engineering experience at Rubrik, Chime, EloStack, and Sebanda Insurance."
+          content="About Kenneth Camacho, an M.S. Computer Science student at Georgia Tech with a Bachelors summa cum laude from Florida State University, currently a Systems Software Engineering Intern at NVIDIA working on NVIDIA DRIVE, with prior software engineering internships at Rubrik and Chime."
         />
       </Head>
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
@@ -65,21 +65,32 @@ const About = () => {
               <p className="font-medium">
                 I&apos;m Kenneth Camacho, a software engineer pursuing an M.S.
                 in Computer Science at Georgia Tech with a specialization in
-                Computing Systems. I earned my Bachelors in Computer Science from
+                Machine Learning. I earned my Bachelors in Computer Science from
                 Florida State University summa cum laude, making the Dean&apos;s
-                List every semester. My work sits where backend engineering
-                meets distributed systems: designing services that stay fast,
-                consistent, and observable under real load.
+                List every semester. My work sits where systems software meets
+                distributed infrastructure: low-level code and backend services
+                that stay fast, predictable, and observable under real load.
               </p>
               <p className="my-4 font-medium">
-                At Rubrik, I build React/TypeScript dashboards for
-                cloud-security alert triage and backup monitoring across
-                multi-cluster deployments. Before that, at Chime, I shipped
-                TypeScript/Node.js features in a payment microservice handling
-                $1.2M+ in monthly transactions. That meant tuning PostgreSQL
-                query plans, designing GraphQL and REST contracts used by three
-                internal teams, and cutting incident response time about 40%
-                with OpenTelemetry tracing and Grafana SLO dashboards.
+                I&apos;m currently a systems software engineering intern at
+                NVIDIA, building and optimizing C++ components for NVIDIA
+                DRIVE, the compute platform behind NVIDIA&apos;s autonomous
+                vehicles. I cut p95 execution latency 18% by profiling CPU
+                hotspots and eliminating unnecessary memory copies, and built
+                Linux tooling and runtime support for performance-sensitive
+                automotive workloads that reduced CPU utilization 12% and
+                improved throughput 21%.
+              </p>
+              <p className="mb-4 font-medium">
+                Before NVIDIA, I built and optimized React/TypeScript
+                workflows at Rubrik for cloud-security alert triage and backup
+                monitoring across multi-cluster environments, cutting p95
+                page-load latency 30%. At Chime, I shipped TypeScript/Node.js
+                features in a payment microservice handling $1.2M+ in monthly
+                transactions. That meant tuning PostgreSQL query plans,
+                designing GraphQL and REST contracts used by three internal
+                teams, and cutting incident MTTR about 40% with OpenTelemetry
+                tracing and Grafana SLO dashboards.
               </p>
               <p className="font-medium">
                 Outside of work, I build distributed systems from first
@@ -112,7 +123,7 @@ const About = () => {
             <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3">
               <Stat value={4500} label="Community Members" />
               <Stat value={200} label="Students Mentored" />
-              <Stat value={4} label="Internships" suffix="" />
+              <Stat value={3} label="Internships" suffix="" />
               <Stat value={3} suffix="x" label="Hackathon Winner" />
             </div>
           </div>

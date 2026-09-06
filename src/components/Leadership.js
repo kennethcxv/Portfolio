@@ -35,14 +35,6 @@ const HIGHLIGHTS = [
     address: "Florida",
     work: "Created an in-browser Python and JavaScript coding playground powered by WebAssembly, with real-time collaborative editing built on Yjs CRDTs.",
   },
-  {
-    position: "2nd Place",
-    company: "Knight Hacks",
-    companyLink: "https://www.knighthacks.org/",
-    time: "University of Central Florida",
-    address: "Orlando, FL",
-    work: "Built a Chrome extension that captions and summarizes online lectures using Whisper and a large language model, helping students review 30-minute lectures in a fraction of the time.",
-  },
 ];
 
 const Details = ({ position, company, companyLink, time, address, work }) => {

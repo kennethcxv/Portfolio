@@ -7,14 +7,14 @@ const EDUCATION = [
     label: "M.S. Computer Science",
     school: "Georgia Institute of Technology",
     link: "https://www.gatech.edu/",
-    time: "Expected Jun 2027 | Atlanta, GA",
-    info: "Specializing in Computing Systems with a 3.9/4.0 GPA. Coursework spans Distributed Systems, Advanced Operating Systems, and Database Internals, which is the theory behind the consensus protocols, storage engines, and schedulers I build in my own projects.",
+    time: "Expected May 2027 | Atlanta, GA",
+    info: "Specializing in Machine Learning with a 3.9/4.0 GPA. Coursework spans Distributed Systems, Advanced Operating Systems, and Database Internals, which is the theory behind the consensus protocols, storage engines, and schedulers I build in my own projects.",
   },
   {
     label: "Bachelors in Computer Science",
     school: "Florida State University",
     link: "https://www.fsu.edu/",
-    time: "Graduated Dec 2025 | Tallahassee, FL",
+    time: "Graduated Aug 2026 | Tallahassee, FL",
     info: "Graduated summa cum laude with a 3.8/4.0 GPA, earning Dean's List honors every semester. Coursework included Operating Systems, Compilers, Algorithms, Networks, and Computer Architecture. Founded Code Culture, FSU's largest student programming community, along the way.",
   },
 ];

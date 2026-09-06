@@ -4,7 +4,7 @@ import NavBar from "@/components/NavBar";
 describe("NavBar", () => {
   it("renders every page link", () => {
     render(<NavBar />);
-    for (const title of ["Home", "About", "Background", "Projects", "Articles"]) {
+    for (const title of ["Home", "About", "Background", "Projects", "Impact"]) {
       expect(screen.getByRole("link", { name: title })).toBeInTheDocument();
     }
   });
@@ -33,7 +33,7 @@ describe("NavBar", () => {
     fireEvent.click(screen.getByRole("button", { name: /open menu/i }));
 
     // The overlay renders page links as buttons.
-    for (const title of ["Home", "About", "Background", "Projects", "Articles"]) {
+    for (const title of ["Home", "About", "Background", "Projects", "Impact"]) {
       expect(screen.getByRole("button", { name: title })).toBeInTheDocument();
     }
     expect(document.body.style.overflow).toBe("hidden");
