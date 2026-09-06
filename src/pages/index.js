@@ -71,16 +71,9 @@ export default function Home() {
               I&apos;m Kenneth Camacho, a software engineer and M.S. Computer
               Science student at Georgia Tech. Right now I&apos;m a systems
               software engineering intern at NVIDIA, writing C++ and Linux
-              tooling for NVIDIA DRIVE, where I&apos;ve cut p95 execution
-              latency 18% and lifted throughput 21%. Before that I shipped
-              production code at Rubrik and Chime, everything from
-              cloud-security workflows to payment services that move over
-              $1.2M a month. For fun, I build distributed systems in Go: a
-              Raft-backed key-value store, a fault-tolerant job queue, and a
-              semantic code search engine. Have a look around at my projects,
-              experience, and measured results. It should give you a decent
-              sense of how I build software: measured, tested, and made to
-              scale.
+              tooling for NVIDIA DRIVE. Before that I shipped production code
+              at Rubrik and Chime. On my own time I build distributed systems
+              in Go.
             </p>
 
             <div className="mt-2 flex items-center gap-6 self-start lg:self-center sm:gap-4">
