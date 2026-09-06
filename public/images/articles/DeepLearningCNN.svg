@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Deep learning layers">
+  <defs>
+    <linearGradient id="cnn-depth" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#ec4899"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="#171344"/>
+  <circle cx="120" cy="110" r="240" fill="#1d1856"/>
+  <circle cx="1120" cy="600" r="200" fill="#1d1856"/>
+
+  <!-- Layer slabs, perspective row -->
+  <g>
+    <rect x="120" y="200" width="34" height="280" rx="6" fill="#6366f1"/>
+    <rect x="205" y="215" width="34" height="250" rx="6" fill="#7460f0"/>
+    <rect x="290" y="230" width="34" height="220" rx="6" fill="#855bee"/>
+    <rect x="375" y="245" width="34" height="190" rx="6" fill="#9955ec"/>
+    <rect x="460" y="260" width="34" height="160" rx="6" fill="#ad50e9"/>
+    <rect x="545" y="272" width="34" height="136" rx="6" fill="#c14ae0"/>
+    <rect x="630" y="284" width="34" height="112" rx="6" fill="#d746c9"/>
+    <rect x="715" y="294" width="34" height="92" rx="6" fill="#ec4899"/>
+  </g>
+  <!-- connections fanning between slabs -->
+  <g stroke="#4e4a8a" stroke-width="1.5" opacity="0.6">
+    <line x1="154" y1="250" x2="205" y2="280"/><line x1="154" y1="340" x2="205" y2="300"/>
+    <line x1="154" y1="430" x2="205" y2="400"/><line x1="239" y1="260" x2="290" y2="300"/>
+    <line x1="239" y1="380" x2="290" y2="340"/><line x1="324" y1="280" x2="375" y2="320"/>
+    <line x1="324" y1="400" x2="375" y2="350"/><line x1="409" y1="300" x2="460" y2="330"/>
+    <line x1="409" y1="390" x2="460" y2="350"/><line x1="494" y1="310" x2="545" y2="330"/>
+    <line x1="494" y1="380" x2="545" y2="350"/><line x1="579" y1="320" x2="630" y2="335"/>
+    <line x1="579" y1="370" x2="630" y2="350"/><line x1="664" y1="325" x2="715" y2="335"/>
+    <line x1="664" y1="360" x2="715" y2="350"/>
+  </g>
+
+  <!-- What each stage sees -->
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="17" text-anchor="middle">
+    <text x="137" y="520" fill="#8a86c9">pixels</text>
+    <text x="307" y="520" fill="#8a86c9">edges</text>
+    <text x="477" y="520" fill="#8a86c9">textures</text>
+    <text x="647" y="520" fill="#8a86c9">parts</text>
+  </g>
+
+  <!-- Output card -->
+  <g>
+    <rect x="830" y="240" width="280" height="200" rx="16" fill="#0f0c30" stroke="url(#cnn-depth)" stroke-width="3"/>
+    <path d="M 890 330 q -10 -60 14 -90 l 16 24 q 28 -10 52 0 l 16 -24 q 24 30 14 90 z" fill="none" stroke="#ec4899" stroke-width="3"/>
+    <text x="970" y="395" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">&#8220;cat&#8221; &#183; 97%</text>
+  </g>
+
+  <!-- Title bottom center -->
+  <text x="600" y="600" font-family="Georgia, serif" font-size="42" font-weight="700" fill="#ffffff" text-anchor="middle">Depth is the whole trick</text>
+  <text x="600" y="638" font-family="Segoe UI, Arial, sans-serif" font-size="19" fill="#8a86c9" text-anchor="middle">every layer sees a little more than the last</text>
+</svg>

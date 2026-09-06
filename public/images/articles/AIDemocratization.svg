@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="AI tools becoming available to everyone">
+  <rect width="1200" height="675" fill="#f2fbf4"/>
+
+  <text x="90" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="48" font-weight="800" fill="#14532d">No gatekeepers left</text>
+  <text x="90" y="140" font-family="Segoe UI, Arial, sans-serif" font-size="21" fill="#5b7263">the whole AI stack, one download away</text>
+
+  <!-- Descending open staircase -->
+  <g font-family="Consolas, ui-monospace, monospace" font-size="19">
+    <rect x="90" y="200" width="300" height="64" rx="10" fill="#ffffff" stroke="#bbd6c2" stroke-width="2"/>
+    <text x="115" y="240" fill="#37503f">research papers &#183; free</text>
+    <rect x="150" y="284" width="300" height="64" rx="10" fill="#ffffff" stroke="#bbd6c2" stroke-width="2"/>
+    <text x="175" y="324" fill="#37503f">open weights &#183; free</text>
+    <rect x="210" y="368" width="300" height="64" rx="10" fill="#ffffff" stroke="#bbd6c2" stroke-width="2"/>
+    <text x="235" y="408" fill="#37503f">hosted APIs &#183; cents</text>
+    <rect x="270" y="452" width="300" height="64" rx="10" fill="#16a34a"/>
+    <text x="295" y="492" fill="#ffffff" font-weight="700">your app &#183; priceless</text>
+  </g>
+  <!-- descent arrow -->
+  <path d="M 430 232 L 490 316 L 550 400 L 610 470" fill="none" stroke="#16a34a" stroke-width="3" stroke-dasharray="8 7"/>
+  <path d="M 597 452 l 13 18 l -21 2" fill="#16a34a"/>
+
+  <!-- Laptop terminal, right -->
+  <g>
+    <rect x="680" y="180" width="430" height="270" rx="14" fill="#14532d"/>
+    <rect x="694" y="194" width="402" height="242" rx="8" fill="#0b2e18"/>
+    <g font-family="Consolas, ui-monospace, monospace" font-size="19">
+      <text x="720" y="240" fill="#86efac">$ pip install torch</text>
+      <text x="720" y="276" fill="#86efac">$ python train.py</text>
+      <text x="720" y="312" fill="#d9f99d">epoch 3/10 &#9608;&#9608;&#9608;&#9608;&#9617;&#9617; loss 0.41</text>
+      <text x="720" y="348" fill="#f2fbf4">works on a used laptop.</text>
+      <text x="720" y="384" fill="#f2fbf4">that&#8217;s the whole point.</text>
+    </g>
+    <rect x="640" y="450" width="510" height="18" rx="9" fill="#c8e6cf"/>
+  </g>
+
+  <!-- Crowd of builders filling the bottom -->
+  <g fill="#16a34a">
+    <circle cx="120" cy="590" r="10"/><circle cx="165" cy="605" r="10"/><circle cx="210" cy="588" r="10"/>
+    <circle cx="255" cy="608" r="10"/><circle cx="300" cy="592" r="10"/><circle cx="345" cy="606" r="10"/>
+    <circle cx="390" cy="590" r="10"/><circle cx="435" cy="604" r="10"/><circle cx="480" cy="588" r="10"/>
+  </g>
+  <g fill="#86c79a">
+    <circle cx="525" cy="606" r="10"/><circle cx="570" cy="590" r="10"/><circle cx="615" cy="604" r="10"/>
+    <circle cx="660" cy="588" r="10"/><circle cx="705" cy="606" r="10"/><circle cx="750" cy="592" r="10"/>
+    <circle cx="795" cy="604" r="10"/><circle cx="840" cy="588" r="10"/><circle cx="885" cy="606" r="10"/>
+    <circle cx="930" cy="590" r="10"/><circle cx="975" cy="604" r="10"/><circle cx="1020" cy="588" r="10"/>
+    <circle cx="1065" cy="604" r="10"/>
+  </g>
+  <text x="600" y="655" font-family="Segoe UI, Arial, sans-serif" font-size="19" fill="#5b7263" text-anchor="middle">the next million builders won&#8217;t ask permission</text>
+</svg>

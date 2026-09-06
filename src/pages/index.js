@@ -38,7 +38,7 @@ const SPHERE_TAGS = [
 
 const HEADLINES = [
   "Welcome to my Portfolio!",
-  "Systems Software Engineer.",
+  "Software Engineer.",
   "Distributed Systems Builder.",
   "Full-Stack Developer.",
 ];
@@ -50,7 +50,7 @@ export default function Home() {
         <title>Kenneth Camacho | Software Engineer</title>
         <meta
           name="description"
-          content="Kenneth Camacho is a systems software engineer and M.S. Computer Science student at Georgia Tech, currently a Systems Software Engineering Intern at NVIDIA working on NVIDIA DRIVE. Prior experience at Rubrik and Chime; builds distributed systems in Go and performance-critical C++ on Linux."
+          content="Kenneth Camacho is a software engineer and M.S. Computer Science student at Georgia Tech. Experience at Rubrik and Chime; builds distributed systems in Go and full-stack products with React, TypeScript, and Node.js."
         />
       </Head>
 
@@ -69,11 +69,15 @@ export default function Home() {
 
             <p className="my-6 text-lg font-medium text-dark dark:text-light xl:text-base md:my-4 sm:text-sm">
               I&apos;m Kenneth Camacho, a software engineer and M.S. Computer
-              Science student at Georgia Tech. Right now I&apos;m a systems
-              software engineering intern at NVIDIA, writing C++ and Linux
-              tooling for NVIDIA DRIVE. Before that I shipped production code
-              at Rubrik and Chime. On my own time I build distributed systems
-              in Go.
+              Science student at Georgia Tech, where I focus on computing
+              systems. I&apos;ve shipped production code at Rubrik and Chime,
+              everything from cloud-security dashboards to payment services
+              that move over $1.2M a month. For fun, I build distributed
+              systems in Go: a Raft-backed key-value store, a fault-tolerant
+              job queue, and a semantic code search engine. Have a look around
+              at my projects, experience, and writing. It should give you a
+              decent sense of how I like to build software: measured, tested,
+              and made to scale.
             </p>
 
             <div className="mt-2 flex items-center gap-6 self-start lg:self-center sm:gap-4">

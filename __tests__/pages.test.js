@@ -3,7 +3,7 @@ import Home from "@/pages/index";
 import About from "@/pages/about";
 import Background from "@/pages/background";
 import Projects from "@/pages/projects";
-import Impact from "@/pages/impact";
+import Articles from "@/pages/articles";
 
 describe("Home", () => {
   it("links the resume PDF and contact email", () => {
@@ -20,7 +20,6 @@ describe("Home", () => {
   it("introduces Kenneth with current roles", () => {
     render(<Home />);
     expect(screen.getByText(/Georgia Tech/)).toBeInTheDocument();
-    expect(screen.getByText(/NVIDIA DRIVE/)).toBeInTheDocument();
     expect(screen.getByText(/Rubrik and Chime/)).toBeInTheDocument();
   });
 });
@@ -32,25 +31,15 @@ describe("About", () => {
     expect(screen.getByText(/summa cum laude/)).toBeInTheDocument();
     expect(screen.getByText(/Community Members/i)).toBeInTheDocument();
     expect(screen.getByAltText(/Kenneth Camacho/)).toBeInTheDocument();
-    expect(screen.getByText(/specialization in\s+Machine Learning/)).toBeInTheDocument();
   });
 });
 
 describe("Background", () => {
-  it("lists the three resume internships, NVIDIA first", () => {
+  it("lists all four internships", () => {
     render(<Background />);
-    for (const company of ["@NVIDIA", "@Rubrik", "@Chime"]) {
+    for (const company of ["@Rubrik", "@Chime", "@EloStack", "@Sebanda Insurance"]) {
       expect(screen.getByText(company)).toBeInTheDocument();
     }
-    for (const dropped of ["@EloStack", "@Sebanda Insurance"]) {
-      expect(screen.queryByText(dropped)).not.toBeInTheDocument();
-    }
-    expect(screen.getByText("@NVIDIA")).toHaveAttribute(
-      "href",
-      "https://www.nvidia.com/en-us/self-driving-cars/"
-    );
-    expect(screen.getByText(/Sep 2026 – Present/)).toBeInTheDocument();
-    expect(screen.getByText(/May 2026 – Aug 2026/)).toBeInTheDocument();
   });
 
   it("lists awards and both degrees", () => {
@@ -59,8 +48,6 @@ describe("Background", () => {
     expect(screen.getByText("@eMerge Americas Hackathon")).toBeInTheDocument();
     expect(screen.getByText("@Georgia Institute of Technology")).toBeInTheDocument();
     expect(screen.getByText("@Florida State University")).toBeInTheDocument();
-    expect(screen.getByText(/Expected May 2027/)).toBeInTheDocument();
-    expect(screen.getByText(/Graduated Aug 2026/)).toBeInTheDocument();
   });
 });
 
@@ -85,35 +72,12 @@ describe("Projects", () => {
   });
 });
 
-describe("Impact", () => {
-  it("groups the resume metrics by section", () => {
-    render(<Impact />);
-    for (const heading of [
-      "Systems & Performance",
-      "Product & Platform",
-      "Systems I Built",
-    ]) {
-      expect(screen.getByText(heading)).toBeInTheDocument();
-    }
-  });
-
-  it("labels each headline metric it reports", () => {
-    render(<Impact />);
-    for (const label of [
-      "p95 execution latency",
-      "throughput",
-      "incident MTTR",
-      "writes sustained",
-      "irrelevant top-k results",
-    ]) {
-      expect(screen.getByText(label)).toBeInTheDocument();
-    }
-  });
-
-  it("links the resume safely", () => {
-    render(<Impact />);
-    const resume = screen.getByRole("link", { name: /resume/i });
-    expect(resume).toHaveAttribute("href", "/Kenneth_Camacho_Resume.pdf");
-    expect(resume.getAttribute("rel")).toContain("noopener");
+describe("Articles", () => {
+  it("renders featured and listed articles", () => {
+    render(<Articles />);
+    expect(
+      screen.getAllByText(/Unraveling the Black Box/i).length
+    ).toBeGreaterThanOrEqual(1);
+    expect(screen.getByText(/Leveraging Machine Learning to Combat/i)).toBeInTheDocument();
   });
 });

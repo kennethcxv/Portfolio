@@ -4,20 +4,12 @@ import LiIcon from "./LiIcon";
 
 const EXPERIENCE = [
   {
-    position: "Systems Software Engineer Intern",
-    company: "NVIDIA",
-    companyLink: "https://www.nvidia.com/en-us/self-driving-cars/",
-    time: "Sep 2026 – Present",
-    address: "Santa Clara, CA",
-    work: "Building and optimizing C++ systems components for NVIDIA DRIVE, cutting p95 execution latency 18% by profiling CPU hotspots, eliminating unnecessary memory copies, and tightening critical-path code. Developed Linux-based tooling and runtime support for performance-sensitive automotive workloads, reducing CPU utilization 12% and improving throughput 21% in internal benchmark scenarios. Added tracing, diagnostics, and automated stress tests across a multi-process software stack, shortening debugging time ~30% and catching concurrency and reliability regressions before integration.",
-  },
-  {
     position: "Software Engineer Intern",
     company: "Rubrik",
     companyLink: "https://www.rubrik.com/",
-    time: "May 2026 – Aug 2026",
+    time: "May 2026 – Present",
     address: "Palo Alto, CA",
-    work: "Built and optimized React/TypeScript workflows for cloud-security alert triage and backup monitoring across multi-cluster environments, cutting p95 page-load latency 30% through code-splitting, React Suspense, and targeted render-path optimization. Refactored GraphQL/Apollo data access across 4 production dashboards into shared hooks and normalized caching, eliminating ~50% of duplicated request logic and fixing cross-view consistency issues affecting customer-facing security and backup workflows.",
+    work: "Building React/TypeScript dashboard views for cloud-security alert triage and backup monitoring across multi-cluster deployments, cutting p95 load time 30% with React Suspense, code-splitting, and selective memoization. Refactored GraphQL/Apollo logic across 4 dashboards into shared hooks with normalized caching, which removed roughly half of the duplicated request code and fixed customer-reported cross-view consistency bugs.",
   },
   {
     position: "Software Engineer Intern",
@@ -25,7 +17,23 @@ const EXPERIENCE = [
     companyLink: "https://www.chime.com/",
     time: "May 2025 – Dec 2025",
     address: "San Francisco, CA",
-    work: "Shipped TypeScript/Node.js features in a payment microservice processing $1.2M+ in monthly transaction volume, cutting p95 latency 20% through PostgreSQL query-plan tuning (EXPLAIN ANALYZE, partial indexes) and Kubernetes HPA scaling. Designed GraphQL/REST contracts and PostgreSQL schemas for a payments service consumed by 3 internal teams, authored the design doc, drove the backward-compatibility review, and shipped Jest tests to 85% coverage. Cut launch-week payment incident MTTR ~40% by adding structured logging, OpenTelemetry tracing spans, and Grafana SLO dashboards on the customer-facing checkout path.",
+    work: "Shipped TypeScript/Node.js features in a payment microservice processing $1.2M+ in monthly transaction volume, cutting p95 latency 20% through PostgreSQL query-plan tuning and Kubernetes autoscaling. Designed GraphQL/REST contracts and PostgreSQL schemas consumed by 3 internal teams, drove the backward-compatibility review, and shipped Jest tests to 85% coverage. Cut launch-week incident MTTR ~40% by adding structured logging, OpenTelemetry tracing, and Grafana SLO dashboards on the checkout path.",
+  },
+  {
+    position: "Software Engineer Intern",
+    company: "EloStack",
+    companyLink: "https://www.elostack.com/",
+    time: "May 2024 – Aug 2024",
+    address: "Miami, FL",
+    work: "Cut initial render time 40% on core React workflows through React Profiler analysis, eliminating redundant API calls and applying React.memo and useMemo on hot-path components. Owned React/Node.js features across user onboarding and dashboards in releases tied to a 25% retention lift, reviewed REST API pull requests, and authored shared frontend patterns adopted org-wide.",
+  },
+  {
+    position: "Software Engineer Intern",
+    company: "Sebanda Insurance",
+    companyLink: "https://www.sebandainsurance.com/",
+    time: "Jan 2024 – Apr 2024",
+    address: "Miami, FL",
+    work: "Built a Python/Pandas reporting tool over PostgreSQL views that automated weekly financial reconciliation, saving the finance team about 5 hours a week and cutting data-entry errors 20%.",
   },
 ];
 

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="One model rippling through a community">
+  <rect width="1200" height="675" fill="#0d1330"/>
+  <!-- stars -->
+  <g fill="#ffffff" opacity="0.35">
+    <circle cx="100" cy="80" r="2"/><circle cx="300" cy="50" r="1.5"/><circle cx="520" cy="90" r="2"/>
+    <circle cx="900" cy="60" r="1.5"/><circle cx="1100" cy="110" r="2"/><circle cx="700" cy="40" r="1.5"/>
+  </g>
+
+  <!-- Ripples from a single stone, right of center -->
+  <g fill="none" stroke="#f59e0b">
+    <circle cx="800" cy="380" r="55" stroke-width="3.5"/>
+    <circle cx="800" cy="380" r="125" stroke-width="2.5" opacity="0.65"/>
+    <circle cx="800" cy="380" r="200" stroke-width="2" opacity="0.4"/>
+    <circle cx="800" cy="380" r="285" stroke-width="1.5" opacity="0.22"/>
+  </g>
+  <circle cx="800" cy="380" r="26" fill="#f59e0b"/>
+  <text x="800" y="388" font-family="Consolas, ui-monospace, monospace" font-size="17" font-weight="700" fill="#0d1330" text-anchor="middle">AI</text>
+
+  <!-- People standing on ripple rings -->
+  <g stroke="#67e8f9" stroke-width="2.5" fill="none">
+    <g transform="translate(672,320)"><circle r="8" cy="-11"/><path d="M 0 -3 v 20 M 0 3 l -10 7 M 0 3 l 10 7 M 0 17 l -8 14 M 0 17 l 8 14"/></g>
+    <g transform="translate(930,290)"><circle r="8" cy="-11"/><path d="M 0 -3 v 20 M 0 3 l -10 7 M 0 3 l 10 7 M 0 17 l -8 14 M 0 17 l 8 14"/></g>
+    <g transform="translate(650,500)"><circle r="8" cy="-11"/><path d="M 0 -3 v 20 M 0 3 l -10 7 M 0 3 l 10 7 M 0 17 l -8 14 M 0 17 l 8 14"/></g>
+    <g transform="translate(985,480)"><circle r="8" cy="-11"/><path d="M 0 -3 v 20 M 0 3 l -10 7 M 0 3 l 10 7 M 0 17 l -8 14 M 0 17 l 8 14"/></g>
+    <g transform="translate(800,190)"><circle r="8" cy="-11"/><path d="M 0 -3 v 20 M 0 3 l -10 7 M 0 3 l 10 7 M 0 17 l -8 14 M 0 17 l 8 14"/></g>
+  </g>
+
+  <!-- Left column: the ledger -->
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="80" y="140" font-size="48" font-weight="800" fill="#fef3c7">One model,</text>
+    <text x="80" y="196" font-size="48" font-weight="800" fill="#67e8f9">many lives</text>
+    <g font-size="20">
+      <text x="80" y="280" fill="#86efac">+ clinicians get evenings back</text>
+      <text x="80" y="318" fill="#86efac">+ classrooms translated live</text>
+      <text x="80" y="356" fill="#fca5a5">&#8722; three jobs quietly reshaped</text>
+      <text x="80" y="394" fill="#fca5a5">&#8722; appeals nobody can explain</text>
+    </g>
+    <line x1="80" y1="425" x2="420" y2="425" stroke="#3b4470" stroke-width="2"/>
+    <text x="80" y="465" font-size="20" fill="#e2e8f0" font-weight="700">the net effect is a design choice</text>
+    <text x="80" y="498" font-size="17" fill="#7a86b8">measure it, don&#8217;t assume it</text>
+  </g>
+</svg>

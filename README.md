@@ -1,6 +1,6 @@
 # Kenneth Camacho — Portfolio
 
-Personal portfolio of **Kenneth Camacho** — systems software engineer, M.S. Computer Science student at Georgia Tech (Machine Learning), and builder of distributed systems.
+Personal portfolio of **Kenneth Camacho** — software engineer, M.S. Computer Science student at Georgia Tech (Computing Systems), and builder of distributed systems.
 
 **Live site:** [kennethcamacho.com](https://www.kennethcamacho.com)
 
@@ -39,7 +39,7 @@ npm run build    # production build
 ```
 src/
   components/    # NavBar, Footer, WordSphere, TypeText, timelines, skills
-  pages/         # Home, About, Background, Projects, Impact
+  pages/         # Home, About, Background, Projects, Articles
   styles/        # Tailwind entry + global a11y/motion rules
 public/
   images/        # project, article, and profile artwork

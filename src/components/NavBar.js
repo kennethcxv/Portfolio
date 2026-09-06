@@ -11,7 +11,7 @@ const NAV_LINKS = [
   { href: "/about", title: "About" },
   { href: "/background", title: "Background" },
   { href: "/projects", title: "Projects" },
-  { href: "/impact", title: "Impact" },
+  { href: "/articles", title: "Articles" },
 ];
 
 const SOCIAL_LINKS = [
